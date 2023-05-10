@@ -1,5 +1,4 @@
 import Head from "next/head";
-import About from "../components/home/About";
 
 export default function About() {
   return (
@@ -7,7 +6,9 @@ export default function About() {
       <Head>
         <title>Bunnyfied Labs</title>
       </Head>
-      <About />
+      <main>
+        <h1> We are inside index.js of the Project Folder.</h1>
+      </main>
     </>
   );
 }

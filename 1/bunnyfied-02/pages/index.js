@@ -1,13 +1,14 @@
 import Head from "next/head";
-import About from "../components/home/About";
 
-export default function About() {
+export default function Home() {
   return (
     <>
       <Head>
         <title>Bunnyfied Labs</title>
       </Head>
-      <About />
+      <main>
+        <h1> We are getting started with learning nextjs</h1>
+      </main>
     </>
   );
 }
