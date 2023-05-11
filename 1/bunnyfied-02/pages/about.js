@@ -1,14 +1,14 @@
 import Head from "next/head";
+import About from "../components/About";
 
-export default function About() {
+export default function about() {
+  const name = "DONTKILLME";
   return (
     <>
       <Head>
         <title>Bunnyfied Labs</title>
       </Head>
-      <main>
-        <h1> We are in the About Page.</h1>
-      </main>
+      <About name={name} description="Blockchain Developer" />
     </>
   );
 }
