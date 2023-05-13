@@ -12,7 +12,7 @@ export default function About() {
       display={"flex"}
       alignItems={"center"}
       justifyContent={"center"}
-      minHeight={"calc(100vh - 175px)"}
+      minHeight={"calc(114vh - 175px)"}
       bgcolor={"blue"}
       sx={{
         ":hover": {
