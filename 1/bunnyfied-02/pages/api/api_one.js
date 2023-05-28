@@ -1,3 +1,5 @@
+import basicMiddleware from "../../middleware/basicMiddleware";
+import basicMiddleware2 from "../../middleware/basicMiddleware2";
 const handler = async (req, res) => {
   try {
     const { method } = req;
@@ -35,4 +37,4 @@ const handler = async (req, res) => {
   }
 };
 
-export default handler;
+export default basicMiddleware(basicMiddleware2(handler));
