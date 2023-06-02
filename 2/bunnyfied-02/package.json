@@ -16,7 +16,7 @@
     "dotenv": "^16.0.3",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
-    "mysql2": "^3.3.2",
+    "mysql2": "^3.3.3",
     "next": "13.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
