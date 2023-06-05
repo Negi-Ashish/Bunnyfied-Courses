@@ -1,17 +1,21 @@
-import basicMiddleware from "../../middleware/basicMiddleware";
-import basicMiddleware2 from "../../middleware/basicMiddleware2";
+import {
+  create_medium_user,
+  fetch_medium_users,
+} from "../../service/dbService";
+
 const handler = async (req, res) => {
   try {
     const { method } = req;
     switch (method) {
       case "POST": {
-        //Do some thing
-        res.status(200).send("We Secured the POST API End Point");
+        const created_user = await create_medium_user(req.body);
+        res.status(200).json(created_user);
         break;
       }
       case "GET": {
         //Do some thing
-        res.status(200).send("We Secured the GET API End Point");
+        const all_users = await fetch_medium_users();
+        res.status(200).json(all_users);
         break;
       }
       case "PUT": {
@@ -37,4 +41,4 @@ const handler = async (req, res) => {
   }
 };
 
-export default basicMiddleware(basicMiddleware2(handler));
+export default handler;
