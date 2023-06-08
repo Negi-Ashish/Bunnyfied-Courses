@@ -3,6 +3,8 @@ import {
   fetch_medium_users,
 } from "../../service/dbService";
 
+import basicMiddleware from "../../middleware/basicMiddleware";
+
 const handler = async (req, res) => {
   try {
     const { method } = req;
@@ -41,4 +43,4 @@ const handler = async (req, res) => {
   }
 };
 
-export default handler;
+export default basicMiddleware(handler);
