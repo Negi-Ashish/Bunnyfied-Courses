@@ -14,3 +14,5 @@ export async function fetch_medium_users() {
   const users = await medium_users.findAll();
   return users;
 }
+
+//-------------------------------------------
