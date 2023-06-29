@@ -24,6 +24,9 @@
     "nodemailer": "^6.9.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sequelize": "^6.31.1"
+    "react-icons": "^4.9.0",
+    "sequelize": "^6.31.1",
+    "socket.io": "^4.6.2",
+    "socket.io-client": "^4.6.2"
   }
 }
