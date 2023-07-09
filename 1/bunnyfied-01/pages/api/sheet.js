@@ -39,11 +39,10 @@ export default function handler(req, res) {
 
       console.log("db_users", db_users);
       return res
-        .status(400)
+        .status(200)
         .send(JSON.stringify({ error: false, data: data.data.values }));
     });
   } catch (e) {
-    console.log("ERROR", e);
     return res
       .status(400)
       .send(JSON.stringify({ error: true, message: e.message }));
