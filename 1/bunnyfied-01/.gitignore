@@ -30,3 +30,8 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+/client_secret_235094038531-ru0kved5k5vnu539q8hnkmdn5up5ojtt.apps.googleusercontent.com.json
+/learned-hour-392307-bf8dc93c7fb8.json
+/client_secret.json
+/key.json
