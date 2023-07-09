@@ -15,9 +15,6 @@ export default function Home() {
     console.log("emails", emails);
   }
 
-  // sheetdata.map((item, index) => {
-  //   console.log(index, item);
-  // });
   return (
     <div>
       <Head>

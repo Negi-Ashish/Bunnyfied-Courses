@@ -17,10 +17,15 @@ module.exports = {
         allowNull: false,
         unique: true,
       },
+      Phone: {
+        type: Sequelize.STRING,
+        unique: true,
+      },
       status: {
         type: Sequelize.BOOLEAN,
         default: true,
       },
+
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

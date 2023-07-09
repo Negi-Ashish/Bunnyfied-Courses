@@ -8,6 +8,7 @@ const init_interns = (sequelize, Types) => {
     {
       Name: DataTypes.STRING,
       Email: DataTypes.STRING,
+      Phone: DataTypes.STRING,
       status: DataTypes.BOOLEAN,
     },
     {
