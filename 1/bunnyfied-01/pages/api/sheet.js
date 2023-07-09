@@ -1,6 +1,16 @@
 import { google } from "googleapis";
 import keys from "../../key.json";
 
+import { interns } from "../../database/models";
+
+//--------------------------------------------------------------------------
+async function fetch_interns() {
+  console.log("called");
+  const users = await interns.findAll();
+  console.log("called", users);
+  return users;
+}
+//--------------------------------------------------------------------------
 export default function handler(req, res) {
   try {
     const client = new google.auth.JWT(
@@ -25,12 +35,15 @@ export default function handler(req, res) {
 
       let data = await gsapi.spreadsheets.values.get(opt);
 
-      console.log("Emails", data.data.values.length);
+      let db_users = await fetch_interns();
+
+      console.log("db_users", db_users);
       return res
         .status(400)
         .send(JSON.stringify({ error: false, data: data.data.values }));
     });
   } catch (e) {
+    console.log("ERROR", e);
     return res
       .status(400)
       .send(JSON.stringify({ error: true, message: e.message }));
