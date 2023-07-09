@@ -1,5 +1,4 @@
-import { fetch_interns } from "../../service/dbService";
-import { fetch_interns_sheet } from "../../service/googleSheetService";
+import { fetch_google_write_db } from "../../service";
 //--------------------------------------------------------------------------
 // export default function handler(req, res) {
 //   try {
@@ -44,7 +43,7 @@ const handler = async (req, res) => {
     const { method } = req;
     switch (method) {
       case "GET": {
-        const emails = await fetch_interns_sheet();
+        const emails = await fetch_google_write_db();
 
         res.status(200).send(JSON.stringify({ error: false, data: emails }));
         break;

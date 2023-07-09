@@ -1,7 +1,7 @@
 import { google } from "googleapis";
 import keys from "../key.json";
 
-export async function fetch_interns_sheet() {
+export async function fetch_interns_sheet(SpreadSheetID, Range) {
   const client = new google.auth.JWT(
     keys.client_email,
     null,
@@ -19,8 +19,8 @@ export async function fetch_interns_sheet() {
       const gsapi = google.sheets({ version: "v4", auth: client });
 
       const opt = {
-        spreadsheetId: "1_0bWDrpNQWM9xg-TOkYfkGk79-yBf9KJGSXjVSAP1Xs",
-        range: "Sheet1!B2:B",
+        spreadsheetId: SpreadSheetID,
+        range: Range,
       };
 
       gsapi.spreadsheets.values.get(opt, (err, res) => {
