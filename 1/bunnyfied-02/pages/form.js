@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Form from "../components/Form.js";
+import ChakraForm from "../components/ChakraUIForm.js";
 
 export default function form() {
   return (
@@ -7,7 +8,8 @@ export default function form() {
       <Head>
         <title>Bunnyfied Labs</title>
       </Head>
-      <Form />
+      {/* <Form /> */}
+      <ChakraForm />
     </>
   );
 }
