@@ -1,14 +1,21 @@
 import Head from "next/head";
+import { Flex } from "@chakra-ui/react";
+import { Footer } from "../components/Footer";
+import { Main } from "../components/Main";
+import { Navbar } from "../components/Navbar";
+import { ChakraProvider } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Bunnyfied Labs</title>
-      </Head>
-      <main>
-        <h1> We are getting started with learning nextjs</h1>
-      </main>
-    </>
+    <ChakraProvider>
+      <Flex direction="column" flex="1">
+        <Head>
+          <title>Bunnyfied Labs</title>
+        </Head>
+        <Navbar />
+        <Main />
+        <Footer />
+      </Flex>
+    </ChakraProvider>
   );
 }
