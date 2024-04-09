@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte';
-
+	import { fade, fly } from 'svelte/transition';
 	// To store the search term searched by user.
 	let search_term = '';
 	// To store the api response data.
@@ -40,22 +40,31 @@
 		photos = data.results;
 		console.log('fetchData', photos);
 	};
-	const handleFetch = async () => {};
-	console.log({ search_term, photos });
+	const handleFetch = async () => {
+		if (!search_term) return;
+		await fetchData();
+		search_term = '';
+	};
 </script>
 
 <div class="container">
 	<div class="header">
 		<h1>Photo Gallery</h1>
 		<div class="input-container">
-			<input type="text" class="input" />
+			<input type="text" class="input" bind:value={search_term} />
 			<button class="button" on:click={handleFetch}>Fetch Photos</button>
 		</div>
 	</div>
 
 	<div class="photos">
 		{#each photos as photo, i (photo.id)}
-			<img src={photo.urls.regular} alt={photo.alt_description} class="image" />
+			<img
+				src={photo.urls.regular}
+				alt={photo.alt_description}
+				class="image"
+				in:fly={{ y: 200, duration: 2000, delay: i * 200 }}
+				out:fade
+			/>
 		{/each}
 	</div>
 </div>
