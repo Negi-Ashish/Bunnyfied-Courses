@@ -1,5 +1,47 @@
 <script lang="ts">
+	import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte';
+
+	// To store the search term searched by user.
+	let search_term = '';
+	// To store the api response data.
+	let photos: {
+		id: string;
+		alt_description: string;
+		urls: { regular: string };
+	}[] = [];
+
+	// Svelte Hook similar to react useEffect but difference being it only works once,
+	// equivalent to useEffect with an empty dependency array, running only onLoad of a page.
+	onMount(() => {
+		console.log('I am onMount');
+		fetchData();
+	});
+	// Svelte Hook triggered when the component is about to be destroyed and removed from the DOM.
+	onDestroy(() => {
+		console.log('I am onDestroy');
+	});
+	// Svelte Hook triggered before the component updates, but after data has changed.
+	beforeUpdate(() => {
+		console.log('I am beforeUpdate');
+	});
+	// Svelte Hook triggered after the component updates and the DOM has been updated.
+	afterUpdate(() => {
+		console.log('I am afterUpdate');
+	});
+
+	const fetchData = async () => {
+		const res = await fetch(
+			`https://api.unsplash.com/search/photos?page=1&query=${search_term || 'animals'}&client_id=MRtnX5pKefP14f_JktJ6jyOP9aJTFLfcqjXj_4ZeT6s`,
+			{
+				method: 'GET'
+			}
+		);
+		const data = await res.json();
+		photos = data.results;
+		console.log('fetchData', photos);
+	};
 	const handleFetch = async () => {};
+	console.log({ search_term, photos });
 </script>
 
 <div class="container">
@@ -12,12 +54,9 @@
 	</div>
 
 	<div class="photos">
-		<img src={''} alt={''} class={'image'} />
-		<img src={''} alt={''} class={'image'} />
-		<img src={''} alt={''} class={'image'} />
-		<img src={''} alt={''} class={'image'} />
-		<img src={''} alt={''} class={'image'} />
-		<img src={''} alt={''} class={'image'} />
+		{#each photos as photo, i (photo.id)}
+			<img src={photo.urls.regular} alt={photo.alt_description} class="image" />
+		{/each}
 	</div>
 </div>
 
@@ -34,7 +73,6 @@
 	.container {
 		width: 1230px;
 		margin: 0 auto;
-		background-color: blue;
 	}
 	.header {
 		text-align: center;
