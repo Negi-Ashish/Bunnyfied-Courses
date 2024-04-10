@@ -1,0 +1,239 @@
+[
+	{
+		"id": 1,
+		"name": "Physics",
+		"imageUrl": "physics",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the formula for gravitational force?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "F = ma"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "F = G(m1 * m2) / r^2"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "F = kq1q2 / r^2"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "F = kx"
+					}
+				],
+				"answer": "b"
+			},
+			{
+				"id": 2,
+				"question": "What is the unit of electric charge?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Ampere"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Ohm"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Coulomb"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Watt"
+					}
+				],
+				"answer": "c"
+			},
+			{
+				"id": 3,
+				"question": "What is the SI unit of energy?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Joule"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Watt"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Volt"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Newton"
+					}
+				],
+				"answer": "a"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Programming",
+		"imageUrl": "computer",
+		"questions": [
+			{
+				"id": 1,
+				"text": "What is a binary search?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Searching algorithm for unsorted lists"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Searching algorithm for sorted lists"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Sorting algorithm for unsorted lists"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "None of the above"
+					}
+				],
+				"answer": "b"
+			},
+			{
+				"id": 2,
+				"text": "What is recursion?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "A loop construct"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "A function calling itself"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "A sorting technique"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "A data structure"
+					}
+				],
+				"answer": "b"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Mathematics",
+		"imageUrl": "mathematics",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the value of pi (π) approximately?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "3.14"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "2.71"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "1.61"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "4.20"
+					}
+				],
+				"answer": "a"
+			},
+			{
+				"id": 2,
+				"question": "What is the formula for the area of a triangle?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "A = πr^2"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "A = 1/2 * base * height"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "A = length * width"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "A = 4s"
+					}
+				],
+				"answer": "b"
+			},
+			{
+				"id": 3,
+				"question": "What is the square root of 16?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "4"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "8"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "2"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "6"
+					}
+				],
+				"answer": "a"
+			}
+		]
+	}
+]
