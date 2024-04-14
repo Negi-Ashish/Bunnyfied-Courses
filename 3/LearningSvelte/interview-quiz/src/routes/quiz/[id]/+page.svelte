@@ -1,13 +1,16 @@
+<script lang="ts">
+	import QuestionText from './components/QuestionText.svelte';
+
+	export let data: any;
+
+	let currentQuestionIndex = 0;
+	$: question = data.questions[currentQuestionIndex];
+</script>
+
 <div>
-	<h1>Hello My Article Readers</h1>
-	<h1>This is going to be your</h1>
-	<h1>Dynamic Page</h1>
+	{currentQuestionIndex}
+	{question.question}
 
-	<h1>Everything is Svelte is Almost</h1>
-	<h1>Similar to NextJS</h1>
-	<h1>If you complete any one</h1>
-
-	<h1>Just go through the fundamental concepts of other</h1>
-	<h1>You have now learned a brand new programming language lol</h1>
-	<h1>Its as simple as that</h1>
+	<button on:click={() => (currentQuestionIndex = 1)}>Next </button>
+	<QuestionText />
 </div>

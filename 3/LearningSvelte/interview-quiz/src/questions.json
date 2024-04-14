@@ -94,7 +94,7 @@
 		"questions": [
 			{
 				"id": 1,
-				"text": "What is a binary search?",
+				"question": "What is a binary search?",
 				"options": [
 					{
 						"id": 1,
@@ -121,7 +121,7 @@
 			},
 			{
 				"id": 2,
-				"text": "What is recursion?",
+				"question": "What is recursion?",
 				"options": [
 					{
 						"id": 1,
