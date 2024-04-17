@@ -2,11 +2,11 @@
 	import QuestionText from './components/QuestionText.svelte';
 	import QuestionOption from './components/QuestionOption.svelte';
 	import QuestionButton from './components/QuestionButton.svelte';
-	//This
+	import QuestionProgressCircle from './components/QuestionProgressCircle.svelte';
 	import { answers, type Answer } from '../../../store';
-
-	//This
 	import { goto } from '$app/navigation';
+
+	import { onMount } from 'svelte';
 
 	export let data: any;
 
@@ -46,9 +46,24 @@
 			currentQuestionIndex++;
 		}
 	};
+	onMount(() => {
+		answers.set(
+			data.questions.map((question: any) => {
+				return {
+					id: question.id,
+					isCorrect: null
+				};
+			})
+		);
+	});
 </script>
 
-<div>
+<div class="w-full">
+	<div class="flex justify-center">
+		{#each answersValue as answer}
+			<QuestionProgressCircle isCorrect={answer.isCorrect} />
+		{/each}
+	</div>
 	<QuestionText text={question.question} />
 	<div class="flex justify-between flex-wrap cursor-pointer">
 		{#each question.options as option (option.id)}
