@@ -8,6 +8,7 @@ root.render(
   <>
     <Canvas>
       <Scene />
+      
     </Canvas>
   </>
 );
