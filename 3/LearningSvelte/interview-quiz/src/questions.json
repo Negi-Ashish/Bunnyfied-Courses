@@ -378,8 +378,16 @@
 				"question": "What is the difference between set.remove(x) and set.discard(x)?",
 				"options": [
 					{ "id": 1, "label": "a", "text": "remove() adds an element, discard() deletes it" },
-					{ "id": 2, "label": "b", "text": "remove() raises KeyError if x doesn't exist, discard() does not" },
-					{ "id": 3, "label": "c", "text": "discard() raises KeyError if x doesn't exist, remove() does not" },
+					{
+						"id": 2,
+						"label": "b",
+						"text": "remove() raises KeyError if x doesn't exist, discard() does not"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "discard() raises KeyError if x doesn't exist, remove() does not"
+					},
 					{ "id": 4, "label": "d", "text": "They are identical" }
 				],
 				"answer": "b",
@@ -402,7 +410,11 @@
 				"question": "What does Counter from the collections module do?",
 				"options": [
 					{ "id": 1, "label": "a", "text": "Counts the number of keys in a dictionary" },
-					{ "id": 2, "label": "b", "text": "Counts occurrences of each element in a list and returns a dict-like object" },
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Counts occurrences of each element in a list and returns a dict-like object"
+					},
 					{ "id": 3, "label": "c", "text": "Sorts a list in descending order" },
 					{ "id": 4, "label": "d", "text": "Removes duplicate elements from a list" }
 				],
@@ -415,7 +427,11 @@
 				"options": [
 					{ "id": 1, "label": "a", "text": "A dictionary with queue-like behavior" },
 					{ "id": 2, "label": "b", "text": "A sorted list" },
-					{ "id": 3, "label": "c", "text": "A double-ended queue that supports adding/removing from both ends" },
+					{
+						"id": 3,
+						"label": "c",
+						"text": "A double-ended queue that supports adding/removing from both ends"
+					},
 					{ "id": 4, "label": "d", "text": "A type of set" }
 				],
 				"answer": "c",
@@ -474,7 +490,11 @@
 				"question": "What does the * (star) notation do in: *name, price = input().split()?",
 				"options": [
 					{ "id": 1, "label": "a", "text": "Multiplies all values in the list" },
-					{ "id": 2, "label": "b", "text": "Captures all but the last split value into a list called name" },
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Captures all but the last split value into a list called name"
+					},
 					{ "id": 3, "label": "c", "text": "Unpacks only the first value into name" },
 					{ "id": 4, "label": "d", "text": "Raises a syntax error" }
 				],
@@ -732,7 +752,7 @@
 	},
 	{
 		"id": 6,
-		"name": "Python 3 (Hard)",
+		"name": "Python 3",
 		"imageUrl": "computer",
 		"questions": [
 			{
@@ -752,9 +772,17 @@
 				"question": "What is the difference between a shallow copy (copy()) and a deep copy (deepcopy())?",
 				"options": [
 					{ "id": 1, "label": "a", "text": "They are identical" },
-					{ "id": 2, "label": "b", "text": "copy() copies the container but nested objects are still shared references; deepcopy() recursively copies everything" },
+					{
+						"id": 2,
+						"label": "b",
+						"text": "copy() copies the container but nested objects are still shared references; deepcopy() recursively copies everything"
+					},
 					{ "id": 3, "label": "c", "text": "deepcopy() only copies the top-level object" },
-					{ "id": 4, "label": "d", "text": "copy() is slower but makes a full independent duplicate" }
+					{
+						"id": 4,
+						"label": "d",
+						"text": "copy() is slower but makes a full independent duplicate"
+					}
 				],
 				"answer": "b",
 				"explanation": "Shallow copy creates a new container but its elements still point to the same objects. deepcopy() creates a fully independent clone — modifying nested objects in one will NOT affect the other."
@@ -765,7 +793,11 @@
 				"options": [
 					{ "id": 1, "label": "a", "text": "A function that always returns a list" },
 					{ "id": 2, "label": "b", "text": "A class that inherits from Iterator" },
-					{ "id": 3, "label": "c", "text": "A function that uses yield to produce values lazily one at a time" },
+					{
+						"id": 3,
+						"label": "c",
+						"text": "A function that uses yield to produce values lazily one at a time"
+					},
 					{ "id": 4, "label": "d", "text": "A built-in for creating random numbers" }
 				],
 				"answer": "c",
@@ -800,7 +832,11 @@
 				"question": "What is the difference between 'is' and '==' in Python?",
 				"options": [
 					{ "id": 1, "label": "a", "text": "They are the same" },
-					{ "id": 2, "label": "b", "text": "is checks identity (same object in memory); == checks equality of value" },
+					{
+						"id": 2,
+						"label": "b",
+						"text": "is checks identity (same object in memory); == checks equality of value"
+					},
 					{ "id": 3, "label": "c", "text": "== checks identity; is checks value equality" },
 					{ "id": 4, "label": "d", "text": "is only works with numbers" }
 				],
@@ -812,7 +848,11 @@
 				"question": "What does functools.lru_cache do?",
 				"options": [
 					{ "id": 1, "label": "a", "text": "Sorts function arguments before calling" },
-					{ "id": 2, "label": "b", "text": "Caches function results so repeated calls with the same arguments return instantly" },
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Caches function results so repeated calls with the same arguments return instantly"
+					},
 					{ "id": 3, "label": "c", "text": "Limits how many times a function can be called" },
 					{ "id": 4, "label": "d", "text": "Converts a function to run asynchronously" }
 				],
@@ -824,7 +864,11 @@
 				"question": "What is the Python GIL?",
 				"options": [
 					{ "id": 1, "label": "a", "text": "A graphical interface library" },
-					{ "id": 2, "label": "b", "text": "A lock that allows only one thread to execute Python bytecode at a time" },
+					{
+						"id": 2,
+						"label": "b",
+						"text": "A lock that allows only one thread to execute Python bytecode at a time"
+					},
 					{ "id": 3, "label": "c", "text": "A garbage collection system" },
 					{ "id": 4, "label": "d", "text": "A module for managing global variables" }
 				],
@@ -837,7 +881,11 @@
 				"options": [
 					{ "id": 1, "label": "a", "text": "Multiplies all elements together" },
 					{ "id": 2, "label": "b", "text": "Creates a Cartesian product of iterables" },
-					{ "id": 3, "label": "c", "text": "Flattens one level of nested iterables into a single lazy iterator" },
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Flattens one level of nested iterables into a single lazy iterator"
+					},
 					{ "id": 4, "label": "d", "text": "Sorts all iterables and merges them" }
 				],
 				"answer": "c",
@@ -849,7 +897,11 @@
 				"options": [
 					{ "id": 1, "label": "a", "text": "Defines default values for instance attributes" },
 					{ "id": 2, "label": "b", "text": "Makes all attributes private" },
-					{ "id": 3, "label": "c", "text": "Prevents adding new attributes dynamically and reduces memory usage per instance" },
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Prevents adding new attributes dynamically and reduces memory usage per instance"
+					},
 					{ "id": 4, "label": "d", "text": "Creates class-level (shared) methods" }
 				],
 				"answer": "c",
@@ -859,7 +911,7 @@
 	},
 	{
 		"id": 7,
-		"name": "Python 4 (Hard)",
+		"name": "Python 4 ",
 		"imageUrl": "computer",
 		"questions": [
 			{
