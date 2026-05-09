@@ -482,5 +482,506 @@
 				"explanation": "The * (splat/star) operator in unpacking captures multiple values into a list. Here, all words except the last go into 'name' as a list, and the last word goes into 'price'. Useful when input has variable-length names."
 			}
 		]
+	},
+	{
+		"id": 5,
+		"name": "Python 2",
+		"imageUrl": "computer",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the output of: print('Hello, World')",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Hello World" },
+					{ "id": 2, "label": "b", "text": "Hello, World" },
+					{ "id": 3, "label": "c", "text": "'Hello, World'" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "print() outputs exactly what is inside the quotes. The comma is part of the string, so it prints: Hello, World — no extra quotes around it."
+			},
+			{
+				"id": 2,
+				"question": "n = 3. What does this print?\nif n % 2 == 1:\n    print('Weird')\nelse:\n    print('Not Weird')",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Not Weird" },
+					{ "id": 2, "label": "b", "text": "Weird" },
+					{ "id": 3, "label": "c", "text": "Nothing" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "3 % 2 = 1, which is truthy, so the if branch runs and prints 'Weird'. Any odd number will always trigger this branch."
+			},
+			{
+				"id": 3,
+				"question": "What values does this print?\nfor i in range(0, 3):\n    print(i * i)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "1, 4, 9" },
+					{ "id": 2, "label": "b", "text": "0, 1, 4" },
+					{ "id": 3, "label": "c", "text": "0, 1, 2" },
+					{ "id": 4, "label": "d", "text": "0, 2, 4" }
+				],
+				"answer": "b",
+				"explanation": "range(0,3) gives i = 0, 1, 2. i*i gives 0*0=0, 1*1=1, 2*2=4. So it prints 0, 1, 4 on separate lines."
+			},
+			{
+				"id": 4,
+				"question": "What does this print?\nnums = [2, 4, 6]\ntotal = 0\nfor num in nums:\n    total = total + num\nprint(total)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "2" },
+					{ "id": 2, "label": "b", "text": "6" },
+					{ "id": 3, "label": "c", "text": "12" },
+					{ "id": 4, "label": "d", "text": "[2, 4, 6]" }
+				],
+				"answer": "c",
+				"explanation": "The loop accumulates the sum: 0+2=2, 2+4=6, 6+6=12. print(total) outputs 12."
+			},
+			{
+				"id": 5,
+				"question": "What is the output of: print(f'{3.14159:.2f}')",
+				"options": [
+					{ "id": 1, "label": "a", "text": "3.14159" },
+					{ "id": 2, "label": "b", "text": "3.14" },
+					{ "id": 3, "label": "c", "text": "3.1" },
+					{ "id": 4, "label": "d", "text": "3" }
+				],
+				"answer": "b",
+				"explanation": ":.2f in an f-string formats the number to exactly 2 decimal places. 3.14159 rounded to 2 decimals is 3.14."
+			},
+			{
+				"id": 6,
+				"question": "What does this print?\nfor i in range(1, 4):\n    print(i, end='')",
+				"options": [
+					{ "id": 1, "label": "a", "text": "1 2 3" },
+					{ "id": 2, "label": "b", "text": "1\n2\n3" },
+					{ "id": 3, "label": "c", "text": "123" },
+					{ "id": 4, "label": "d", "text": "1,2,3" }
+				],
+				"answer": "c",
+				"explanation": "end='' replaces the default newline with nothing, so all values print back-to-back on one line: 123."
+			},
+			{
+				"id": 7,
+				"question": "What does this print?\ntest = [1, 2, 3]\ntest.append(4)\ntest.pop()\nprint(test)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[1, 2, 3, 4]" },
+					{ "id": 2, "label": "b", "text": "[2, 3, 4]" },
+					{ "id": 3, "label": "c", "text": "[1, 2, 3]" },
+					{ "id": 4, "label": "d", "text": "[1, 2, 4]" }
+				],
+				"answer": "c",
+				"explanation": "append(4) adds 4 → [1,2,3,4]. pop() removes the last element (4) → [1,2,3]. The list returns to its original state."
+			},
+			{
+				"id": 8,
+				"question": "What does this print?\nwords = 'hello world'\nprint(words.split(' '))",
+				"options": [
+					{ "id": 1, "label": "a", "text": "hello world" },
+					{ "id": 2, "label": "b", "text": "['hello world']" },
+					{ "id": 3, "label": "c", "text": "['hello', 'world']" },
+					{ "id": 4, "label": "d", "text": "('hello', 'world')" }
+				],
+				"answer": "c",
+				"explanation": "split(' ') splits the string on spaces and returns a list. 'hello world' split by space gives ['hello', 'world']."
+			},
+			{
+				"id": 9,
+				"question": "What does this print?\nprint('Hello'.swapcase())",
+				"options": [
+					{ "id": 1, "label": "a", "text": "HELLO" },
+					{ "id": 2, "label": "b", "text": "hello" },
+					{ "id": 3, "label": "c", "text": "hELLO" },
+					{ "id": 4, "label": "d", "text": "Hello" }
+				],
+				"answer": "c",
+				"explanation": "swapcase() flips the case of every character. H (uppercase) → h, ello (lowercase) → ELLO. Result: hELLO."
+			},
+			{
+				"id": 10,
+				"question": "What does this print?\nt = (1, 2, 3)\nprint(type(t))",
+				"options": [
+					{ "id": 1, "label": "a", "text": "<class 'list'>" },
+					{ "id": 2, "label": "b", "text": "<class 'tuple'>" },
+					{ "id": 3, "label": "c", "text": "<class 'set'>" },
+					{ "id": 4, "label": "d", "text": "<class 'dict'>" }
+				],
+				"answer": "b",
+				"explanation": "Parentheses with comma-separated values create a tuple. type() returns the class of the object, which is <class 'tuple'>."
+			},
+			{
+				"id": 11,
+				"question": "n = 8. What does this print?\nif n % 2 == 1:\n    print('Weird')\nelse:\n    if n >= 6 and n <= 20:\n        print('Weird')\n    elif n > 20:\n        print('Not Weird')",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Not Weird" },
+					{ "id": 2, "label": "b", "text": "Weird" },
+					{ "id": 3, "label": "c", "text": "Nothing is printed" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "8 % 2 = 0 so the if is skipped. In the else: 8 >= 6 and 8 <= 20 is True, so it prints 'Weird'."
+			},
+			{
+				"id": 12,
+				"question": "What does this print?\nresult = [x * 2 for x in range(3) if x != 1]\nprint(result)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[0, 2, 4]" },
+					{ "id": 2, "label": "b", "text": "[0, 4]" },
+					{ "id": 3, "label": "c", "text": "[2, 4]" },
+					{ "id": 4, "label": "d", "text": "[0, 2]" }
+				],
+				"answer": "b",
+				"explanation": "range(3) gives 0, 1, 2. The condition filters out x=1, leaving 0 and 2. Multiplied by 2: [0*2, 2*2] = [0, 4]."
+			},
+			{
+				"id": 13,
+				"question": "What does this print?\ns = set([1,2,3,4,5])\ns.discard(6)\ns.remove(3)\nprint(len(s))",
+				"options": [
+					{ "id": 1, "label": "a", "text": "3" },
+					{ "id": 2, "label": "b", "text": "4" },
+					{ "id": 3, "label": "c", "text": "5" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "discard(6) does nothing because 6 is not in the set. remove(3) removes 3. Set becomes {1,2,4,5}, length = 4."
+			},
+			{
+				"id": 14,
+				"question": "What does this print?\nprint(divmod(17, 5))",
+				"options": [
+					{ "id": 1, "label": "a", "text": "(3, 2)" },
+					{ "id": 2, "label": "b", "text": "(2, 3)" },
+					{ "id": 3, "label": "c", "text": "3.4" },
+					{ "id": 4, "label": "d", "text": "(5, 2)" }
+				],
+				"answer": "a",
+				"explanation": "divmod(17, 5) returns (quotient, remainder). 17 // 5 = 3, 17 % 5 = 2. Output: (3, 2)."
+			},
+			{
+				"id": 15,
+				"question": "What does this print?\nfrom collections import Counter\nnums = [1, 2, 2, 3, 3, 3]\nc = Counter(nums)\nprint(c[3])",
+				"options": [
+					{ "id": 1, "label": "a", "text": "1" },
+					{ "id": 2, "label": "b", "text": "2" },
+					{ "id": 3, "label": "c", "text": "3" },
+					{ "id": 4, "label": "d", "text": "6" }
+				],
+				"answer": "c",
+				"explanation": "Counter counts how many times each element appears. The number 3 appears 3 times in the list, so c[3] = 3."
+			},
+			{
+				"id": 16,
+				"question": "What does this print?\ns1 = {1, 2, 3, 4}\ns2 = {3, 4, 5, 6}\nprint(len(s1.intersection(s2)))",
+				"options": [
+					{ "id": 1, "label": "a", "text": "2" },
+					{ "id": 2, "label": "b", "text": "4" },
+					{ "id": 3, "label": "c", "text": "6" },
+					{ "id": 4, "label": "d", "text": "8" }
+				],
+				"answer": "a",
+				"explanation": "Intersection gives elements in both sets: {3, 4}. len({3, 4}) = 2."
+			},
+			{
+				"id": 17,
+				"question": "What does this print?\ndef mutate_string(string, position, character):\n    test = list(string)\n    test[position] = character\n    return ''.join(test)\nprint(mutate_string('abcde', 2, 'X'))",
+				"options": [
+					{ "id": 1, "label": "a", "text": "abXde" },
+					{ "id": 2, "label": "b", "text": "abcXe" },
+					{ "id": 3, "label": "c", "text": "Xbcde" },
+					{ "id": 4, "label": "d", "text": "abcdX" }
+				],
+				"answer": "a",
+				"explanation": "list('abcde') = ['a','b','c','d','e']. Index 2 is 'c', replaced with 'X' → ['a','b','X','d','e']. Joined back: 'abXde'."
+			},
+			{
+				"id": 18,
+				"question": "What does this print?\nfrom collections import deque\nd = deque()\nd.append(1)\nd.appendleft(2)\nd.append(3)\nprint(list(d))",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[1, 2, 3]" },
+					{ "id": 2, "label": "b", "text": "[2, 1, 3]" },
+					{ "id": 3, "label": "c", "text": "[3, 1, 2]" },
+					{ "id": 4, "label": "d", "text": "[2, 3, 1]" }
+				],
+				"answer": "b",
+				"explanation": "append(1) → [1]. appendleft(2) adds to the front → [2, 1]. append(3) adds to the back → [2, 1, 3]."
+			},
+			{
+				"id": 19,
+				"question": "What does this print?\ns1 = {1, 2, 3}\ns2 = {2, 3, 4}\nprint(len(s1.symmetric_difference(s2)))",
+				"options": [
+					{ "id": 1, "label": "a", "text": "2" },
+					{ "id": 2, "label": "b", "text": "3" },
+					{ "id": 3, "label": "c", "text": "4" },
+					{ "id": 4, "label": "d", "text": "5" }
+				],
+				"answer": "a",
+				"explanation": "Symmetric difference = elements in one set but not both. {1} is only in s1, {4} is only in s2. Result: {1, 4}, length = 2."
+			},
+			{
+				"id": 20,
+				"question": "What does this print?\n*name, price = 'John Smith 150'.split()\nprint(name)\nprint(price)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "['John', 'Smith'] then 150" },
+					{ "id": 2, "label": "b", "text": "'John Smith' then '150'" },
+					{ "id": 3, "label": "c", "text": "['John'] then 'Smith'" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "a",
+				"explanation": "split() gives ['John', 'Smith', '150']. The * operator captures all but the last into name as a list: ['John', 'Smith']. price = '150'."
+			}
+		]
+	},
+	{
+		"id": 6,
+		"name": "Python 3 (Hard)",
+		"imageUrl": "computer",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the time complexity of list.insert(0, x) in Python?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "O(1)" },
+					{ "id": 2, "label": "b", "text": "O(log n)" },
+					{ "id": 3, "label": "c", "text": "O(n)" },
+					{ "id": 4, "label": "d", "text": "O(n²)" }
+				],
+				"answer": "c",
+				"explanation": "Inserting at index 0 requires shifting every existing element one position to the right. With n elements that is n shifts — O(n). deque.appendleft() does the same job in O(1)."
+			},
+			{
+				"id": 2,
+				"question": "What is the difference between a shallow copy (copy()) and a deep copy (deepcopy())?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "They are identical" },
+					{ "id": 2, "label": "b", "text": "copy() copies the container but nested objects are still shared references; deepcopy() recursively copies everything" },
+					{ "id": 3, "label": "c", "text": "deepcopy() only copies the top-level object" },
+					{ "id": 4, "label": "d", "text": "copy() is slower but makes a full independent duplicate" }
+				],
+				"answer": "b",
+				"explanation": "Shallow copy creates a new container but its elements still point to the same objects. deepcopy() creates a fully independent clone — modifying nested objects in one will NOT affect the other."
+			},
+			{
+				"id": 3,
+				"question": "What is a generator function in Python?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "A function that always returns a list" },
+					{ "id": 2, "label": "b", "text": "A class that inherits from Iterator" },
+					{ "id": 3, "label": "c", "text": "A function that uses yield to produce values lazily one at a time" },
+					{ "id": 4, "label": "d", "text": "A built-in for creating random numbers" }
+				],
+				"answer": "c",
+				"explanation": "A generator uses yield instead of return. It pauses execution and resumes on the next next() call, producing one value at a time without storing the whole sequence in memory — great for large datasets."
+			},
+			{
+				"id": 4,
+				"question": "What does the @staticmethod decorator do?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Makes a method accessible only within the class" },
+					{ "id": 2, "label": "b", "text": "Defines a method that receives neither self nor cls" },
+					{ "id": 3, "label": "c", "text": "Automatically caches the method's return value" },
+					{ "id": 4, "label": "d", "text": "Makes the method run at class definition time" }
+				],
+				"answer": "b",
+				"explanation": "A static method behaves like a regular function but lives in the class namespace. It gets no automatic first argument (no self, no cls), so it cannot access instance or class state."
+			},
+			{
+				"id": 5,
+				"question": "What is the result of: bool([]) == bool(0) == bool('') == bool(None)?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "False" },
+					{ "id": 2, "label": "b", "text": "True" },
+					{ "id": 3, "label": "c", "text": "TypeError" },
+					{ "id": 4, "label": "d", "text": "None" }
+				],
+				"answer": "b",
+				"explanation": "[], 0, '', and None are all falsy in Python. bool() of any of them is False. Python chains comparisons, so False == False == False == False evaluates to True."
+			},
+			{
+				"id": 6,
+				"question": "What is the difference between 'is' and '==' in Python?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "They are the same" },
+					{ "id": 2, "label": "b", "text": "is checks identity (same object in memory); == checks equality of value" },
+					{ "id": 3, "label": "c", "text": "== checks identity; is checks value equality" },
+					{ "id": 4, "label": "d", "text": "is only works with numbers" }
+				],
+				"answer": "b",
+				"explanation": "is returns True only if both variables point to the exact same object in memory. == returns True if the values are equal, even if stored as different objects. Example: a = [1,2]; b = [1,2]; a==b is True but a is b is False."
+			},
+			{
+				"id": 7,
+				"question": "What does functools.lru_cache do?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Sorts function arguments before calling" },
+					{ "id": 2, "label": "b", "text": "Caches function results so repeated calls with the same arguments return instantly" },
+					{ "id": 3, "label": "c", "text": "Limits how many times a function can be called" },
+					{ "id": 4, "label": "d", "text": "Converts a function to run asynchronously" }
+				],
+				"answer": "b",
+				"explanation": "lru_cache memoizes (caches) the return values of a function. If you call it again with the same arguments, it returns the cached result without re-running the function. LRU = Least Recently Used — oldest entries are dropped when the cache is full."
+			},
+			{
+				"id": 8,
+				"question": "What is the Python GIL?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "A graphical interface library" },
+					{ "id": 2, "label": "b", "text": "A lock that allows only one thread to execute Python bytecode at a time" },
+					{ "id": 3, "label": "c", "text": "A garbage collection system" },
+					{ "id": 4, "label": "d", "text": "A module for managing global variables" }
+				],
+				"answer": "b",
+				"explanation": "The Global Interpreter Lock (GIL) is a mutex that prevents multiple threads from executing Python bytecode simultaneously. This limits CPU-bound multi-threading. Use multiprocessing to bypass it."
+			},
+			{
+				"id": 9,
+				"question": "What does itertools.chain(*iterables) do?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Multiplies all elements together" },
+					{ "id": 2, "label": "b", "text": "Creates a Cartesian product of iterables" },
+					{ "id": 3, "label": "c", "text": "Flattens one level of nested iterables into a single lazy iterator" },
+					{ "id": 4, "label": "d", "text": "Sorts all iterables and merges them" }
+				],
+				"answer": "c",
+				"explanation": "chain() treats multiple iterables as one continuous sequence, yielding elements from the first, then the second, etc. — without creating a new list. Useful for iterating over multiple collections in one loop."
+			},
+			{
+				"id": 10,
+				"question": "What does __slots__ do in a Python class?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Defines default values for instance attributes" },
+					{ "id": 2, "label": "b", "text": "Makes all attributes private" },
+					{ "id": 3, "label": "c", "text": "Prevents adding new attributes dynamically and reduces memory usage per instance" },
+					{ "id": 4, "label": "d", "text": "Creates class-level (shared) methods" }
+				],
+				"answer": "c",
+				"explanation": "__slots__ = ['x', 'y'] tells Python to skip creating a __dict__ per instance, using a fixed-size array instead. This saves memory when creating millions of objects, but means you can't add new attributes at runtime."
+			}
+		]
+	},
+	{
+		"id": 7,
+		"name": "Python 4 (Hard)",
+		"imageUrl": "computer",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What does this print?\ndef func(x, lst=[]):\n    lst.append(x)\n    return lst\nprint(func(1))\nprint(func(2))",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[1] then [2]" },
+					{ "id": 2, "label": "b", "text": "[1] then [1, 2]" },
+					{ "id": 3, "label": "c", "text": "[1] then [2, 1]" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "Mutable default arguments are created ONCE at function definition, not on each call. The same list object is reused every call. func(1) appends to [] → [1]. func(2) appends to the same [1] → [1, 2]. This is a classic Python trap."
+			},
+			{
+				"id": 2,
+				"question": "What does this print?\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[1, 2, 3]" },
+					{ "id": 2, "label": "b", "text": "[1, 2, 3, 4]" },
+					{ "id": 3, "label": "c", "text": "[4]" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "y = x does NOT copy the list — it creates a second reference to the same object. y.append(4) mutates that shared object, so x also reflects the change: [1, 2, 3, 4]. Use y = x[:] or copy() to make an independent copy."
+			},
+			{
+				"id": 3,
+				"question": "What does this print?\ndef gen():\n    yield 1\n    yield 2\n    yield 3\ng = gen()\nprint(next(g))\nprint(next(g))",
+				"options": [
+					{ "id": 1, "label": "a", "text": "1 then 1" },
+					{ "id": 2, "label": "b", "text": "1 then 2" },
+					{ "id": 3, "label": "c", "text": "[1, 2, 3] then [1, 2, 3]" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "next() advances the generator one yield at a time. First next(g) runs until yield 1 and returns 1. Second next(g) resumes from there, runs until yield 2 and returns 2."
+			},
+			{
+				"id": 4,
+				"question": "What does this print?\na = [1, 2, 3, 4, 5]\nprint(a[1:4])",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[1, 2, 3]" },
+					{ "id": 2, "label": "b", "text": "[2, 3, 4]" },
+					{ "id": 3, "label": "c", "text": "[2, 3, 4, 5]" },
+					{ "id": 4, "label": "d", "text": "[1, 2, 3, 4]" }
+				],
+				"answer": "b",
+				"explanation": "a[1:4] slices from index 1 up to but NOT including index 4. Indices 1, 2, 3 map to values 2, 3, 4. Result: [2, 3, 4]."
+			},
+			{
+				"id": 5,
+				"question": "What does this print?\nnums = [3, 1, 4, 1, 5]\nnums.sort()\nnums.reverse()\nprint(nums)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[1, 1, 3, 4, 5]" },
+					{ "id": 2, "label": "b", "text": "[5, 4, 3, 1, 1]" },
+					{ "id": 3, "label": "c", "text": "[3, 1, 4, 1, 5]" },
+					{ "id": 4, "label": "d", "text": "[5, 1, 4, 1, 3]" }
+				],
+				"answer": "b",
+				"explanation": "sort() sorts ascending → [1, 1, 3, 4, 5]. reverse() flips it in place → [5, 4, 3, 1, 1]. Both methods modify the list in place and return None."
+			},
+			{
+				"id": 6,
+				"question": "What does this print?\nprint(pow(2, 10, 100))",
+				"options": [
+					{ "id": 1, "label": "a", "text": "1024" },
+					{ "id": 2, "label": "b", "text": "24" },
+					{ "id": 3, "label": "c", "text": "10" },
+					{ "id": 4, "label": "d", "text": "2" }
+				],
+				"answer": "b",
+				"explanation": "pow(a, b, m) computes (a ** b) % m efficiently. 2 ** 10 = 1024. 1024 % 100 = 24. This three-argument form is faster than (2**10) % 100 for large numbers."
+			},
+			{
+				"id": 7,
+				"question": "What does this print?\ns = 'abcd123#'\nprint(s.isalnum())\nprint(s.islower())",
+				"options": [
+					{ "id": 1, "label": "a", "text": "True then True" },
+					{ "id": 2, "label": "b", "text": "False then True" },
+					{ "id": 3, "label": "c", "text": "True then False" },
+					{ "id": 4, "label": "d", "text": "False then False" }
+				],
+				"answer": "b",
+				"explanation": "isalnum() is False because '#' is not alphanumeric. islower() is True because all LETTERS (a,b,c,d) are lowercase — digits and symbols are ignored by islower(), they don't make it return False."
+			},
+			{
+				"id": 8,
+				"question": "What does this print?\nfrom itertools import permutations\nresult = list(permutations([1, 2, 3], 2))\nprint(len(result))",
+				"options": [
+					{ "id": 1, "label": "a", "text": "3" },
+					{ "id": 2, "label": "b", "text": "6" },
+					{ "id": 3, "label": "c", "text": "9" },
+					{ "id": 4, "label": "d", "text": "2" }
+				],
+				"answer": "b",
+				"explanation": "permutations([1,2,3], 2) gives all ordered 2-element arrangements: (1,2),(1,3),(2,1),(2,3),(3,1),(3,2). Count = n!/(n-r)! = 3!/(3-2)! = 6."
+			},
+			{
+				"id": 9,
+				"question": "What does this print?\ndata = {'alice': [85, 90], 'bob': [70, 80]}\nfor key in data:\n    if key == 'alice':\n        scores = data[key]\ntotal = 0\nfor num in scores:\n    total += num\nprint(total)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "70" },
+					{ "id": 2, "label": "b", "text": "150" },
+					{ "id": 3, "label": "c", "text": "175" },
+					{ "id": 4, "label": "d", "text": "325" }
+				],
+				"answer": "c",
+				"explanation": "The first loop finds key 'alice' and stores [85, 90] in scores. The second loop sums scores: 85 + 90 = 175."
+			},
+			{
+				"id": 10,
+				"question": "What does this print?\nfrom collections import OrderedDict\nd = OrderedDict()\nd['b'] = 2\nd['a'] = 1\nd['c'] = 3\nfor k in d:\n    print(k, end=' ')",
+				"options": [
+					{ "id": 1, "label": "a", "text": "a b c" },
+					{ "id": 2, "label": "b", "text": "b a c" },
+					{ "id": 3, "label": "c", "text": "c b a" },
+					{ "id": 4, "label": "d", "text": "Random order" }
+				],
+				"answer": "b",
+				"explanation": "OrderedDict preserves insertion order. Keys were inserted as b, then a, then c — so they print in that exact order: b a c. Note: regular dicts in Python 3.7+ also preserve insertion order."
+			}
+		]
 	}
 ]

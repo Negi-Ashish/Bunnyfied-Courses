@@ -3,7 +3,7 @@
 	import Card from '../components/Card.svelte';
 </script>
 
-{#each quizzes.filter((q) => q.id === 4) as quiz}
+{#each quizzes.filter((q) => q.id >= 4) as quiz}
 	<Card {quiz} />
 {/each}
 
