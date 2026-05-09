@@ -5,7 +5,6 @@
 	import QuestionProgressCircle from './components/QuestionProgressCircle.svelte';
 	import { answers, type Answer } from '../../../store';
 	import { goto } from '$app/navigation';
-
 	import { onMount } from 'svelte';
 
 	export let data: any;
@@ -19,26 +18,28 @@
 	});
 
 	let selectedOption: null | string = null;
+	let submitted = false;
+
 	const handleChangeOption = (label: string) => {
-		selectedOption = label;
+		if (!submitted) selectedOption = label;
 	};
 
-	//This
-	let showCorrectAnswer = false;
 	const handleSubmit = () => {
-		//Dont allow function to proceed if option is not selected.
 		if (!selectedOption) return;
-
-		showCorrectAnswer = true;
+		submitted = true;
 		answers.update((currentState) => {
-			const updatedAnswerState = currentState;
-			updatedAnswerState[currentQuestionIndex].isCorrect = selectedOption === question.answer;
-			return updatedAnswerState;
+			const updated = [...currentState];
+			updated[currentQuestionIndex] = {
+				...updated[currentQuestionIndex],
+				selectedOption,
+				isCorrect: selectedOption === question.answer
+			};
+			return updated;
 		});
 	};
 
 	const handleNext = () => {
-		showCorrectAnswer = false;
+		submitted = false;
 		selectedOption = null;
 		if (currentQuestionIndex === data.questions.length - 1) {
 			goto('/results');
@@ -46,14 +47,18 @@
 			currentQuestionIndex++;
 		}
 	};
+
 	onMount(() => {
 		answers.set(
-			data.questions.map((question: any) => {
-				return {
-					id: question.id,
-					isCorrect: null
-				};
-			})
+			data.questions.map((q: any) => ({
+				id: q.id,
+				questionText: q.question,
+				options: q.options,
+				selectedOption: null,
+				correctAnswer: q.answer,
+				isCorrect: null,
+				explanation: q.explanation ?? ''
+			}))
 		);
 	});
 </script>
@@ -71,10 +76,9 @@
 				{option}
 				{selectedOption}
 				{handleChangeOption}
-				{showCorrectAnswer}
-				answer={question.answer}
+				{submitted}
 			/>
 		{/each}
 	</div>
-	<QuestionButton {handleSubmit} {handleNext} {showCorrectAnswer} />
+	<QuestionButton {handleSubmit} {handleNext} {submitted} />
 </div>

@@ -235,5 +235,252 @@
 				"answer": "a"
 			}
 		]
+	},
+	{
+		"id": 4,
+		"name": "Python",
+		"imageUrl": "computer",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the correct way to print 'Hello, World!' in Python?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "echo('Hello, World!')" },
+					{ "id": 2, "label": "b", "text": "print('Hello, World!')" },
+					{ "id": 3, "label": "c", "text": "console.log('Hello, World!')" },
+					{ "id": 4, "label": "d", "text": "System.out.println('Hello, World!')" }
+				],
+				"answer": "b",
+				"explanation": "In Python, print() is the built-in function used to output text to the console. Unlike other languages, no import is needed — just call print() directly."
+			},
+			{
+				"id": 2,
+				"question": "Which keyword is used to define a function in Python?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "function" },
+					{ "id": 2, "label": "b", "text": "def" },
+					{ "id": 3, "label": "c", "text": "func" },
+					{ "id": 4, "label": "d", "text": "define" }
+				],
+				"answer": "b",
+				"explanation": "Python uses the 'def' keyword to define a function. Example: def is_leap(year): — then the function body is indented below it."
+			},
+			{
+				"id": 3,
+				"question": "What is the correct syntax for a for loop that goes from 0 to 4?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "for i in range(1, 5):" },
+					{ "id": 2, "label": "b", "text": "for i in range(0, 5):" },
+					{ "id": 3, "label": "c", "text": "for i in range(0, 4):" },
+					{ "id": 4, "label": "d", "text": "for i from 0 to 4:" }
+				],
+				"answer": "b",
+				"explanation": "range(0, 5) generates 0, 1, 2, 3, 4 — the end value is exclusive. range(0, 4) would only go to 3, missing 4."
+			},
+			{
+				"id": 4,
+				"question": "How do you loop through a list called 'nums'?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "for num in nums:" },
+					{ "id": 2, "label": "b", "text": "foreach num in nums:" },
+					{ "id": 3, "label": "c", "text": "loop num in nums:" },
+					{ "id": 4, "label": "d", "text": "for num of nums:" }
+				],
+				"answer": "a",
+				"explanation": "Python's 'for ... in ...' syntax directly iterates over every item in a list. 'foreach' and 'for...of' are JavaScript syntax and don't exist in Python."
+			},
+			{
+				"id": 5,
+				"question": "What does s.swapcase() do to the string 'Hello'?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Returns 'HELLO'" },
+					{ "id": 2, "label": "b", "text": "Returns 'hello'" },
+					{ "id": 3, "label": "c", "text": "Returns 'hELLO'" },
+					{ "id": 4, "label": "d", "text": "Returns 'Hello'" }
+				],
+				"answer": "c",
+				"explanation": "swapcase() swaps the case of every letter: uppercase becomes lowercase and lowercase becomes uppercase. 'H' → 'h', 'ello' → 'ELLO'."
+			},
+			{
+				"id": 6,
+				"question": "Which data structure uses square brackets [] in Python?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Tuple" },
+					{ "id": 2, "label": "b", "text": "Set" },
+					{ "id": 3, "label": "c", "text": "Dictionary" },
+					{ "id": 4, "label": "d", "text": "List" }
+				],
+				"answer": "d",
+				"explanation": "Lists use square brackets [1, 2, 3]. Tuples use parentheses (1, 2, 3), sets use curly braces {1, 2, 3}, and dictionaries use {key: value}."
+			},
+			{
+				"id": 7,
+				"question": "What is the main difference between a list and a tuple?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Lists use (), tuples use []" },
+					{ "id": 2, "label": "b", "text": "Lists are immutable, tuples are mutable" },
+					{ "id": 3, "label": "c", "text": "Lists are mutable, tuples are immutable" },
+					{ "id": 4, "label": "d", "text": "There is no difference" }
+				],
+				"answer": "c",
+				"explanation": "Lists [1,2,3] can be changed after creation (mutable). Tuples (1,2,3) cannot be modified after creation (immutable). Tuples are also faster and use less memory."
+			},
+			{
+				"id": 8,
+				"question": "What does list.append(x) do?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Removes the last element" },
+					{ "id": 2, "label": "b", "text": "Adds x to the beginning of the list" },
+					{ "id": 3, "label": "c", "text": "Adds x to the end of the list" },
+					{ "id": 4, "label": "d", "text": "Sorts the list" }
+				],
+				"answer": "c",
+				"explanation": "append(x) always adds x to the end. To add to the beginning, use insert(0, x). To remove from the end, use pop()."
+			},
+			{
+				"id": 9,
+				"question": "How do you print values on the same line inside a loop?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "print(i, end='\\n')" },
+					{ "id": 2, "label": "b", "text": "print(i, end='')" },
+					{ "id": 3, "label": "c", "text": "print(i, same_line=True)" },
+					{ "id": 4, "label": "d", "text": "inline_print(i)" }
+				],
+				"answer": "b",
+				"explanation": "The 'end' parameter of print() defaults to '\\n' (newline). Setting end='' removes the newline so the next print continues on the same line."
+			},
+			{
+				"id": 10,
+				"question": "How do you format a float to exactly 2 decimal places using an f-string?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "f\"{number:.2f}\"" },
+					{ "id": 2, "label": "b", "text": "f\"{number:2}\"" },
+					{ "id": 3, "label": "c", "text": "format(number, '2d')" },
+					{ "id": 4, "label": "d", "text": "round(number)" }
+				],
+				"answer": "a",
+				"explanation": "f\"{number:.2f}\" formats the number as a float with exactly 2 decimal places. '%.2f' % number and '{:.2f}'.format(number) are the older equivalents."
+			},
+			{
+				"id": 11,
+				"question": "What does divmod(10, 3) return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "(3, 1)" },
+					{ "id": 2, "label": "b", "text": "(1, 3)" },
+					{ "id": 3, "label": "c", "text": "3.33" },
+					{ "id": 4, "label": "d", "text": "(3, 3)" }
+				],
+				"answer": "a",
+				"explanation": "divmod(a, b) returns a tuple (quotient, remainder). 10 // 3 = 3 and 10 % 3 = 1, so the result is (3, 1). Useful when you need both values at once."
+			},
+			{
+				"id": 12,
+				"question": "What is the difference between set.remove(x) and set.discard(x)?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "remove() adds an element, discard() deletes it" },
+					{ "id": 2, "label": "b", "text": "remove() raises KeyError if x doesn't exist, discard() does not" },
+					{ "id": 3, "label": "c", "text": "discard() raises KeyError if x doesn't exist, remove() does not" },
+					{ "id": 4, "label": "d", "text": "They are identical" }
+				],
+				"answer": "b",
+				"explanation": "remove(x) raises a KeyError if x is not in the set. discard(x) silently does nothing if x is absent — use discard() when you're not sure if the element exists."
+			},
+			{
+				"id": 13,
+				"question": "What does s.intersection(t) return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Elements in s but not in t" },
+					{ "id": 2, "label": "b", "text": "All elements from both s and t" },
+					{ "id": 3, "label": "c", "text": "Elements present in both s and t" },
+					{ "id": 4, "label": "d", "text": "Elements in either s or t but not both" }
+				],
+				"answer": "c",
+				"explanation": "Intersection (A ∩ B) returns only elements that appear in both sets. s & t is shorthand. Union (A ∪ B) returns all elements from both, and symmetric_difference returns elements in one but not both."
+			},
+			{
+				"id": 14,
+				"question": "What does Counter from the collections module do?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Counts the number of keys in a dictionary" },
+					{ "id": 2, "label": "b", "text": "Counts occurrences of each element in a list and returns a dict-like object" },
+					{ "id": 3, "label": "c", "text": "Sorts a list in descending order" },
+					{ "id": 4, "label": "d", "text": "Removes duplicate elements from a list" }
+				],
+				"answer": "b",
+				"explanation": "Counter([1, 2, 2, 3]) returns Counter({2: 2, 1: 1, 3: 1}) — each element mapped to how many times it appears. Very useful for frequency counting without writing loops."
+			},
+			{
+				"id": 15,
+				"question": "What is a deque in Python?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "A dictionary with queue-like behavior" },
+					{ "id": 2, "label": "b", "text": "A sorted list" },
+					{ "id": 3, "label": "c", "text": "A double-ended queue that supports adding/removing from both ends" },
+					{ "id": 4, "label": "d", "text": "A type of set" }
+				],
+				"answer": "c",
+				"explanation": "collections.deque supports append/pop from the right and appendleft/popleft from the left, both in O(1) time. A regular list's insert(0, x) is O(n), making deque much faster for front operations."
+			},
+			{
+				"id": 16,
+				"question": "What does s.symmetric_difference(t) return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Elements in both s and t" },
+					{ "id": 2, "label": "b", "text": "Elements in s but not in t" },
+					{ "id": 3, "label": "c", "text": "Elements in either s or t, but not both" },
+					{ "id": 4, "label": "d", "text": "The union of s and t" }
+				],
+				"answer": "c",
+				"explanation": "Symmetric difference returns elements that are in one set OR the other, but NOT in both — it's the opposite of intersection. Think of it as 'exclusive or' for sets."
+			},
+			{
+				"id": 17,
+				"question": "What does str.isalnum() return for the string 'ab123'?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "False, because it contains numbers" },
+					{ "id": 2, "label": "b", "text": "True, because all characters are letters or digits" },
+					{ "id": 3, "label": "c", "text": "False, because it contains both letters and numbers" },
+					{ "id": 4, "label": "d", "text": "True, only if the string is all letters" }
+				],
+				"answer": "b",
+				"explanation": "isalnum() returns True if every character is alphanumeric (a-z, A-Z, or 0-9). 'ab123' passes. 'ab123#' would return False because '#' is not alphanumeric."
+			},
+			{
+				"id": 18,
+				"question": "Which of the following is a correct list comprehension with a condition?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[i for i in range(10) where i % 2 == 0]" },
+					{ "id": 2, "label": "b", "text": "[i for i in range(10) if i % 2 == 0]" },
+					{ "id": 3, "label": "c", "text": "[i if i % 2 == 0 for i in range(10)]" },
+					{ "id": 4, "label": "d", "text": "(i for i in range(10) if i % 2 == 0)" }
+				],
+				"answer": "b",
+				"explanation": "List comprehension syntax is: [expression for item in iterable if condition]. Option a) uses 'where' (SQL syntax, invalid). Option d) is a generator expression using () — not a list."
+			},
+			{
+				"id": 19,
+				"question": "How do you get all ordered permutations of length 2 from ['1','2','3']?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "combinations(['1','2','3'], 2)" },
+					{ "id": 2, "label": "b", "text": "product(['1','2','3'], repeat=2)" },
+					{ "id": 3, "label": "c", "text": "permutations(['1','2','3'], 2)" },
+					{ "id": 4, "label": "d", "text": "permutations(['1','2','3'])" }
+				],
+				"answer": "c",
+				"explanation": "permutations(iterable, r) returns all ordered r-length arrangements. Without r (option d), it returns full-length permutations (triples, not pairs). combinations() gives unordered pairs."
+			},
+			{
+				"id": 20,
+				"question": "What does the * (star) notation do in: *name, price = input().split()?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Multiplies all values in the list" },
+					{ "id": 2, "label": "b", "text": "Captures all but the last split value into a list called name" },
+					{ "id": 3, "label": "c", "text": "Unpacks only the first value into name" },
+					{ "id": 4, "label": "d", "text": "Raises a syntax error" }
+				],
+				"answer": "b",
+				"explanation": "The * (splat/star) operator in unpacking captures multiple values into a list. Here, all words except the last go into 'name' as a list, and the last word goes into 'price'. Useful when input has variable-length names."
+			}
+		]
 	}
 ]
