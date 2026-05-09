@@ -12,7 +12,7 @@
 		<p class="text-slate-400 text-sm">Choose a topic and test your knowledge</p>
 	</div>
 	<div class="flex flex-wrap justify-center gap-5">
-		{#each quizzes.filter((q) => q.id >= 4) as quiz}
+		{#each quizzes as quiz}
 			<Card {quiz} />
 		{/each}
 	</div>

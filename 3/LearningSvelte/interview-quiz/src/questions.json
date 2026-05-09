@@ -1,242 +1,5 @@
 [
 	{
-		"id": 1,
-		"name": "Physics",
-		"imageUrl": "physics",
-		"questions": [
-			{
-				"id": 1,
-				"question": "What is the formula for gravitational force?",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "F = ma"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "F = G(m1 * m2) / r^2"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "F = kq1q2 / r^2"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "F = kx"
-					}
-				],
-				"answer": "b"
-			},
-			{
-				"id": 2,
-				"question": "What is the unit of electric charge?",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "Ampere"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "Ohm"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "Coulomb"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "Watt"
-					}
-				],
-				"answer": "c"
-			},
-			{
-				"id": 3,
-				"question": "What is the SI unit of energy?",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "Joule"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "Watt"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "Volt"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "Newton"
-					}
-				],
-				"answer": "a"
-			}
-		]
-	},
-	{
-		"id": 2,
-		"name": "Programming",
-		"imageUrl": "computer",
-		"questions": [
-			{
-				"id": 1,
-				"question": "What is a binary search?",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "Searching algorithm for unsorted lists"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "Searching algorithm for sorted lists"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "Sorting algorithm for unsorted lists"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "None of the above"
-					}
-				],
-				"answer": "b"
-			},
-			{
-				"id": 2,
-				"question": "What is recursion?",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "A loop construct"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "A function calling itself"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "A sorting technique"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "A data structure"
-					}
-				],
-				"answer": "b"
-			}
-		]
-	},
-	{
-		"id": 3,
-		"name": "Mathematics",
-		"imageUrl": "mathematics",
-		"questions": [
-			{
-				"id": 1,
-				"question": "What is the value of pi (\u03c0) approximately?",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "3.14"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "2.71"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "1.61"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "4.20"
-					}
-				],
-				"answer": "a"
-			},
-			{
-				"id": 2,
-				"question": "What is the formula for the area of a triangle?",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "A = \u03c0r^2"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "A = 1/2 * base * height"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "A = length * width"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "A = 4s"
-					}
-				],
-				"answer": "b"
-			},
-			{
-				"id": 3,
-				"question": "What is the square root of 16?",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "4"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "8"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "2"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "6"
-					}
-				],
-				"answer": "a"
-			}
-		]
-	},
-	{
 		"id": 4,
 		"name": "Python",
 		"imageUrl": "python",
@@ -267,7 +30,7 @@
 					}
 				],
 				"answer": "b",
-				"explanation": "In Python, print() is the built-in function used to output text to the console. Unlike other languages, no import is needed \u2014 just call print() directly."
+				"explanation": "In Python, print() is the built-in function used to output text to the console. Unlike other languages, no import is needed — just call print() directly."
 			},
 			{
 				"id": 2,
@@ -295,7 +58,7 @@
 					}
 				],
 				"answer": "b",
-				"explanation": "Python uses the 'def' keyword to define a function. Example: def is_leap(year): \u2014 then the function body is indented below it."
+				"explanation": "Python uses the 'def' keyword to define a function. Example: def is_leap(year): — then the function body is indented below it."
 			},
 			{
 				"id": 3,
@@ -323,7 +86,7 @@
 					}
 				],
 				"answer": "b",
-				"explanation": "range(0, 5) generates 0, 1, 2, 3, 4 \u2014 the end value is exclusive. range(0, 4) would only go to 3, missing 4."
+				"explanation": "range(0, 5) generates 0, 1, 2, 3, 4 — the end value is exclusive. range(0, 4) would only go to 3, missing 4."
 			},
 			{
 				"id": 4,
@@ -379,7 +142,7 @@
 					}
 				],
 				"answer": "c",
-				"explanation": "swapcase() swaps the case of every letter: uppercase becomes lowercase and lowercase becomes uppercase. 'H' \u2192 'h', 'ello' \u2192 'ELLO'."
+				"explanation": "swapcase() swaps the case of every letter: uppercase becomes lowercase and lowercase becomes uppercase. 'H' → 'h', 'ello' → 'ELLO'."
 			},
 			{
 				"id": 6,
@@ -575,7 +338,7 @@
 					}
 				],
 				"answer": "b",
-				"explanation": "remove(x) raises a KeyError if x is not in the set. discard(x) silently does nothing if x is absent \u2014 use discard() when you're not sure if the element exists."
+				"explanation": "remove(x) raises a KeyError if x is not in the set. discard(x) silently does nothing if x is absent — use discard() when you're not sure if the element exists."
 			},
 			{
 				"id": 13,
@@ -603,7 +366,7 @@
 					}
 				],
 				"answer": "c",
-				"explanation": "Intersection (A \u2229 B) returns only elements that appear in both sets. s & t is shorthand. Union (A \u222a B) returns all elements from both, and symmetric_difference returns elements in one but not both."
+				"explanation": "Intersection (A ∩ B) returns only elements that appear in both sets. s & t is shorthand. Union (A ∪ B) returns all elements from both, and symmetric_difference returns elements in one but not both."
 			},
 			{
 				"id": 14,
@@ -631,7 +394,7 @@
 					}
 				],
 				"answer": "b",
-				"explanation": "Counter([1, 2, 2, 3]) returns Counter({2: 2, 1: 1, 3: 1}) \u2014 each element mapped to how many times it appears. Very useful for frequency counting without writing loops."
+				"explanation": "Counter([1, 2, 2, 3]) returns Counter({2: 2, 1: 1, 3: 1}) — each element mapped to how many times it appears. Very useful for frequency counting without writing loops."
 			},
 			{
 				"id": 15,
@@ -687,7 +450,7 @@
 					}
 				],
 				"answer": "c",
-				"explanation": "Symmetric difference returns elements that are in one set OR the other, but NOT in both \u2014 it's the opposite of intersection. Think of it as 'exclusive or' for sets."
+				"explanation": "Symmetric difference returns elements that are in one set OR the other, but NOT in both — it's the opposite of intersection. Think of it as 'exclusive or' for sets."
 			},
 			{
 				"id": 17,
@@ -743,7 +506,7 @@
 					}
 				],
 				"answer": "b",
-				"explanation": "List comprehension syntax is: [expression for item in iterable if condition]. Option a) uses 'where' (SQL syntax, invalid). Option d) is a generator expression using () \u2014 not a list."
+				"explanation": "List comprehension syntax is: [expression for item in iterable if condition]. Option a) uses 'where' (SQL syntax, invalid). Option d) is a generator expression using () — not a list."
 			},
 			{
 				"id": 19,
@@ -834,7 +597,7 @@
 					}
 				],
 				"answer": "b",
-				"explanation": "print() outputs exactly what is inside the quotes. The comma is part of the string, so it prints: Hello, World \u2014 no extra quotes around it."
+				"explanation": "print() outputs exactly what is inside the quotes. The comma is part of the string, so it prints: Hello, World — no extra quotes around it."
 			},
 			{
 				"id": 2,
@@ -1002,7 +765,7 @@
 					}
 				],
 				"answer": "c",
-				"explanation": "append(4) adds 4 \u2192 [1,2,3,4]. pop() removes the last element (4) \u2192 [1,2,3]. The list returns to its original state."
+				"explanation": "append(4) adds 4 → [1,2,3,4]. pop() removes the last element (4) → [1,2,3]. The list returns to its original state."
 			},
 			{
 				"id": 8,
@@ -1058,7 +821,7 @@
 					}
 				],
 				"answer": "c",
-				"explanation": "swapcase() flips the case of every character. H (uppercase) \u2192 h, ello (lowercase) \u2192 ELLO. Result: hELLO."
+				"explanation": "swapcase() flips the case of every character. H (uppercase) → h, ello (lowercase) → ELLO. Result: hELLO."
 			},
 			{
 				"id": 10,
@@ -1282,7 +1045,7 @@
 					}
 				],
 				"answer": "a",
-				"explanation": "list('abcde') = ['a','b','c','d','e']. Index 2 is 'c', replaced with 'X' \u2192 ['a','b','X','d','e']. Joined back: 'abXde'."
+				"explanation": "list('abcde') = ['a','b','c','d','e']. Index 2 is 'c', replaced with 'X' → ['a','b','X','d','e']. Joined back: 'abXde'."
 			},
 			{
 				"id": 18,
@@ -1310,7 +1073,7 @@
 					}
 				],
 				"answer": "b",
-				"explanation": "append(1) \u2192 [1]. appendleft(2) adds to the front \u2192 [2, 1]. append(3) adds to the back \u2192 [2, 1, 3]."
+				"explanation": "append(1) → [1]. appendleft(2) adds to the front → [2, 1]. append(3) adds to the back → [2, 1, 3]."
 			},
 			{
 				"id": 19,
@@ -1377,119 +1140,7 @@
 		"questions": [
 			{
 				"id": 1,
-				"question": "What is the time complexity of list.insert(0, x) in Python?",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "O(1)"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "O(log n)"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "O(n)"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "O(n\u00b2)"
-					}
-				],
-				"answer": "c",
-				"explanation": "Inserting at index 0 requires shifting every existing element one position to the right. With n elements that is n shifts \u2014 O(n). deque.appendleft() does the same job in O(1)."
-			},
-			{
-				"id": 2,
-				"question": "What is the difference between a shallow copy (copy()) and a deep copy (deepcopy())?",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "They are identical"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "copy() copies the container but nested objects are still shared references; deepcopy() recursively copies everything"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "deepcopy() only copies the top-level object"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "copy() is slower but makes a full independent duplicate"
-					}
-				],
-				"answer": "b",
-				"explanation": "Shallow copy creates a new container but its elements still point to the same objects. deepcopy() creates a fully independent clone \u2014 modifying nested objects in one will NOT affect the other."
-			},
-			{
-				"id": 3,
-				"question": "What is a generator function in Python?",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "A function that always returns a list"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "A class that inherits from Iterator"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "A function that uses yield to produce values lazily one at a time"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "A built-in for creating random numbers"
-					}
-				],
-				"answer": "c",
-				"explanation": "A generator uses yield instead of return. It pauses execution and resumes on the next next() call, producing one value at a time without storing the whole sequence in memory \u2014 great for large datasets."
-			},
-			{
-				"id": 4,
-				"question": "What does the @staticmethod decorator do?",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "Makes a method accessible only within the class"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "Defines a method that receives neither self nor cls"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "Automatically caches the method's return value"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "Makes the method run at class definition time"
-					}
-				],
-				"answer": "b",
-				"explanation": "A static method behaves like a regular function but lives in the class namespace. It gets no automatic first argument (no self, no cls), so it cannot access instance or class state."
-			},
-			{
-				"id": 5,
-				"question": "What is the result of: bool([]) == bool(0) == bool('') == bool(None)?",
+				"question": "What is the output?\ns = 'abcd123#'\nprint(s.islower())",
 				"options": [
 					{
 						"id": 1,
@@ -1504,7 +1155,7 @@
 					{
 						"id": 3,
 						"label": "c",
-						"text": "TypeError"
+						"text": "Error"
 					},
 					{
 						"id": 4,
@@ -1513,147 +1164,259 @@
 					}
 				],
 				"answer": "b",
-				"explanation": "[], 0, '', and None are all falsy in Python. bool() of any of them is False. Python chains comparisons, so False == False == False == False evaluates to True."
+				"explanation": "islower() returns True if ALL cased characters are lowercase and at least one cased character exists. Digits (123) and symbols (#) are not cased — they are ignored. Only a,b,c,d are cased and all are lowercase, so True."
+			},
+			{
+				"id": 2,
+				"question": "What is the output?\nresult = [[i,j,k]\n    for i in range(2)\n    for j in range(2)\n    for k in range(2)\n    if i+j+k != 2]\nprint(len(result))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "8"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "3"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "5"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "6"
+					}
+				],
+				"answer": "c",
+				"explanation": "range(2) gives [0,1]. All 2×2×2=8 combos. Combos where i+j+k==2: (0,1,1),(1,0,1),(1,1,0) — 3 are excluded. 8−3=5 pass the filter, so len(result) is 5."
+			},
+			{
+				"id": 3,
+				"question": "What does this function return?\ndef mutate_string(string, position, character):\n    test = list(string)\n    test[position] = character\n    string = ''.join(test)\n    return string\nprint(mutate_string('abcde', 2, 'X'))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "'abXde'"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "'Xbcde'"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "'abcdX'"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "'abcXe'"
+					}
+				],
+				"answer": "a",
+				"explanation": "Converts the string to a list: ['a','b','c','d','e']. Changes index 2 ('c') to 'X'. Joins back: 'abXde'. This is the standard way to mutate a specific position since strings are immutable."
+			},
+			{
+				"id": 4,
+				"question": "What is the output?\nmarks = {'Alice': [90, 85], 'Bob': [70, 75]}\nfor key in marks:\n    if key == 'Bob':\n        total = sum(marks[key])\nprint(total)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "90"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "145"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "165"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "70"
+					}
+				],
+				"answer": "b",
+				"explanation": "The for loop iterates over dictionary keys. When key == 'Bob', it sums marks['Bob'] = [70, 75] → 70+75 = 145. This is the pattern for looping through a dict and accessing values by key."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nnumber = 7.0\nprint('%.2f' % number)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "'7'"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "'7.0'"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "'7.00'"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "'7.2'"
+					}
+				],
+				"answer": "c",
+				"explanation": "'%.2f' always shows exactly 2 decimal places, even for whole numbers. 7.0 becomes '7.00'. This is useful when you need consistent formatting like prices or scores."
 			},
 			{
 				"id": 6,
-				"question": "What is the difference between 'is' and '==' in Python?",
+				"question": "What is the output?\nfor i in range(1, 4):\n    print(i, end=' ')\nprint('done')",
 				"options": [
 					{
 						"id": 1,
 						"label": "a",
-						"text": "They are the same"
+						"text": "1 2 3 done  (all one line)"
 					},
 					{
 						"id": 2,
 						"label": "b",
-						"text": "is checks identity (same object in memory); == checks equality of value"
+						"text": "1\\n2\\n3\\ndone"
 					},
 					{
 						"id": 3,
 						"label": "c",
-						"text": "== checks identity; is checks value equality"
+						"text": "1 2 3\\ndone"
 					},
 					{
 						"id": 4,
 						"label": "d",
-						"text": "is only works with numbers"
+						"text": "done 1 2 3"
 					}
 				],
-				"answer": "b",
-				"explanation": "is returns True only if both variables point to the exact same object in memory. == returns True if the values are equal, even if stored as different objects. Example: a = [1,2]; b = [1,2]; a==b is True but a is b is False."
+				"answer": "a",
+				"explanation": "end=' ' replaces the default newline with a space, so 1, 2, 3 all print on the same line with spaces. Then print('done') continues on that same line (no newline was printed before it), producing: 1 2 3 done"
 			},
 			{
 				"id": 7,
-				"question": "What does functools.lru_cache do?",
+				"question": "What is the output?\ns = 'PyThOn'\nprint(s.swapcase())",
 				"options": [
 					{
 						"id": 1,
 						"label": "a",
-						"text": "Sorts function arguments before calling"
+						"text": "'python'"
 					},
 					{
 						"id": 2,
 						"label": "b",
-						"text": "Caches function results so repeated calls with the same arguments return instantly"
+						"text": "'PYTHON'"
 					},
 					{
 						"id": 3,
 						"label": "c",
-						"text": "Limits how many times a function can be called"
+						"text": "'pYtHoN'"
 					},
 					{
 						"id": 4,
 						"label": "d",
-						"text": "Converts a function to run asynchronously"
+						"text": "'Python'"
 					}
 				],
-				"answer": "b",
-				"explanation": "lru_cache memoizes (caches) the return values of a function. If you call it again with the same arguments, it returns the cached result without re-running the function. LRU = Least Recently Used \u2014 oldest entries are dropped when the cache is full."
+				"answer": "c",
+				"explanation": "swapcase() converts every uppercase letter to lowercase and every lowercase letter to uppercase. P→p, y→Y, T→t, H→h, O→o, n→N → 'pYtHoN'."
 			},
 			{
 				"id": 8,
-				"question": "What is the Python GIL?",
+				"question": "What is the output?\nprint('123'.isdigit())\nprint('12.3'.isdigit())",
 				"options": [
 					{
 						"id": 1,
 						"label": "a",
-						"text": "A graphical interface library"
+						"text": "True, True"
 					},
 					{
 						"id": 2,
 						"label": "b",
-						"text": "A lock that allows only one thread to execute Python bytecode at a time"
+						"text": "False, False"
 					},
 					{
 						"id": 3,
 						"label": "c",
-						"text": "A garbage collection system"
+						"text": "True, False"
 					},
 					{
 						"id": 4,
 						"label": "d",
-						"text": "A module for managing global variables"
+						"text": "False, True"
 					}
 				],
-				"answer": "b",
-				"explanation": "The Global Interpreter Lock (GIL) is a mutex that prevents multiple threads from executing Python bytecode simultaneously. This limits CPU-bound multi-threading. Use multiprocessing to bypass it."
+				"answer": "c",
+				"explanation": "isdigit() returns True only if EVERY character is a digit (0–9). '123' passes. '12.3' fails because '.' is not a digit. This is a common trap — decimal points break isdigit()."
 			},
 			{
 				"id": 9,
-				"question": "What does itertools.chain(*iterables) do?",
+				"question": "What is the output?\nL = [5, 3, 1, 4, 2]\nL.sort()\nL.insert(2, 10)\nprint(L[2])",
 				"options": [
 					{
 						"id": 1,
 						"label": "a",
-						"text": "Multiplies all elements together"
+						"text": "3"
 					},
 					{
 						"id": 2,
 						"label": "b",
-						"text": "Creates a Cartesian product of iterables"
+						"text": "10"
 					},
 					{
 						"id": 3,
 						"label": "c",
-						"text": "Flattens one level of nested iterables into a single lazy iterator"
+						"text": "1"
 					},
 					{
 						"id": 4,
 						"label": "d",
-						"text": "Sorts all iterables and merges them"
+						"text": "4"
 					}
 				],
-				"answer": "c",
-				"explanation": "chain() treats multiple iterables as one continuous sequence, yielding elements from the first, then the second, etc. \u2014 without creating a new list. Useful for iterating over multiple collections in one loop."
+				"answer": "b",
+				"explanation": "sort() → [1,2,3,4,5]. insert(2, 10) inserts 10 at index 2, shifting everything right → [1,2,10,3,4,5]. L[2] is now 10."
 			},
 			{
 				"id": 10,
-				"question": "What does __slots__ do in a Python class?",
+				"question": "What is the output?\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
 				"options": [
 					{
 						"id": 1,
 						"label": "a",
-						"text": "Defines default values for instance attributes"
+						"text": "(99, 2, 3)"
 					},
 					{
 						"id": 2,
 						"label": "b",
-						"text": "Makes all attributes private"
+						"text": "(1, 2, 3)"
 					},
 					{
 						"id": 3,
 						"label": "c",
-						"text": "Prevents adding new attributes dynamically and reduces memory usage per instance"
+						"text": "TypeError"
 					},
 					{
 						"id": 4,
 						"label": "d",
-						"text": "Creates class-level (shared) methods"
+						"text": "[99, 2, 3]"
 					}
 				],
 				"answer": "c",
-				"explanation": "__slots__ = ['x', 'y'] tells Python to skip creating a __dict__ per instance, using a fixed-size array instead. This saves memory when creating millions of objects, but means you can't add new attributes at runtime."
+				"explanation": "Tuples are immutable — their elements cannot be changed after creation. Attempting to assign t[0] = 99 raises a TypeError. This is the key difference from lists, which are mutable and allow element changes."
 			}
 		]
 	},
@@ -1664,203 +1427,175 @@
 		"questions": [
 			{
 				"id": 1,
-				"question": "What does this print?\ndef func(x, lst=[]):\n    lst.append(x)\n    return lst\nprint(func(1))\nprint(func(2))",
+				"question": "What is the output?\ns = {1, 2, 3, 4, 5}\ns.add(6)\ns.discard(10)\ns.remove(1)\nprint(len(s))",
 				"options": [
 					{
 						"id": 1,
 						"label": "a",
-						"text": "[1] then [2]"
+						"text": "6"
 					},
 					{
 						"id": 2,
 						"label": "b",
-						"text": "[1] then [1, 2]"
+						"text": "5"
 					},
 					{
 						"id": 3,
 						"label": "c",
-						"text": "[1] then [2, 1]"
+						"text": "4"
 					},
 					{
 						"id": 4,
 						"label": "d",
-						"text": "Error"
+						"text": "KeyError"
 					}
 				],
 				"answer": "b",
-				"explanation": "Mutable default arguments are created ONCE at function definition, not on each call. The same list object is reused every call. func(1) appends to [] \u2192 [1]. func(2) appends to the same [1] \u2192 [1, 2]. This is a classic Python trap."
+				"explanation": "add(6) → size 6. discard(10) — 10 not in set, but discard NEVER raises an error, so nothing changes. remove(1) — 1 IS in the set, removes it → size 5."
 			},
 			{
 				"id": 2,
-				"question": "What does this print?\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)",
+				"question": "What is the output?\ns1 = {1, 2, 3, 4}\ns2 = {3, 4, 5, 6}\nprint(len(s1.difference(s2)))\nprint(len(s1.symmetric_difference(s2)))",
 				"options": [
 					{
 						"id": 1,
 						"label": "a",
-						"text": "[1, 2, 3]"
+						"text": "2, 4"
 					},
 					{
 						"id": 2,
 						"label": "b",
-						"text": "[1, 2, 3, 4]"
+						"text": "4, 2"
 					},
 					{
 						"id": 3,
 						"label": "c",
-						"text": "[4]"
+						"text": "2, 2"
 					},
 					{
 						"id": 4,
 						"label": "d",
-						"text": "Error"
+						"text": "4, 4"
 					}
 				],
-				"answer": "b",
-				"explanation": "y = x does NOT copy the list \u2014 it creates a second reference to the same object. y.append(4) mutates that shared object, so x also reflects the change: [1, 2, 3, 4]. Use y = x[:] or copy() to make an independent copy."
+				"answer": "a",
+				"explanation": "difference: elements in s1 NOT in s2 = {1,2} → len 2. symmetric_difference: elements in either but NOT both = {1,2,5,6} → len 4."
 			},
 			{
 				"id": 3,
-				"question": "What does this print?\ndef gen():\n    yield 1\n    yield 2\n    yield 3\ng = gen()\nprint(next(g))\nprint(next(g))",
+				"question": "What is the output?\nq, r = divmod(25, 7)\nprint(q, r)",
 				"options": [
 					{
 						"id": 1,
 						"label": "a",
-						"text": "1 then 1"
+						"text": "3 4"
 					},
 					{
 						"id": 2,
 						"label": "b",
-						"text": "1 then 2"
+						"text": "4 3"
 					},
 					{
 						"id": 3,
 						"label": "c",
-						"text": "[1, 2, 3] then [1, 2, 3]"
+						"text": "3.57 0"
 					},
 					{
 						"id": 4,
 						"label": "d",
-						"text": "Error"
+						"text": "(3, 4)"
 					}
 				],
-				"answer": "b",
-				"explanation": "next() advances the generator one yield at a time. First next(g) runs until yield 1 and returns 1. Second next(g) resumes from there, runs until yield 2 and returns 2."
+				"answer": "a",
+				"explanation": "divmod(a, b) returns a tuple (quotient, remainder). 25 ÷ 7 = 3 remainder 4. Unpacking gives q=3, r=4. print(q, r) outputs: 3 4."
 			},
 			{
 				"id": 4,
-				"question": "What does this print?\na = [1, 2, 3, 4, 5]\nprint(a[1:4])",
+				"question": "What is the output?\nprint(pow(3, 4, 5))",
 				"options": [
 					{
 						"id": 1,
 						"label": "a",
-						"text": "[1, 2, 3]"
+						"text": "81"
 					},
 					{
 						"id": 2,
 						"label": "b",
-						"text": "[2, 3, 4]"
+						"text": "1"
 					},
 					{
 						"id": 3,
 						"label": "c",
-						"text": "[2, 3, 4, 5]"
+						"text": "16"
 					},
 					{
 						"id": 4,
 						"label": "d",
-						"text": "[1, 2, 3, 4]"
+						"text": "4"
 					}
 				],
 				"answer": "b",
-				"explanation": "a[1:4] slices from index 1 up to but NOT including index 4. Indices 1, 2, 3 map to values 2, 3, 4. Result: [2, 3, 4]."
+				"explanation": "pow(a, b, m) computes (a**b) % m efficiently. 3**4 = 81. 81 % 5 = 1 (since 81 = 5×16 + 1). This three-argument form is useful in cryptography and competitive programming."
 			},
 			{
 				"id": 5,
-				"question": "What does this print?\nnums = [3, 1, 4, 1, 5]\nnums.sort()\nnums.reverse()\nprint(nums)",
+				"question": "What is the output?\nfrom collections import Counter\nwords = ['apple','banana','apple','cherry','banana','apple']\nc = Counter(words)\nprint(c['apple'])\nprint(c['grape'])",
 				"options": [
 					{
 						"id": 1,
 						"label": "a",
-						"text": "[1, 1, 3, 4, 5]"
+						"text": "3, 0"
 					},
 					{
 						"id": 2,
 						"label": "b",
-						"text": "[5, 4, 3, 1, 1]"
+						"text": "3, KeyError"
 					},
 					{
 						"id": 3,
 						"label": "c",
-						"text": "[3, 1, 4, 1, 5]"
+						"text": "3, None"
 					},
 					{
 						"id": 4,
 						"label": "d",
-						"text": "[5, 1, 4, 1, 3]"
+						"text": "2, 0"
 					}
 				],
-				"answer": "b",
-				"explanation": "sort() sorts ascending \u2192 [1, 1, 3, 4, 5]. reverse() flips it in place \u2192 [5, 4, 3, 1, 1]. Both methods modify the list in place and return None."
+				"answer": "a",
+				"explanation": "Counter counts occurrences: 'apple' appears 3 times → c['apple'] = 3. For a missing key, Counter returns 0 (not an error, not None) — this is different from a regular dict which would raise a KeyError."
 			},
 			{
 				"id": 6,
-				"question": "What does this print?\nprint(pow(2, 10, 100))",
+				"question": "What is the output?\nfrom collections import deque\nd = deque([1, 2, 3])\nd.appendleft(0)\nd.pop()\nprint(list(d))",
 				"options": [
 					{
 						"id": 1,
 						"label": "a",
-						"text": "1024"
+						"text": "[0, 1, 2, 3]"
 					},
 					{
 						"id": 2,
 						"label": "b",
-						"text": "24"
+						"text": "[1, 2, 3, 0]"
 					},
 					{
 						"id": 3,
 						"label": "c",
-						"text": "10"
+						"text": "[0, 1, 2]"
 					},
 					{
 						"id": 4,
 						"label": "d",
-						"text": "2"
+						"text": "[1, 2]"
 					}
 				],
-				"answer": "b",
-				"explanation": "pow(a, b, m) computes (a ** b) % m efficiently. 2 ** 10 = 1024. 1024 % 100 = 24. This three-argument form is faster than (2**10) % 100 for large numbers."
+				"answer": "c",
+				"explanation": "Start: [1,2,3]. appendleft(0) adds to the LEFT → [0,1,2,3]. pop() removes from the RIGHT → [0,1,2]. Deque is a double-ended queue — append/pop work on both ends."
 			},
 			{
 				"id": 7,
-				"question": "What does this print?\ns = 'abcd123#'\nprint(s.isalnum())\nprint(s.islower())",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "True then True"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "False then True"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "True then False"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "False then False"
-					}
-				],
-				"answer": "b",
-				"explanation": "isalnum() is False because '#' is not alphanumeric. islower() is True because all LETTERS (a,b,c,d) are lowercase \u2014 digits and symbols are ignored by islower(), they don't make it return False."
-			},
-			{
-				"id": 8,
-				"question": "What does this print?\nfrom itertools import permutations\nresult = list(permutations([1, 2, 3], 2))\nprint(len(result))",
+				"question": "What is the output?\nfrom itertools import permutations\nresult = list(permutations('abc'))\nprint(len(result))",
 				"options": [
 					{
 						"id": 1,
@@ -1880,67 +1615,3826 @@
 					{
 						"id": 4,
 						"label": "d",
+						"text": "8"
+					}
+				],
+				"answer": "b",
+				"explanation": "permutations('abc') without a length argument gives all full-length arrangements. 3 elements → 3! = 3×2×1 = 6 permutations: abc, acb, bac, bca, cab, cba."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nfrom itertools import product\nresult = list(product([1, 2], [3, 4]))\nprint(len(result))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "2"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "4"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "6"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "8"
+					}
+				],
+				"answer": "b",
+				"explanation": "Cartesian product pairs every element of the first list with every element of the second: (1,3),(1,4),(2,3),(2,4). 2×2 = 4 pairs total."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\ns = {1, 2, 3}\ns.discard(5)\ns.remove(5)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "No error, set stays {1, 2, 3}"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "KeyError on discard(5)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "KeyError on remove(5)"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Set becomes {1, 2, 3, 5}"
+					}
+				],
+				"answer": "c",
+				"explanation": "discard() NEVER raises an error — if the element is missing, it silently does nothing. remove() DOES raise a KeyError if the element is not found. This is the critical difference between the two."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nline = 'John 90'\n*name, score = line.split()\nprint(name)\nprint(score)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "['John'], '90'"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "'John', '90'"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "['John', '90'], ''"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "a",
+				"explanation": "line.split() gives ['John','90']. The star notation *name collects all items except the last one into a list. So name=['John'] and score='90'. This pattern handles variable-length inputs like names with multiple words."
+			}
+		]
+	},
+	{
+		"id": 8,
+		"name": "JS: Variables & Datatypes",
+		"imageUrl": "js_variables",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What does `typeof null` return in JavaScript?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"null\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"undefined\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"object\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"string\""
+					}
+				],
+				"answer": "c",
+				"explanation": "`typeof null === \"object\"` is a long-standing JavaScript bug that was never fixed for backwards compatibility. `null` is its own primitive type, but `typeof` incorrectly reports it as \"object\"."
+			},
+			{
+				"id": 2,
+				"question": "Which keyword declares a variable that CANNOT be reassigned?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "let"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "var"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "const"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "def"
+					}
+				],
+				"answer": "c",
+				"explanation": "`const` declares a variable that cannot be reassigned after initialization and must be given a value at declaration. `let` allows reassignment; `var` also allows reassignment."
+			},
+			{
+				"id": 3,
+				"question": "What value does a declared but uninitialized `let` variable hold?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "null"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "0"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "undefined"
+					}
+				],
+				"answer": "d",
+				"explanation": "In JavaScript, `let age;` without an assignment automatically holds `undefined`. This means \"this variable exists but has no value yet.\" It's different from `null`, which is an intentional empty value."
+			},
+			{
+				"id": 4,
+				"question": "What does `typeof \"hello\"` return?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"text\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"string\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"str\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"char\""
+					}
+				],
+				"answer": "b",
+				"explanation": "`typeof` returns a string describing the type. For text values it returns `\"string\"`. Other possible returns include `\"number\"`, `\"boolean\"`, `\"undefined\"`, `\"object\"`, and `\"function\"`."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nlet age;\nconsole.log(typeof age);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"null\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "null"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"undefined\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "undefined"
+					}
+				],
+				"answer": "c",
+				"explanation": "`age` is declared but never assigned, so it holds `undefined`. `typeof undefined` returns the string `\"undefined\"` — note it is a string result, not the bare value `undefined`."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\nlet score = null;\nconsole.log(typeof score);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"null\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"undefined\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"number\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"object\""
+					}
+				],
+				"answer": "d",
+				"explanation": "This is one of JavaScript's oldest quirks. `typeof null` returns `\"object\"` even though `null` is not an object — it's a historical bug that remains for backwards compatibility."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nlet x = 10;\nlet y = \"10\";\nconsole.log(typeof x, typeof y);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"number\" \"number\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"int\" \"string\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"number\" \"string\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "10 \"10\""
+					}
+				],
+				"answer": "c",
+				"explanation": "`x` holds the number `10` → `typeof x` is `\"number\"`. `y` holds the string `\"10\"` → `typeof y` is `\"string\"`. The quotes matter — `10` and `\"10\"` are completely different types in JavaScript."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nconst name = \"Alex\";\nname = \"Sam\";\nconsole.log(name);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"Sam\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"Alex\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "undefined"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "TypeError"
+					}
+				],
+				"answer": "d",
+				"explanation": "`const` variables cannot be reassigned. Attempting to do so throws a `TypeError: Assignment to constant variable`. This is why `const` is used for values that should never change after creation."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nlet a = 5;\nlet b = a;\nb = 10;\nconsole.log(a);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "10"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "undefined"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "5"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "15"
+					}
+				],
+				"answer": "c",
+				"explanation": "Primitive values like numbers are copied by value, not by reference. `b = a` makes `b` a separate copy of `5`. Changing `b` to `10` has zero effect on `a`, which stays `5`."
+			},
+			{
+				"id": 10,
+				"question": "Which of these correctly declares a boolean in JavaScript?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "let active = \"true\";"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "let active = true;"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "let active = True;"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "let active = 1;"
+					}
+				],
+				"answer": "b",
+				"explanation": "JavaScript booleans are the literal values `true` and `false` (lowercase). `\"true\"` is a string, `True` causes a ReferenceError (JavaScript is case-sensitive), and `1` is a number — truthy, but not the boolean `true`."
+			}
+		]
+	},
+	{
+		"id": 9,
+		"name": "JS: Control Flow",
+		"imageUrl": "js_control",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What does `&&` (AND) do when the first condition is false?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Returns true"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Throws an error"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Returns the first falsy value immediately"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Always evaluates both sides"
+					}
+				],
+				"answer": "c",
+				"explanation": "`&&` short-circuits: if the first value is falsy it immediately returns that value without evaluating the right side. This is why `false && doSomething()` never calls `doSomething()`."
+			},
+			{
+				"id": 2,
+				"question": "What does `condition ? a : b` return when condition is false?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "a"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "condition"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "b"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "undefined"
+					}
+				],
+				"answer": "c",
+				"explanation": "The ternary operator is a compact if-else. When the condition is truthy it returns the value before `:`. When falsy it returns the value after `:`. So `false ? \"yes\" : \"no\"` returns `\"no\"`."
+			},
+			{
+				"id": 3,
+				"question": "Which operator checks if a value is greater than OR equal to another?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": ">"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "=>"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "=="
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": ">="
+					}
+				],
+				"answer": "d",
+				"explanation": "`>=` means \"greater than or equal to\". It returns `true` if the left value is larger than or the same as the right. Note: `=>` is arrow function syntax, not a comparison operator."
+			},
+			{
+				"id": 4,
+				"question": "What is `||` (OR) used for?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Both conditions must be true"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Returns true if at least one condition is true"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Inverts a boolean"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Checks equality"
+					}
+				],
+				"answer": "b",
+				"explanation": "`||` returns `true` if ANY operand is truthy and short-circuits on the first truthy value. Commonly used for fallbacks: `let name = input || \"Guest\"` — if `input` is falsy, `\"Guest\"` is used."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nlet score = 75;\nif (score >= 90) {\n  console.log(\"A\");\n} else if (score >= 70) {\n  console.log(\"B\");\n} else {\n  console.log(\"C\");\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"A\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"C\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"B\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"A\" and \"B\""
+					}
+				],
+				"answer": "c",
+				"explanation": "`75 >= 90` is false. `75 >= 70` is true, so `\"B\"` prints and the chain stops. Once one `else if` matches, the remaining branches are skipped entirely."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\nlet x = 5;\nconsole.log(x > 3 && x < 10);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "false"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"true\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "true"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "5"
+					}
+				],
+				"answer": "c",
+				"explanation": "`5 > 3` is `true` AND `5 < 10` is `true`. Since both are truthy, `&&` returns `true`. The result is the boolean `true`, not the string `\"true\"`."
+			},
+			{
+				"id": 7,
+				"question": "What does this print?\nlet age = 20;\nlet msg = age >= 18 ? \"Adult\" : \"Minor\";\nconsole.log(msg);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"Minor\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "true"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"Adult\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "20"
+					}
+				],
+				"answer": "c",
+				"explanation": "The ternary checks `20 >= 18` which is `true`, so the expression evaluates to `\"Adult\"`. That value is stored in `msg` and logged."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nlet x = 0;\nif (x) {\n  console.log(\"truthy\");\n} else {\n  console.log(\"falsy\");\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"truthy\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"x\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "0"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"falsy\""
+					}
+				],
+				"answer": "d",
+				"explanation": "In JavaScript, `0` is a falsy value. When used as an `if` condition it behaves like `false`. The complete falsy values are: `0`, `\"\"`, `null`, `undefined`, `NaN`, and `false`."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nconsole.log(false || \"hello\");",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "false"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "true"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"hello\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"false\""
+					}
+				],
+				"answer": "c",
+				"explanation": "`||` returns the first truthy value it finds, not just `true`/`false`. `false` is falsy so it moves on. `\"hello\"` is truthy so it returns `\"hello\"`. This pattern powers default values like `let name = input || \"Guest\"`."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nconsole.log(5 == \"5\");\nconsole.log(5 === \"5\");",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "false, false"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "true, true"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "false, true"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "true, false"
+					}
+				],
+				"answer": "d",
+				"explanation": "`==` (loose equality) converts types before comparing — `\"5\"` becomes `5`, so `5 == \"5\"` is `true`. `===` (strict equality) checks value AND type — number vs string, so it is `false`. Always prefer `===` to avoid surprises."
+			}
+		]
+	},
+	{
+		"id": 10,
+		"name": "JS: For Loops",
+		"imageUrl": "js_forloop",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What are the three parts of a `for` loop?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "condition, body, return"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "start, stop, step"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "initialization, condition, increment"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "declare, compare, execute"
+					}
+				],
+				"answer": "c",
+				"explanation": "A `for` loop: `for (initialization; condition; increment)`. Initialization runs once at the start, the condition is checked before each iteration, and the increment runs after each iteration body."
+			},
+			{
+				"id": 2,
+				"question": "How do you correctly loop through every element in `let items = [10, 20, 30]`?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "for (let i = 1; i <= items.length; i++)"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "for (let i = 0; i < items.length; i++)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "for (let i = 0; i <= items.length; i++)"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "for (let i = 1; i < items.length; i++)"
+					}
+				],
+				"answer": "b",
+				"explanation": "Arrays are zero-indexed: first element at index `0`, last at `length - 1`. Start at `i = 0` and use `i < items.length` (strictly less than) to cover every element without going out of bounds."
+			},
+			{
+				"id": 3,
+				"question": "What does `for...of` iterate over?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "The indices of an array"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "The keys of an object"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "The values of an iterable"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "A fixed number of times"
+					}
+				],
+				"answer": "c",
+				"explanation": "`for (let item of array)` gives you each value directly on every iteration without needing an index. Works on arrays, strings, Sets, and other iterables. Use `for...in` for object keys."
+			},
+			{
+				"id": 4,
+				"question": "What does `for...in` iterate over?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "The values of an array"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "The keys/property names of an object"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "A range of numbers"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "The values of a Set"
+					}
+				],
+				"answer": "b",
+				"explanation": "`for (let key in object)` iterates over the enumerable property names of an object. If used on an array it gives index numbers as strings — which is not recommended for arrays."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nfor (let i = 0; i < 3; i++) {\n  console.log(i);\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1, 2, 3"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "0, 1, 2, 3"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "0, 1, 2"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "1, 2"
+					}
+				],
+				"answer": "c",
+				"explanation": "Starts at `i = 0`, runs while `i < 3`. Prints `0`, `1`, `2`, then `i` becomes `3`. The condition `3 < 3` is false so the loop exits. The value `3` is never printed."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\nlet fruits = [\"apple\", \"banana\", \"cherry\"];\nfor (let fruit of fruits) {\n  console.log(fruit);\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "0, 1, 2"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "apple, banana, cherry"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[\"apple\", \"banana\", \"cherry\"]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "fruit, fruit, fruit"
+					}
+				],
+				"answer": "b",
+				"explanation": "`for...of` gives each value directly. `fruit` holds `\"apple\"` on the first pass, `\"banana\"` on the second, `\"cherry\"` on the third. Each is logged on its own line."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nlet person = { name: \"Alex\", age: 16 };\nfor (let key in person) {\n  console.log(key);\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"Alex\", 16"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "name, age"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"name\", \"age\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "{name: \"Alex\"}, {age: 16}"
+					}
+				],
+				"answer": "b",
+				"explanation": "`for...in` iterates over property keys. `person` has two keys: `\"name\"` and `\"age\"`. Those key strings are logged. To get values you'd write `person[key]`."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nlet sum = 0;\nfor (let i = 1; i <= 4; i++) {\n  sum += i;\n}\nconsole.log(sum);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "4"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "14"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "10"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "6"
+					}
+				],
+				"answer": "c",
+				"explanation": "The loop adds each `i` to `sum`: 0+1=1, 1+2=3, 3+3=6, 6+4=10. The final logged value is `10`."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nfor (let i = 0; i < 3; i++) {\n  if (i === 1) continue;\n  console.log(i);\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "0, 1, 2"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "0, 2"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "1"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "0"
+					}
+				],
+				"answer": "b",
+				"explanation": "`continue` skips the rest of the current iteration and jumps to the next one. When `i === 1`, the `console.log` is skipped. So only `0` and `2` are printed."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nlet nums = [1, 2, 3];\nfor (let i = 0; i < nums.length; i++) {\n  console.log(nums[i] * 2);\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1, 2, 3"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "2, 4, 6"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[2, 4, 6]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "NaN, NaN, NaN"
+					}
+				],
+				"answer": "b",
+				"explanation": "Each element is multiplied by `2` before logging. `nums[0]=1→2`, `nums[1]=2→4`, `nums[2]=3→6`. Each result is logged separately, not as an array."
+			}
+		]
+	},
+	{
+		"id": 11,
+		"name": "JS: While Loops",
+		"imageUrl": "js_while",
+		"questions": [
+			{
+				"id": 1,
+				"question": "When does a `while` loop stop running?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "After exactly 10 iterations"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "When its condition becomes false"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "After the body runs once"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "When the variable reaches 0"
+					}
+				],
+				"answer": "b",
+				"explanation": "A `while` loop checks its condition before each iteration. If the condition is `false` at any check the loop ends. If the condition starts as `false`, the loop body never runs at all."
+			},
+			{
+				"id": 2,
+				"question": "What is the key difference between `while` and `do...while`?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "`while` is faster"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "`do...while` always runs the body at least once"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "`while` doesn't need a condition"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "`do...while` only works with numbers"
+					}
+				],
+				"answer": "b",
+				"explanation": "In `while`, the condition is checked BEFORE the body — it may run zero times. In `do...while`, the body runs FIRST then the condition is checked — so it always runs at least once."
+			},
+			{
+				"id": 3,
+				"question": "Why must a `while` loop include an update statement?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "To make it run faster"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "To avoid an infinite loop"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Because JavaScript requires it by syntax"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "To track the iteration count"
+					}
+				],
+				"answer": "b",
+				"explanation": "If the condition never becomes `false`, the loop runs forever (infinite loop), crashing the browser. An update like `i++` changes the variable the condition depends on, eventually making it `false`."
+			},
+			{
+				"id": 4,
+				"question": "What does `break` do inside a loop?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Pauses the loop temporarily"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Skips the current iteration"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Exits the loop immediately"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Restarts the loop from the beginning"
+					}
+				],
+				"answer": "c",
+				"explanation": "`break` immediately terminates the entire loop regardless of whether the condition is still true. Execution jumps to the first line after the loop. Often used with `if` to exit when a target value is found."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nlet i = 0;\nwhile (i < 3) {\n  console.log(i);\n  i++;\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "0, 1, 2, 3"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "1, 2, 3"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "0, 1, 2"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Infinite loop"
+					}
+				],
+				"answer": "c",
+				"explanation": "Starts at `i = 0`. Each iteration prints `i` then increments. After printing `2`, `i` becomes `3`. `3 < 3` is false — loop exits. Output: `0`, `1`, `2`."
+			},
+			{
+				"id": 6,
+				"question": "What does this print?\nlet i = 5;\ndo {\n  console.log(i);\n  i++;\n} while (i < 3);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Nothing"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "5"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "5, 6, 7..."
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "b",
+				"explanation": "In `do...while`, the body runs BEFORE checking the condition. So `5` is printed and `i` becomes `6`. Then `6 < 3` is false — loop ends. Only `5` is printed even though the condition was false from the start."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nlet i = 0;\nwhile (i < 5) {\n  if (i === 3) break;\n  console.log(i);\n  i++;\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "0, 1, 2, 3"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "0, 1, 2"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "0, 1, 2, 3, 4"
+					}
+				],
+				"answer": "b",
+				"explanation": "The loop runs normally for `i = 0, 1, 2`. When `i === 3`, `break` immediately exits the loop before logging `3`. So only `0`, `1`, `2` are printed."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nlet i = 0;\nwhile (i < 5) {\n  i++;\n  if (i === 3) continue;\n  console.log(i);\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1, 2, 3, 4, 5"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "1, 2, 4, 5"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "0, 1, 2, 4, 5"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "1, 2, 3, 5"
+					}
+				],
+				"answer": "b",
+				"explanation": "`i++` runs first on each pass. When `i === 3`, `continue` skips the log and goes back to the condition check. The loop still continues normally after that. Output: `1, 2` then skip `3`, then `4, 5`."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nlet i = 0;\nwhile (true) {\n  if (i === 3) break;\n  i++;\n}\nconsole.log(i);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Infinite loop — never reaches console.log"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Error: condition must be a variable"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "4"
+					}
+				],
+				"answer": "c",
+				"explanation": "`while (true)` loops forever but `break` exits when `i === 3`. After `i` is incremented to `3`, break fires and code jumps to `console.log(i)` which prints `3`. This is a valid pattern for complex exit conditions."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nlet x = 1;\ndo {\n  console.log(x);\n  x *= 2;\n} while (x < 10);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1, 2, 4, 8, 16"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "2, 4, 8"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "1, 2, 4, 8"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "1, 2, 4"
+					}
+				],
+				"answer": "c",
+				"explanation": "Starting at `x=1`: logs `1`, doubles to `2`; logs `2`, doubles to `4`; logs `4`, doubles to `8`; logs `8`, doubles to `16`. Now `16 < 10` is false — loop ends. Output: `1, 2, 4, 8`."
+			}
+		]
+	},
+	{
+		"id": 12,
+		"name": "JS: Functions Basics",
+		"imageUrl": "js_functions",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the purpose of a function parameter?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "To store the return value"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "To pass data into the function when calling it"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "To exit the function early"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "To declare global variables"
+					}
+				],
+				"answer": "b",
+				"explanation": "Parameters are named inputs defined in the function declaration. When the function is called, arguments get assigned to those parameters, allowing the same function to work with different data each time."
+			},
+			{
+				"id": 2,
+				"question": "What does the `return` statement do?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Prints a value to the console"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Declares a variable"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Ends the function and sends back a value"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Calls another function"
+					}
+				],
+				"answer": "c",
+				"explanation": "`return` does two things: it immediately stops the function from running and sends a value back to wherever the function was called. Without a `return`, a function returns `undefined` by default."
+			},
+			{
+				"id": 3,
+				"question": "What does a function return if it has no `return` statement?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "0"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "null"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "undefined"
+					}
+				],
+				"answer": "d",
+				"explanation": "Every JavaScript function returns a value. If no `return` statement is present (or `return` is used alone with no value), the function automatically returns `undefined`."
+			},
+			{
+				"id": 4,
+				"question": "What is a default parameter?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "A function that always returns the same value"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "A parameter with a fallback value used when none is provided"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "A function that cannot be called without arguments"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "A parameter that ignores the passed value"
+					}
+				],
+				"answer": "b",
+				"explanation": "Default parameters let you specify a fallback value used when the caller doesn't pass an argument or passes `undefined`. Example: `function greet(name = \"Guest\")` — calling `greet()` uses `\"Guest\"` as the name."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nfunction add(a, b) {\n  return a + b;\n}\nconsole.log(add(3, 4));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"34\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "undefined"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "7"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "a + b"
+					}
+				],
+				"answer": "c",
+				"explanation": "`add(3, 4)` assigns `a = 3` and `b = 4`. The function returns `3 + 4 = 7`. `console.log(7)` prints `7`."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\nfunction greet(name = \"World\") {\n  console.log(\"Hello, \" + name + \"!\");\n}\ngreet();\ngreet(\"Alex\");",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Error, \"Hello, Alex!\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"Hello, World!\", \"Hello, Alex!\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"Hello, undefined!\", \"Hello, Alex!\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"Hello, !\", \"Hello, Alex!\""
+					}
+				],
+				"answer": "b",
+				"explanation": "`greet()` passes no argument, so `name` uses default `\"World\"` → `\"Hello, World!\"`. `greet(\"Alex\")` overrides the default → `\"Hello, Alex!\"`."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nfunction double(x) {\n  return x * 2;\n}\nlet result = double(5);\nconsole.log(result);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "5"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "x * 2"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "undefined"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "10"
+					}
+				],
+				"answer": "d",
+				"explanation": "`double(5)` returns `5 * 2 = 10`. That value is stored in `result`. `console.log(result)` prints `10`."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nfunction sayHi() {\n  console.log(\"Hi!\");\n}\nlet x = sayHi();\nconsole.log(x);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"Hi!\", \"Hi!\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"Hi!\", undefined"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "undefined, undefined"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"Hi!\", null"
+					}
+				],
+				"answer": "b",
+				"explanation": "`sayHi()` logs `\"Hi!\"` but has no `return` statement, so it returns `undefined`. That `undefined` is stored in `x`. The second `console.log` prints `undefined`."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nfunction add(a, b) {\n  return a + b;\n}\nconsole.log(add(2, 3, 10));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Error: too many arguments"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "15"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "5"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "NaN"
+					}
+				],
+				"answer": "c",
+				"explanation": "JavaScript does NOT throw an error when you pass more arguments than parameters. Extra arguments are simply ignored. `a = 2`, `b = 3`, and `10` is discarded. The function returns `5`."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nfunction check(x) {\n  if (x > 0) return \"positive\";\n  return \"non-positive\";\n  console.log(\"done\");\n}\nconsole.log(check(5));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"positive\", \"done\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"done\", \"positive\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"positive\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"non-positive\""
+					}
+				],
+				"answer": "c",
+				"explanation": "`check(5)` hits `if (x > 0)` which is true, so `return \"positive\"` executes — the function ends immediately. The `console.log(\"done\")` is unreachable code and never runs."
+			}
+		]
+	},
+	{
+		"id": 13,
+		"name": "JS: Arrow Functions",
+		"imageUrl": "js_arrow",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What keyword does an arrow function replace?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "def"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "fun"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "function"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "lambda"
+					}
+				],
+				"answer": "c",
+				"explanation": "Arrow functions are shorthand for regular functions. Instead of `function(x) { return x * 2; }` you write `(x) => x * 2`. The `function` keyword is replaced by the `=>` arrow after the parameters."
+			},
+			{
+				"id": 2,
+				"question": "What is \"implicit return\" in an arrow function?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "The function returns nothing automatically"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "The return value is undefined by default"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "A single-expression arrow function returns without writing `return`"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "The function returns the parameter name"
+					}
+				],
+				"answer": "c",
+				"explanation": "When an arrow function body is a single expression with no curly braces `{}`, the result is automatically returned. `(x) => x * 2` returns `x * 2` without writing `return`. Adding `{}` requires an explicit `return`."
+			},
+			{
+				"id": 3,
+				"question": "What happens if you use `{}` in an arrow function without a `return`?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "It creates an object"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "It returns undefined"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "It causes a syntax error"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "It returns the last line automatically"
+					}
+				],
+				"answer": "b",
+				"explanation": "Curly braces `{}` create a function body block. Inside a block you must explicitly write `return`. Without it the function returns `undefined`. This is a common bug when adding curly braces to a previously implicit arrow function."
+			},
+			{
+				"id": 4,
+				"question": "Which is a valid arrow function that squares a number?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "function(x) => x * x"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "x -> x * x"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "(x) => x * x"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "x => { x * x }"
+					}
+				],
+				"answer": "c",
+				"explanation": "Correct syntax: `(x) => x * x`. Option A mixes `function` keyword with arrow syntax. Option B is Java/Kotlin syntax. Option D uses a block but has no `return`, so it returns `undefined` instead of `x * x`."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nconst double = (x) => x * 2;\nconsole.log(double(6));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "x * 2"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "undefined"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "12"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "6"
+					}
+				],
+				"answer": "c",
+				"explanation": "`double` implicitly returns `x * 2`. Calling `double(6)` computes `6 * 2 = 12`. `console.log` prints `12`."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\nconst greet = (name) => {\n  `Hello, ${name}!`\n};\nconsole.log(greet(\"Sam\"));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"Hello, Sam!\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "undefined"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"Hello, undefined!\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "b",
+				"explanation": "The curly braces create a function body, but there is no `return` statement. The template literal is evaluated but its result is discarded. The function returns `undefined`."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nconst add = (a, b = 5) => a + b;\nconsole.log(add(3));\nconsole.log(add(3, 7));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "3, 10"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "undefined, 10"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "8, 10"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "5, 7"
+					}
+				],
+				"answer": "c",
+				"explanation": "`add(3)`: `a=3`, `b` uses default `5` → returns `8`. `add(3, 7)`: `a=3`, `b=7` overrides default → returns `10`. Output: `8` then `10`."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nconst nums = [1, 2, 3, 4];\nconst evens = nums.filter(n => n % 2 === 0);\nconsole.log(evens);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[1, 3]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "[2, 4]"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[1, 2, 3, 4]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "[0, 0]"
+					}
+				],
+				"answer": "b",
+				"explanation": "`.filter()` keeps elements for which the callback returns `true`. `n % 2 === 0` is true for even numbers only. `2` and `4` pass the test, giving `[2, 4]`."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nconst square = x => x * x;\nconsole.log(square(4));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Error: missing parentheses around parameter"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "8"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "16"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "undefined"
+					}
+				],
+				"answer": "c",
+				"explanation": "When an arrow function has exactly ONE parameter, the parentheses are optional. `x => x * x` is valid and equivalent to `(x) => x * x`. It returns `4 * 4 = 16`."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nconst makeObj = (val) => ({ result: val });\nconsole.log(makeObj(42));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "undefined"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Error"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "result: 42"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "{ result: 42 }"
+					}
+				],
+				"answer": "d",
+				"explanation": "To implicitly return an object literal from an arrow function, wrap it in parentheses `()`. Without them, `{}` is interpreted as a function body block. The `()` tells JavaScript this is an expression to return."
+			}
+		]
+	},
+	{
+		"id": 14,
+		"name": "JS: Arrays",
+		"imageUrl": "js_arrays",
+		"questions": [
+			{
+				"id": 1,
+				"question": "How do you access the FIRST element of `let items = [10, 20, 30]`?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "items[1]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "items.first()"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "items[0]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "items.get(0)"
+					}
+				],
+				"answer": "c",
+				"explanation": "Arrays use zero-based indexing. The first element is at index `0`, the second at `1`, and so on. `items[0]` accesses `10`."
+			},
+			{
+				"id": 2,
+				"question": "What does the spread operator `...` do when used with two arrays?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Removes duplicates"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Multiplies all elements"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Unpacks and combines their elements into a new array"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Reverses the array"
+					}
+				],
+				"answer": "c",
+				"explanation": "`...arr` unpacks all elements of `arr`. `let combined = [...a, ...b]` creates a new array with all elements of `a` followed by all elements of `b`. It's equivalent to `a.concat(b)` but more flexible."
+			},
+			{
+				"id": 3,
+				"question": "What does `array.concat(other)` return?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Modifies the original array in place"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "A new array combining both arrays"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "The count of elements"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "The last element of the array"
+					}
+				],
+				"answer": "b",
+				"explanation": "`.concat()` merges arrays WITHOUT modifying the originals. It returns a NEW array containing all elements of both. `[1,2].concat([3,4])` returns `[1,2,3,4]`."
+			},
+			{
+				"id": 4,
+				"question": "What does `array.length` return?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "The index of the last element"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "The total number of elements"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "The size in bytes"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "The highest value in the array"
+					}
+				],
+				"answer": "b",
+				"explanation": "`.length` returns the count of elements. For `[10, 20, 30]`, `.length` is `3`. The last element's index is always `length - 1` (index `2` here), not `length` itself."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nlet nums = [10, 20, 30];\nconsole.log(nums[1]);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "10"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "20"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "30"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "undefined"
+					}
+				],
+				"answer": "b",
+				"explanation": "Index `0` = `10`, index `1` = `20`, index `2` = `30`. `nums[1]` accesses the element at index `1` which is `20`."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\nlet a = [1, 2];\nlet b = [3, 4];\nlet c = [...a, ...b];\nconsole.log(c);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[[1, 2], [3, 4]]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "[1, 2, 3, 4]"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[3, 4, 1, 2]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "[1, 2]"
+					}
+				],
+				"answer": "b",
+				"explanation": "The spread operator unpacks both arrays. `...a` becomes `1, 2` and `...b` becomes `3, 4`. Combined into a new array: `[1, 2, 3, 4]`. This does NOT create a nested array."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nlet fruits = [\"apple\", \"banana\", \"cherry\"];\nconsole.log(fruits.length);\nconsole.log(fruits[fruits.length - 1]);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "3, \"apple\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "2, \"cherry\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3, \"cherry\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "3, \"banana\""
+					}
+				],
+				"answer": "c",
+				"explanation": "`fruits.length` is `3`. `fruits[3 - 1]` = `fruits[2]` = `\"cherry\"`. Using `length - 1` is the reliable pattern to always get the last element of any array."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nlet nums = [5, 10, 15];\nnums[1] = 99;\nconsole.log(nums);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[5, 10, 15]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "[99, 10, 15]"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[5, 99, 15]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error: arrays are immutable"
+					}
+				],
+				"answer": "c",
+				"explanation": "Array elements can be reassigned by index at any time. `nums[1] = 99` replaces the element at index `1` (which was `10`) with `99`. The array becomes `[5, 99, 15]`."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nlet arr = [1, 2, 3];\nconsole.log(arr[5]);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Error: index out of bounds"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "0"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "null"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "undefined"
+					}
+				],
+				"answer": "d",
+				"explanation": "Unlike some languages, JavaScript does NOT throw an error for out-of-bounds access. Accessing a non-existent index returns `undefined`. This can cause silent bugs if you expect an error to catch mistakes."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nlet a = [1, 2, 3];\nlet b = a;\nb[0] = 99;\nconsole.log(a[0]);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "99"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "undefined"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "b",
+				"explanation": "Arrays are objects, stored by reference. `b = a` does NOT copy the array — both `a` and `b` point to the SAME array in memory. Changing `b[0]` changes `a[0]` too. To make a copy, use `let b = [...a]`."
+			}
+		]
+	},
+	{
+		"id": 15,
+		"name": "JS: Objects & JSON",
+		"imageUrl": "js_objects",
+		"questions": [
+			{
+				"id": 1,
+				"question": "How do you access the `name` property of `let person = { name: \"Alex\", age: 16 }`?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "person->name"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "person::name"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "person.name"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "person[name]  (without quotes)"
+					}
+				],
+				"answer": "c",
+				"explanation": "Dot notation `object.property` is the standard way to access object properties. Bracket notation with a string also works: `person[\"name\"]`. But `person[name]` without quotes looks for a variable called `name`."
+			},
+			{
+				"id": 2,
+				"question": "What is a key-value pair in a JavaScript object?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "A pair of equal numbers"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "A property name paired with its associated value"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Two arrays combined"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "An array index and its element"
+					}
+				],
+				"answer": "b",
+				"explanation": "Objects store data as key-value pairs. The key is a string identifier (property name), and the value can be any type — number, string, boolean, array, or another object. E.g. `{ age: 16 }` where `\"age\"` is the key and `16` is the value."
+			},
+			{
+				"id": 3,
+				"question": "How do you add a new property to an existing object?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "object.push(\"key\", value)"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "object.add(\"key\", value)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "object.key = value  or  object[\"key\"] = value"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "You cannot add properties after creation"
+					}
+				],
+				"answer": "c",
+				"explanation": "You can add new properties to objects at any time using dot notation or bracket notation with an assignment. `person.email = \"alex@mail.com\"` adds an `email` property."
+			},
+			{
+				"id": 4,
+				"question": "What does `for...in` return when used on an object?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "The values of the object"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "The keys (property names)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "The object converted to an array"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "The number of properties"
+					}
+				],
+				"answer": "b",
+				"explanation": "`for (let key in obj)` iterates over the enumerable property names. To get the value for each key, use `obj[key]` inside the loop."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nlet car = { brand: \"Toyota\", year: 2020 };\nconsole.log(car.brand);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"car.brand\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "{ brand: \"Toyota\" }"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"Toyota\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "undefined"
+					}
+				],
+				"answer": "c",
+				"explanation": "`car.brand` accesses the `brand` property whose value is the string `\"Toyota\"`. That value is what gets logged."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\nlet person = { name: \"Alex\", age: 16 };\nfor (let key in person) {\n  console.log(key + \": \" + person[key]);\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"name\", \"age\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"Alex\", 16"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "name: Alex, age: 16"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "{ name: \"Alex\" }, { age: 16 }"
+					}
+				],
+				"answer": "c",
+				"explanation": "`for...in` gives keys `\"name\"` and `\"age\"`. `person[key]` looks up each value. Concatenation produces `\"name: Alex\"` then `\"age: 16\"`. Note: `person.key` would not work — it looks for a literal property named `\"key\"`."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nlet user = { name: \"Sam\" };\nuser.score = 100;\nconsole.log(user.score);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "undefined"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Error: property doesn't exist"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "null"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "100"
+					}
+				],
+				"answer": "d",
+				"explanation": "You can add new properties to objects after creation. `user.score = 100` adds the `score` property with value `100`. Accessing it immediately with `user.score` returns `100`."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nlet obj = { a: 1, b: 2, c: 3 };\nconsole.log(obj[\"b\"]);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "2"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"b\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "undefined"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "1"
+					}
+				],
+				"answer": "a",
+				"explanation": "Bracket notation `obj[\"b\"]` is fully equivalent to dot notation `obj.b`. Both access the property named `\"b\"`, whose value is `2`."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nlet person = { name: \"Alex\", age: 16 };\nconsole.log(person.height);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Error: property not found"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "null"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "0"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "undefined"
+					}
+				],
+				"answer": "d",
+				"explanation": "Accessing a property that doesn't exist on an object returns `undefined` — no error is thrown. This is different from some other languages and can cause silent bugs if you misspell a property name."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nlet config = {};\nlet key = \"theme\";\nconfig[key] = \"dark\";\nconsole.log(config.theme);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "undefined"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Error"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"key\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"dark\""
+					}
+				],
+				"answer": "d",
+				"explanation": "Bracket notation `config[key]` evaluates the variable `key` first, getting `\"theme\"`. It then sets `config[\"theme\"] = \"dark\"`. Dot notation `config.theme` and bracket `config[\"theme\"]` both access the same property. This dynamic key pattern is very common."
+			}
+		]
+	},
+	{
+		"id": 16,
+		"name": "JS: String Methods",
+		"imageUrl": "js_strings",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What does `.length` return on a string?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "The last character"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "The total number of characters"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "The word count"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "The index of the last character"
+					}
+				],
+				"answer": "b",
+				"explanation": "`.length` returns the total number of characters. `\"hello\".length` returns `5`. Spaces and punctuation count: `\"hi there\".length` is `8`."
+			},
+			{
+				"id": 2,
+				"question": "What does `.toUpperCase()` do?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Checks if the string is already uppercase"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Capitalizes only the first letter"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Returns a new string with all letters uppercased"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Modifies the original string in place"
+					}
+				],
+				"answer": "c",
+				"explanation": "`.toUpperCase()` returns a NEW string with every letter converted to uppercase. Strings in JavaScript are immutable — the original is unchanged. `\"hello\".toUpperCase()` returns `\"HELLO\"`."
+			},
+			{
+				"id": 3,
+				"question": "What does `.includes()` return?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "The index where the substring starts"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "A boolean — true if the substring is found"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "An array of matches"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "The matched substring"
+					}
+				],
+				"answer": "b",
+				"explanation": "`.includes(substring)` returns `true` if the substring is found anywhere in the string, `false` otherwise. `\"hello world\".includes(\"world\")` returns `true`."
+			},
+			{
+				"id": 4,
+				"question": "What does `.trim()` remove?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "All spaces everywhere in the string"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "The last character"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Leading and trailing whitespace only"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Special characters"
+					}
+				],
+				"answer": "c",
+				"explanation": "`.trim()` removes whitespace (spaces, tabs, newlines) from the START and END of a string only — NOT from the middle. `\"  hello  \".trim()` returns `\"hello\"`."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nlet str = \"JavaScript\";\nconsole.log(str[0]);\nconsole.log(str.length);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"J\", 9"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"J\", 10"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"j\", 10"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "1, 10"
+					}
+				],
+				"answer": "b",
+				"explanation": "`str[0]` accesses the first character at index `0`, which is `\"J\"`. `\"JavaScript\"` has 10 characters (J-a-v-a-S-c-r-i-p-t), so `.length` is `10`."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\nlet msg = \"  Hello World  \";\nconsole.log(msg.trim());",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"  Hello World  \""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"HelloWorld\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"Hello World\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"hello world\""
+					}
+				],
+				"answer": "c",
+				"explanation": "`.trim()` removes the leading and trailing spaces. The space between `Hello` and `World` remains — only outer whitespace is stripped. Result: `\"Hello World\"`."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nlet text = \"banana\";\nconsole.log(text.includes(\"nan\"));\nconsole.log(text.toUpperCase());",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "false, \"BANANA\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "true, \"banana\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "true, \"BANANA\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "false, \"Banana\""
+					}
+				],
+				"answer": "c",
+				"explanation": "`\"banana\".includes(\"nan\")` — `\"nan\"` appears in `ba-nan-a` → `true`. `.toUpperCase()` converts every letter → `\"BANANA\"`."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nlet str = \"hello world\";\nlet parts = str.split(\" \");\nconsole.log(parts[1]);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"hello\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"world\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[\"hello\", \"world\"]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\" \""
+					}
+				],
+				"answer": "b",
+				"explanation": "`.split(\" \")` splits by spaces, creating `[\"hello\", \"world\"]`. `parts[1]` accesses index `1` which is `\"world\"`."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nlet str = \"Hello\";\nstr[0] = \"J\";\nconsole.log(str);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"Jello\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Error"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"Hello\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"J\""
+					}
+				],
+				"answer": "c",
+				"explanation": "Strings in JavaScript are immutable. You cannot change individual characters by index assignment. `str[0] = \"J\"` silently does nothing. `str` remains `\"Hello\"`. Use `.replace()` or string rebuilding to modify strings."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nconsole.log(\"5\" + 3);\nconsole.log(\"5\" - 3);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "8, 2"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"53\", \"53\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"53\", 2"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "8, \"53\""
+					}
+				],
+				"answer": "c",
+				"explanation": "`+` with a string performs concatenation — `\"5\" + 3` → `\"53\"`. But `-` has no string version, so JavaScript coerces `\"5\"` to the number `5` and computes `5 - 3 = 2`. This is type coercion and a common source of bugs."
+			}
+		]
+	},
+	{
+		"id": 17,
+		"name": "JS: Math & Operators",
+		"imageUrl": "js_math",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What does the `%` (modulo) operator return?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "The result of division as a float"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "The integer quotient"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "The remainder after division"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "The absolute value"
+					}
+				],
+				"answer": "c",
+				"explanation": "`%` gives the remainder left over after integer division. `10 % 3 = 1` because 10 ÷ 3 = 3 remainder 1. Commonly used to check if a number is even: `n % 2 === 0`."
+			},
+			{
+				"id": 2,
+				"question": "What does `Math.max()` do?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Returns the average"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Returns the smallest number"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Returns the largest number among its arguments"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Returns the sum"
+					}
+				],
+				"answer": "c",
+				"explanation": "`Math.max(3, 8, 1, 5)` returns `8`. When used with an array, spread it first: `Math.max(...arr)`."
+			},
+			{
+				"id": 3,
+				"question": "What does `Math.round()` do?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Always rounds down"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Always rounds up"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Rounds to the nearest integer"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Removes the decimal part"
+					}
+				],
+				"answer": "c",
+				"explanation": "`Math.round(4.7)` returns `5`, `Math.round(4.4)` returns `4`. Rule: decimal >= 0.5 rounds up; below 0.5 rounds down. `Math.floor` always rounds down, `Math.ceil` always rounds up."
+			},
+			{
+				"id": 4,
+				"question": "What does the `/` operator return in JavaScript for non-even divisions?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "JavaScript automatically floors the result"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "JavaScript returns a float"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "JavaScript throws an error"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "JavaScript rounds to the nearest integer"
+					}
+				],
+				"answer": "b",
+				"explanation": "JavaScript's `/` always returns a float when the result isn't a whole number. `10 / 3` returns `3.333...`, not `3`. Use `Math.floor(10 / 3)` to get integer division."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nconsole.log(10 % 3);\nconsole.log(10 % 2);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "3, 0"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "1, 0"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3, 1"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "0, 1"
+					}
+				],
+				"answer": "b",
+				"explanation": "`10 % 3`: 10 ÷ 3 = 3 remainder **1**. `10 % 2`: 10 ÷ 2 = 5 remainder **0**. Remainder `0` means the number divides evenly — the standard even-number check."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\nlet candles = [3, 8, 1, 6, 5];\nlet max = Math.max(...candles);\nconsole.log(max);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "5"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "6"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "8"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "[8]"
+					}
+				],
+				"answer": "c",
+				"explanation": "`...candles` spreads the array elements as individual arguments: `Math.max(3, 8, 1, 6, 5)`. The maximum value is `8`."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nconsole.log(Math.round(4.5));\nconsole.log(Math.round(4.4));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "4, 4"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "5, 5"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "5, 4"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "4, 5"
+					}
+				],
+				"answer": "c",
+				"explanation": "`Math.round(4.5)` → `5` (halfway always rounds up). `Math.round(4.4)` → `4` (below halfway rounds down)."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nconsole.log(7 / 2);\nconsole.log(Math.floor(7 / 2));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "3, 3"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "3.5, 4"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3.5, 3"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "4, 3"
+					}
+				],
+				"answer": "c",
+				"explanation": "`7 / 2 = 3.5` — JavaScript returns a float. `Math.floor(3.5) = 3` — floor always rounds DOWN. Combine `/` with `Math.floor()` to get integer division."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nconsole.log(0.1 + 0.2 === 0.3);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "true"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "TypeError"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "undefined"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "false"
+					}
+				],
+				"answer": "d",
+				"explanation": "Classic floating-point precision issue. `0.1 + 0.2` in binary floating point equals `0.30000000000000004`, not exactly `0.3`. So the strict equality check fails. Use `Math.abs(a - b) < 0.0001` for float comparisons."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nconsole.log(5 % 5);\nconsole.log(3 % 7);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1, 3"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "5, 3"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "0, 3"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "0, 7"
+					}
+				],
+				"answer": "c",
+				"explanation": "`5 % 5 = 0` — any number modulo itself is `0` (divides evenly). `3 % 7 = 3` — when the dividend is smaller than the divisor, the remainder IS the dividend (7 goes into 3 zero times, leaving 3)."
+			}
+		]
+	},
+	{
+		"id": 18,
+		"name": "JS: Sets",
+		"imageUrl": "js_sets",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What makes a `Set` different from an array?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "A Set is ordered by value automatically"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "A Set only stores numbers"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "A Set automatically removes duplicate values"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "A Set has a fixed size"
+					}
+				],
+				"answer": "c",
+				"explanation": "A `Set` only stores unique values. If you try to add a value that already exists, it's silently ignored. `new Set([1, 2, 2, 3])` contains just `{1, 2, 3}`. Arrays allow duplicates; Sets do not."
+			},
+			{
+				"id": 2,
+				"question": "How do you add a value to a Set?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "set.push(value)"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "set.append(value)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "set.add(value)"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "set[index] = value"
+					}
+				],
+				"answer": "c",
+				"explanation": "Sets use `.add()`, not `.push()` (which is for arrays). `mySet.add(5)` adds `5` to the set. If `5` is already present, nothing changes — Sets are deduplicated automatically."
+			},
+			{
+				"id": 3,
+				"question": "How do you check if a value exists in a Set?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "set.contains(value)"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "set.includes(value)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "set.has(value)"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "set.find(value)"
+					}
+				],
+				"answer": "c",
+				"explanation": "Sets use `.has()` for membership checks — returns `true` if found, `false` otherwise. Arrays use `.includes()`. This is one of the key API differences between Sets and arrays."
+			},
+			{
+				"id": 4,
+				"question": "How do you get the number of elements in a Set?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "set.length"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "set.count"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "set.size"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "set.total()"
+					}
+				],
+				"answer": "c",
+				"explanation": "Sets use `.size` (not `.length`). `new Set([1, 2, 3]).size` returns `3`. This is a subtle but important difference from arrays."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nlet s = new Set([1, 2, 2, 3, 3, 3]);\nconsole.log(s.size);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "6"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "3"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "4"
+					},
+					{
+						"id": 4,
+						"label": "d",
 						"text": "2"
 					}
 				],
 				"answer": "b",
-				"explanation": "permutations([1,2,3], 2) gives all ordered 2-element arrangements: (1,2),(1,3),(2,1),(2,3),(3,1),(3,2). Count = n!/(n-r)! = 3!/(3-2)! = 6."
+				"explanation": "`new Set()` removes all duplicates. `[1, 2, 2, 3, 3, 3]` has three unique values: `1`, `2`, `3`. The Set contains 3 elements, so `.size` returns `3`."
 			},
 			{
-				"id": 9,
-				"question": "What does this print?\ndata = {'alice': [85, 90], 'bob': [70, 80]}\nfor key in data:\n    if key == 'alice':\n        scores = data[key]\ntotal = 0\nfor num in scores:\n    total += num\nprint(total)",
+				"id": 6,
+				"question": "What is the output?\nlet s = new Set([10, 20, 30]);\ns.add(20);\nconsole.log(s.size);",
 				"options": [
 					{
 						"id": 1,
 						"label": "a",
-						"text": "70"
+						"text": "4"
 					},
 					{
 						"id": 2,
 						"label": "b",
-						"text": "150"
+						"text": "3"
 					},
 					{
 						"id": 3,
 						"label": "c",
-						"text": "175"
+						"text": "2"
 					},
 					{
 						"id": 4,
 						"label": "d",
-						"text": "325"
-					}
-				],
-				"answer": "c",
-				"explanation": "The first loop finds key 'alice' and stores [85, 90] in scores. The second loop sums scores: 85 + 90 = 175."
-			},
-			{
-				"id": 10,
-				"question": "What does this print?\nfrom collections import OrderedDict\nd = OrderedDict()\nd['b'] = 2\nd['a'] = 1\nd['c'] = 3\nfor k in d:\n    print(k, end=' ')",
-				"options": [
-					{
-						"id": 1,
-						"label": "a",
-						"text": "a b c"
-					},
-					{
-						"id": 2,
-						"label": "b",
-						"text": "b a c"
-					},
-					{
-						"id": 3,
-						"label": "c",
-						"text": "c b a"
-					},
-					{
-						"id": 4,
-						"label": "d",
-						"text": "Random order"
+						"text": "Error"
 					}
 				],
 				"answer": "b",
-				"explanation": "OrderedDict preserves insertion order. Keys were inserted as b, then a, then c \u2014 so they print in that exact order: b a c. Note: regular dicts in Python 3.7+ also preserve insertion order."
+				"explanation": "`20` already exists in the Set. `.add(20)` has no effect — Sets silently ignore duplicate additions. The size stays `3`."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nlet s = new Set([\"a\", \"b\", \"c\"]);\nconsole.log(s.has(\"b\"));\nconsole.log(s.has(\"z\"));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "false, true"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "true, true"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "false, false"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "true, false"
+					}
+				],
+				"answer": "d",
+				"explanation": "`\"b\"` is in the Set → `.has(\"b\")` returns `true`. `\"z\"` is not in the Set → `.has(\"z\")` returns `false`."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nlet nums = [1, 1, 2, 2, 3];\nlet unique = [...new Set(nums)];\nconsole.log(unique);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[1, 2, 3]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Set {1, 2, 3}"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[1, 1, 2, 2, 3]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "[3, 2, 1]"
+					}
+				],
+				"answer": "a",
+				"explanation": "`new Set(nums)` creates `{1, 2, 3}` (deduped). Spreading it with `[...set]` converts it back to a plain array `[1, 2, 3]`. This is the standard one-liner for removing duplicates from an array."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nlet s = new Set([1, \"1\"]);\nconsole.log(s.size);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "2"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Error"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "0"
+					}
+				],
+				"answer": "b",
+				"explanation": "Sets use strict equality (`===`) to check for duplicates. The number `1` and the string `\"1\"` are different types — they are NOT `===` equal. So both are stored and `.size` is `2`."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nlet s = new Set([3, 1, 2]);\nfor (let val of s) {\n  console.log(val);\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1, 2, 3  (sorted)"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "3, 2, 1  (reversed)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Error: Sets are not iterable"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "3, 1, 2  (insertion order)"
+					}
+				],
+				"answer": "d",
+				"explanation": "Sets preserve insertion order. Elements are iterated in the order they were added, not sorted. `3` was inserted first, so it comes first. Sets ARE iterable with `for...of`."
+			}
+		]
+	},
+	{
+		"id": 19,
+		"name": "JS: Nested Loops",
+		"imageUrl": "js_nested",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is a nested loop?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "A loop that skips every other iteration"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "A loop that runs forever"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "A loop placed inside another loop"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "A loop with multiple conditions"
+					}
+				],
+				"answer": "c",
+				"explanation": "A nested loop is a loop inside another loop. The inner loop runs completely for each single iteration of the outer loop. If outer runs 3 times and inner runs 3 times, the inner body executes 3 × 3 = 9 times."
+			},
+			{
+				"id": 2,
+				"question": "How many times does the inner body run?\nfor (let i = 0; i < 3; i++) {\n  for (let j = 0; j < 4; j++) { /* body */ }\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "7  (3 + 4)"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "12  (3 × 4)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "4"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "3"
+					}
+				],
+				"answer": "b",
+				"explanation": "The outer loop runs 3 times. For each of those, the inner loop runs 4 times. Total: 3 × 4 = 12 executions of the inner body. Nested loops multiply, they don't add."
+			},
+			{
+				"id": 3,
+				"question": "What is the typical time complexity of a double nested loop over n elements?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "O(n)"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "O(log n)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "O(n²)"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "O(2n)"
+					}
+				],
+				"answer": "c",
+				"explanation": "If both loops iterate `n` times, the body runs `n × n = n²` times. For n=1000 that's 1,000,000 iterations. This is why deeply nested loops can slow programs significantly on large datasets."
+			},
+			{
+				"id": 4,
+				"question": "What is a common use case for nested loops?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Reading files from disk"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Iterating over a 2D array (grid or matrix)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Recursion"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Handling click events"
+					}
+				],
+				"answer": "b",
+				"explanation": "Nested loops are ideal for 2D structures. The outer loop handles rows, the inner handles columns — every `grid[row][col]` combination can be reached. Also used for comparing pairs of elements in an array."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nfor (let i = 1; i <= 2; i++) {\n  for (let j = 1; j <= 2; j++) {\n    console.log(i + \",\" + j);\n  }\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1,1  2,2"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "1,1  1,2  2,1  2,2"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "1,2  2,1"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "1,1  2,1  1,2  2,2"
+					}
+				],
+				"answer": "b",
+				"explanation": "For `i=1`: inner runs `j=1` → `\"1,1\"`, then `j=2` → `\"1,2\"`. For `i=2`: `j=1` → `\"2,1\"`, then `j=2` → `\"2,2\"`. Total 4 lines in that order."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\nlet count = 0;\nfor (let i = 0; i < 3; i++) {\n  for (let j = 0; j < 3; j++) {\n    count++;\n  }\n}\nconsole.log(count);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "6"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "3"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "9"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "0"
+					}
+				],
+				"answer": "c",
+				"explanation": "Each loop runs 3 times. `count++` runs 3 × 3 = 9 times. Starting at `0` and incrementing 9 times gives `9`."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nfor (let i = 0; i < 3; i++) {\n  for (let j = 0; j < 3; j++) {\n    if (j === 1) break;\n    console.log(i, j);\n  }\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "0 0, 1 0, 2 0"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "0 0, 0 1, 1 0, 1 1, 2 0, 2 1"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "0 0"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "0 0, 0 1, 0 2, 1 0, 1 1, 1 2..."
+					}
+				],
+				"answer": "a",
+				"explanation": "`break` exits only the INNER loop. When `j === 1`, the inner loop exits but the outer continues. For each `i` (0, 1, 2), only `j = 0` prints before break fires. Output: `0 0`, `1 0`, `2 0`."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nlet grid = [[1, 2], [3, 4]];\nfor (let i = 0; i < grid.length; i++) {\n  for (let j = 0; j < grid[i].length; j++) {\n    console.log(grid[i][j]);\n  }\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[1, 2], [3, 4]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "1, 3, 2, 4"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "1, 2, 3, 4"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "grid[0][0], grid[0][1]..."
+					}
+				],
+				"answer": "c",
+				"explanation": "Outer loop iterates rows: `i=0` → row `[1,2]`, `i=1` → row `[3,4]`. Inner loop iterates columns. Output order: `grid[0][0]=1`, `grid[0][1]=2`, `grid[1][0]=3`, `grid[1][1]=4`."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nfor (let i = 0; i < 3; i++) {\n  for (let j = i; j < 3; j++) {\n    console.log(j);\n  }\n}",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "0,1,2, 0,1,2, 0,1,2"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "0,1,2, 1,2, 2"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "0, 1, 2"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "2, 1, 0"
+					}
+				],
+				"answer": "b",
+				"explanation": "The inner loop starts at `j = i`, not `j = 0`. For `i=0`: j prints 0,1,2. For `i=1`: j prints 1,2. For `i=2`: j prints 2 only. A triangular pattern of decreasing iterations."
+			},
+			{
+				"id": 10,
+				"question": "In a nested loop, what does `break` affect?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Both the inner and outer loop"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Only the outer loop"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Only the innermost loop it is placed in"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "The entire program"
+					}
+				],
+				"answer": "c",
+				"explanation": "`break` exits only the loop it directly belongs to. If placed in the inner loop, it exits the inner loop and returns to the outer loop. To break both loops, use a boolean flag variable checked in the outer loop's condition."
+			}
+		]
+	},
+	{
+		"id": 20,
+		"name": "JS: Recursive Functions",
+		"imageUrl": "js_recursive",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is a recursive function?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "A function that takes no arguments"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "A function that calls itself inside its own body"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "A function defined inside another function"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "A function that runs in reverse order"
+					}
+				],
+				"answer": "b",
+				"explanation": "A recursive function calls itself within its own body. Each call works on a smaller version of the problem until it reaches the base case. Recursion is an alternative to iteration for problems with repetitive substructure."
+			},
+			{
+				"id": 2,
+				"question": "What is the \"base case\" in recursion?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "The first call to the function"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "The condition that stops the recursion"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "The return value of the last call"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "The largest input the function can handle"
+					}
+				],
+				"answer": "b",
+				"explanation": "The base case is the condition that, when true, returns immediately without making another recursive call. Without a base case, the function calls itself forever causing a stack overflow."
+			},
+			{
+				"id": 3,
+				"question": "What happens if a recursive function has no base case?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "It returns undefined after 1 call"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "It runs exactly once"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "It causes a stack overflow error"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "JavaScript automatically stops it after 100 calls"
+					}
+				],
+				"answer": "c",
+				"explanation": "Each function call is added to the call stack. Without a base case, calls stack up indefinitely until JavaScript throws \"Maximum call stack size exceeded\" — a stack overflow."
+			},
+			{
+				"id": 4,
+				"question": "What is the \"recursive case\"?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "The part where the function returns a fixed value"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "The part where the function calls itself with a modified argument"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "The part where the function accepts parameters"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "The condition that ends the recursion"
+					}
+				],
+				"answer": "b",
+				"explanation": "The recursive case calls the function again with a simpler or reduced input, moving the problem closer to the base case each time. Without progress toward the base case you'd still get infinite recursion."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nfunction countdown(n) {\n  if (n === 0) return;\n  console.log(n);\n  countdown(n - 1);\n}\ncountdown(3);",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "0, 1, 2, 3"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "3, 2, 1, 0"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3, 2, 1"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "1, 2, 3"
+					}
+				],
+				"answer": "c",
+				"explanation": "`countdown(3)` logs `3` then calls `countdown(2)`, which logs `2` then calls `countdown(1)`, which logs `1` then calls `countdown(0)`. At `n === 0` the function returns without logging. Output: `3, 2, 1`."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\nfunction factorial(n) {\n  if (n === 0) return 1;\n  return n * factorial(n - 1);\n}\nconsole.log(factorial(4));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "24"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "12"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "16"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "10"
+					}
+				],
+				"answer": "a",
+				"explanation": "Unwinds as: 4 × factorial(3) = 4 × 3 × factorial(2) = 4 × 3 × 2 × factorial(1) = 4 × 3 × 2 × 1 × factorial(0) = 4 × 3 × 2 × 1 × 1 = `24`."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nfunction sum(n) {\n  if (n <= 0) return 0;\n  return n + sum(n - 1);\n}\nconsole.log(sum(4));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "16"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "4"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "10"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "0"
+					}
+				],
+				"answer": "c",
+				"explanation": "`sum(4)` = 4 + sum(3) = 4 + 3 + sum(2) = 4 + 3 + 2 + sum(1) = 4 + 3 + 2 + 1 + sum(0) = 4 + 3 + 2 + 1 + 0 = `10`."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nfunction power(base, exp) {\n  if (exp === 0) return 1;\n  return base * power(base, exp - 1);\n}\nconsole.log(power(2, 3));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "6"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "8"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "9"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "16"
+					}
+				],
+				"answer": "b",
+				"explanation": "`power(2, 3)` = 2 × power(2,2) = 2 × 2 × power(2,1) = 2 × 2 × 2 × power(2,0) = 2 × 2 × 2 × 1 = `8`. This is 2³ = 8."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nfunction mystery(n) {\n  if (n <= 1) return n;\n  return mystery(n - 1) + mystery(n - 2);\n}\nconsole.log(mystery(5));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "4"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "8"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "5"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "3"
+					}
+				],
+				"answer": "c",
+				"explanation": "This is the Fibonacci sequence. `mystery(5)` expands to the 5th Fibonacci number. The sequence is: 0, 1, 1, 2, 3, **5**. So the answer is `5`."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nfunction rev(str) {\n  if (str.length === 0) return \"\";\n  return rev(str.slice(1)) + str[0];\n}\nconsole.log(rev(\"abc\"));",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"abc\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"cba\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"a\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"\""
+					}
+				],
+				"answer": "b",
+				"explanation": "Each call removes the first character and appends it after the recursive result. `rev(\"abc\")` = rev(\"bc\") + \"a\" = (rev(\"c\") + \"b\") + \"a\" = ((rev(\"\") + \"c\") + \"b\") + \"a\" = \"\" + \"c\" + \"b\" + \"a\" = `\"cba\"`."
 			}
 		]
 	}
