@@ -11,6 +11,8 @@
 
 	let currentQuestionIndex = 0;
 	$: question = data.questions[currentQuestionIndex];
+	$: total = data.questions.length;
+	$: progressWidth = (currentQuestionIndex / total) * 100;
 
 	let answersValue: Answer[];
 	answers.subscribe((value) => {
@@ -64,21 +66,41 @@
 </script>
 
 <div class="w-full">
-	<div class="flex justify-center">
-		{#each answersValue as answer}
-			<QuestionProgressCircle isCorrect={answer.isCorrect} />
-		{/each}
+	<div class="mb-6">
+		<div class="flex items-center justify-between mb-3">
+			<span class="text-slate-400 text-sm font-medium">{data.name}</span>
+			<span class="text-slate-400 text-sm font-medium">
+				<span class="text-white font-bold">{currentQuestionIndex + 1}</span> / {total}
+			</span>
+		</div>
+
+		<div class="w-full h-1.5 rounded-full overflow-hidden" style="background: rgba(255,255,255,0.1);">
+			<div
+				class="h-full rounded-full transition-all duration-500"
+				style="width: {progressWidth}%; background: linear-gradient(to right, #6366f1, #8b5cf6);"
+			/>
+		</div>
+
+		<div class="flex justify-center mt-3">
+			{#each answersValue as answer, i}
+				<QuestionProgressCircle isCorrect={answer.isCorrect} isCurrent={i === currentQuestionIndex} />
+			{/each}
+		</div>
 	</div>
+
 	<QuestionText text={question.question} />
-	<div class="flex justify-between flex-wrap cursor-pointer">
+
+	<div class="flex justify-between flex-wrap">
 		{#each question.options as option (option.id)}
 			<QuestionOption
 				{option}
 				{selectedOption}
 				{handleChangeOption}
 				{submitted}
+				correctAnswer={question.answer}
 			/>
 		{/each}
 	</div>
+
 	<QuestionButton {handleSubmit} {handleNext} {submitted} />
 </div>

@@ -3,7 +3,9 @@
     "allow": [
       "Bash(npm run *)",
       "Bash(npm install *)",
-      "Bash(node -e \"console.log\\(require\\('./node_modules/@sveltejs/kit/package.json'\\).version, require\\('./node_modules/@sveltejs/adapter-vercel/package.json'\\).version\\)\")"
+      "Bash(node -e \"console.log\\(require\\('./node_modules/@sveltejs/kit/package.json'\\).version, require\\('./node_modules/@sveltejs/adapter-vercel/package.json'\\).version\\)\")",
+      "Bash(grep -v \"\\\\\"id\\\\\": [0-9]\\\\+,$\")",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

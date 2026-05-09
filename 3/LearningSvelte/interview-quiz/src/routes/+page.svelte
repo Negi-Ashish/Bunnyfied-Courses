@@ -3,12 +3,17 @@
 	import Card from '../components/Card.svelte';
 </script>
 
-{#each quizzes.filter((q) => q.id >= 4) as quiz}
-	<Card {quiz} />
-{/each}
-
-<style lang="postcss">
-	:global(html) {
-		background-color: theme(colors.gray.100);
-	}
-</style>
+<div class="w-full">
+	<div class="text-center mb-10">
+		<p class="text-indigo-400 uppercase tracking-widest text-xs font-semibold mb-2">
+			Sharpen Your Skills
+		</p>
+		<h1 class="text-4xl font-bold text-white mb-3">Interview Quiz</h1>
+		<p class="text-slate-400 text-sm">Choose a topic and test your knowledge</p>
+	</div>
+	<div class="flex flex-wrap justify-center gap-5">
+		{#each quizzes.filter((q) => q.id >= 4) as quiz}
+			<Card {quiz} />
+		{/each}
+	</div>
+</div>

@@ -18,12 +18,23 @@
 </script>
 
 <button
-	class="quiz-card shadow w-[250px] rounded overflow-hidden cursor-pointer m-2"
+	class="group w-[220px] rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+	style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px);"
 	on:click={() => goto(`/quiz/${quiz.id}`)}
 >
-	<img class="h-44" src={images[quiz.imageUrl]} alt="" />
-	<div class="flex items-center justify-between py-3 px-2">
-		<h1 class="font-bold">{quiz.name}</h1>
-		<p>{quiz.questions.length} questions</p>
+	<div class="relative overflow-hidden h-40">
+		<img
+			class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+			src={images[quiz.imageUrl]}
+			alt=""
+		/>
+		<div
+			class="absolute inset-0"
+			style="background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.6) 100%);"
+		></div>
+	</div>
+	<div class="p-4 text-left">
+		<h1 class="font-bold text-white text-lg">{quiz.name}</h1>
+		<p class="text-indigo-400 text-sm mt-1">{quiz.questions.length} questions</p>
 	</div>
 </button>

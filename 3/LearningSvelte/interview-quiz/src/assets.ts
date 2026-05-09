@@ -5,3 +5,11 @@ export const mathematics =
 
 export const computer = 'https://image.lexica.art/full_webp/42a1376f-b990-44a1-bf81-dee814939cca';
 
+export const python = 'https://picsum.photos/seed/python-basics/800/500';
+
+export const python2 = 'https://picsum.photos/seed/python-functions/800/500';
+
+export const python3 = 'https://picsum.photos/seed/python-oop/800/500';
+
+export const python4 = 'https://picsum.photos/seed/python-advanced/800/500';
+
