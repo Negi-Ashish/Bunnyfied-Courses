@@ -5437,5 +5437,2301 @@
 				"explanation": "Each call removes the first character and appends it after the recursive result. `rev(\"abc\")` = rev(\"bc\") + \"a\" = (rev(\"c\") + \"b\") + \"a\" = ((rev(\"\") + \"c\") + \"b\") + \"a\" = \"\" + \"c\" + \"b\" + \"a\" = `\"cba\"`."
 			}
 		]
+	},
+	{
+		"id": 21,
+		"name": "Python: Print & If/Else",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the exact output of this line?\nprint(\"Hello, World\")",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Hello World"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Hello, World"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"Hello, World\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "b",
+				"explanation": "print() outputs exactly what is inside the quotes, including punctuation. The comma is part of the string so it prints: Hello, World — no surrounding quotes in the output."
+			},
+			{
+				"id": 2,
+				"question": "What does `n % 2 == 1` check?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "If n is even"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "If n is odd"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "If n is greater than 2"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "If n is divisible by 2"
+					}
+				],
+				"answer": "b",
+				"explanation": "% is the modulo operator — it gives the remainder after division. If n % 2 == 1, the remainder when dividing by 2 is 1, which means n is odd. Even numbers have remainder 0."
+			},
+			{
+				"id": 3,
+				"question": "What is the output when n = 3?\nif n % 2 == 1:\n    print(\"Weird\")\nelse:\n    if n >= 2 and n <= 5:\n        print(\"Not Weird\")\n    elif n >= 6 and n <= 20:\n        print(\"Weird\")\n    elif n > 20:\n        print(\"Not Weird\")",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Not Weird"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Weird"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Nothing"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "b",
+				"explanation": "n=3. 3 % 2 == 1 is True (3 is odd), so the very first branch runs and prints \"Weird\". The entire else block is skipped."
+			},
+			{
+				"id": 4,
+				"question": "What is the output when n = 4?\nif n % 2 == 1:\n    print(\"Weird\")\nelse:\n    if n >= 2 and n <= 5:\n        print(\"Not Weird\")\n    elif n >= 6 and n <= 20:\n        print(\"Weird\")\n    elif n > 20:\n        print(\"Not Weird\")",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Weird"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Not Weird"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Nothing"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "b",
+				"explanation": "n=4. 4 % 2 == 1 is False (4 is even). Goes to else. 4 >= 2 and 4 <= 5 is True → prints \"Not Weird\"."
+			},
+			{
+				"id": 5,
+				"question": "What is the output when n = 10?\nif n % 2 == 1:\n    print(\"Weird\")\nelse:\n    if n >= 2 and n <= 5:\n        print(\"Not Weird\")\n    elif n >= 6 and n <= 20:\n        print(\"Weird\")\n    elif n > 20:\n        print(\"Not Weird\")",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Not Weird"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Weird"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Nothing"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "b",
+				"explanation": "n=10. 10 % 2 == 1 is False. Goes to else. 10 >= 2 and 10 <= 5 is False. 10 >= 6 and 10 <= 20 is True → prints \"Weird\"."
+			},
+			{
+				"id": 6,
+				"question": "What is the output when n = 22?\nif n % 2 == 1:\n    print(\"Weird\")\nelse:\n    if n >= 2 and n <= 5:\n        print(\"Not Weird\")\n    elif n >= 6 and n <= 20:\n        print(\"Weird\")\n    elif n > 20:\n        print(\"Not Weird\")",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Weird"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Not Weird"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Nothing"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "b",
+				"explanation": "n=22. 22 % 2 == 1 is False (even). Goes to else. First two conditions are False. 22 > 20 is True → prints \"Not Weird\"."
+			},
+			{
+				"id": 7,
+				"question": "What does the `and` keyword require?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "At least one condition must be True"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Both conditions must be True"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Neither condition must be True"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Exactly one condition must be True"
+					}
+				],
+				"answer": "b",
+				"explanation": "and returns True only if ALL conditions on both sides are True. If either is False, the whole expression is False. Example: n >= 2 and n <= 5 is only True if n satisfies BOTH conditions."
+			},
+			{
+				"id": 8,
+				"question": "What is the difference between `elif` and `else`?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "They do the same thing"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "elif checks a specific condition; else runs when all above conditions are False"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "else checks a condition; elif doesn't"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "elif always runs last"
+					}
+				],
+				"answer": "b",
+				"explanation": "elif (else if) lets you check another specific condition with a test. else is a catch-all — it runs only when all preceding if and elif conditions were False. else never has a condition."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nprint(\"Hello\", \"World\")",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "HelloWorld"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Hello, World"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Hello World"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "(\"Hello\", \"World\")"
+					}
+				],
+				"answer": "c",
+				"explanation": "When print() receives multiple arguments, it joins them with a single space by default. print(\"Hello\", \"World\") outputs: Hello World — no comma, just a space between them."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nx = 15\nif x > 10:\n    print(\"Big\")\nelif x > 5:\n    print(\"Medium\")\nelse:\n    print(\"Small\")",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Big"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Medium"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Big and Medium"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Small"
+					}
+				],
+				"answer": "a",
+				"explanation": "x=15. 15 > 10 is True → prints \"Big\" and the rest of the chain is skipped immediately. Even though 15 > 5 is also True, elif only runs if the if was False. Only one branch ever executes."
+			}
+		]
+	},
+	{
+		"id": 22,
+		"name": "Python: For Loops",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What values does `range(0, 5)` produce?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "0, 1, 2, 3, 4, 5"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "1, 2, 3, 4, 5"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "0, 1, 2, 3, 4"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "0, 1, 2, 3, 4, 5, 6"
+					}
+				],
+				"answer": "c",
+				"explanation": "range(start, stop) generates numbers from start up to but NOT including stop. range(0, 5) gives 0, 1, 2, 3, 4 — the value 5 is never included."
+			},
+			{
+				"id": 2,
+				"question": "What is the output?\nfor i in range(0, 4):\n    print(i * i)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "0, 1, 2, 3"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "0, 1, 4, 9"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "1, 4, 9, 16"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "0, 1, 4, 9, 16"
+					}
+				],
+				"answer": "b",
+				"explanation": "range(0,4) gives 0,1,2,3. Each value is squared: 0²=0, 1²=1, 2²=4, 3²=9. Output: 0, 1, 4, 9 on separate lines."
+			},
+			{
+				"id": 3,
+				"question": "What is the output?\nnums = [2, 3, 5]\ntotal = 0\nfor num in nums:\n    total = total + num\nprint(total)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[2, 3, 5]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "0"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "10"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "c",
+				"explanation": "Loops through the list accumulating: 0+2=2, 2+3=5, 5+5=10. Prints 10. This is the standard pattern for summing a list with a for loop."
+			},
+			{
+				"id": 4,
+				"question": "What is the output?\nstudent_marks = {\"Alice\": 90, \"Bob\": 75}\nfor key in student_marks:\n    if key == \"Bob\":\n        print(student_marks[key])",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "90"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "75"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Bob"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "{\"Bob\": 75}"
+					}
+				],
+				"answer": "b",
+				"explanation": "for key in dict iterates over keys. When key is \"Bob\", student_marks[\"Bob\"] retrieves the value 75. This is the pattern for looping through a dictionary and accessing a specific key's value."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nfor i in range(1, 5, 2):\n    print(i)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1, 2, 3, 4"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "1, 3"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "1, 3, 5"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "2, 4"
+					}
+				],
+				"answer": "b",
+				"explanation": "range(start, stop, step) with step=2 skips every other number. Starts at 1, next is 3, next would be 5 but 5 is not < 5. So only 1 and 3 are printed."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\ndata = {\"x\": 10, \"y\": 20, \"z\": 30}\ntotal = 0\nfor key in data:\n    total += data[key]\nprint(total)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "10"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "30"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "60"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "c",
+				"explanation": "Loops over all keys, accessing and summing values: 10+20+30=60. total += data[key] is shorthand for total = total + data[key]."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nfor i in range(3, 0, -1):\n    print(i)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "0, 1, 2"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "3, 2, 1"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3, 2, 1, 0"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "b",
+				"explanation": "range(3, 0, -1) counts DOWN from 3, stopping before reaching 0. Prints 3, 2, 1. A negative step makes range count backwards."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nnums = [1, 2, 3]\nfor i in range(len(nums)):\n    nums[i] = nums[i] * 2\nprint(nums)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[1, 2, 3]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "[2, 4, 6]"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[2, 4, 6, 2, 4, 6]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "b",
+				"explanation": "range(len(nums)) gives indices 0,1,2. Each element is doubled in place: nums[0]=2, nums[1]=4, nums[2]=6. The original list is mutated."
+			},
+			{
+				"id": 9,
+				"question": "How many times does the loop body run?\nfor i in range(0, 10, 3):\n    print(i)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "10"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "3"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "4"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "5"
+					}
+				],
+				"answer": "c",
+				"explanation": "range(0, 10, 3) gives: 0, 3, 6, 9 — stops before reaching 10. That is 4 values, so the body runs 4 times."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nmarks = {\"Alice\": [85, 90], \"Bob\": [70, 75]}\nfor key in marks:\n    total = sum(marks[key])\n    print(key, total)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Alice 175, Bob 145"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Alice 85, Bob 70"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "85 90, 70 75"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "a",
+				"explanation": "Loops over both keys. For Alice: sum([85,90])=175. For Bob: sum([70,75])=145. print(key, total) outputs the key and its sum on the same line."
+			}
+		]
+	},
+	{
+		"id": 23,
+		"name": "Python: Functions & Formatting",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What keyword defines a function in Python?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "function"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "func"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "define"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "def"
+					}
+				],
+				"answer": "d",
+				"explanation": "Python uses def to define a function. Syntax: def function_name(parameters): followed by an indented body. Unlike JavaScript there is no function keyword or curly braces — indentation defines the body."
+			},
+			{
+				"id": 2,
+				"question": "What does the function return for year = 2000?\ndef is_leap(year):\n    if (year%4==0 and not(year%100==0)) or year%400==0:\n        return True\n    return False",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "False"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "True"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Error"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "None"
+					}
+				],
+				"answer": "b",
+				"explanation": "2000 % 400 == 0 is True, making the whole condition True → returns True. Year 2000 is a leap year because it is divisible by 400."
+			},
+			{
+				"id": 3,
+				"question": "What does the function return for year = 1900?\ndef is_leap(year):\n    if (year%4==0 and not(year%100==0)) or year%400==0:\n        return True\n    return False",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "True"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "False"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Error"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "None"
+					}
+				],
+				"answer": "b",
+				"explanation": "1900 % 4 == 0 is True, BUT 1900 % 100 == 0 is also True, so not(year%100==0) is False — first part fails. 1900 % 400 != 0 — second part fails. Returns False. 1900 is NOT a leap year."
+			},
+			{
+				"id": 4,
+				"question": "What is the output?\nnumber = 3.14159\nprint(\"%.2f\" % number)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "3.14159"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "3.14"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3.1"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "3.15"
+					}
+				],
+				"answer": "b",
+				"explanation": "%.2f formats a float to exactly 2 decimal places. 3.14159 rounded to 2 decimals: the third decimal is 1 (below 5), so it rounds down → 3.14."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nnumber = 7.0\nprint(f\"{number:.2f}\")",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "7"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "7.0"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "7.00"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "c",
+				"explanation": ":.2f in an f-string always shows exactly 2 decimal places, even for whole numbers. 7.0 becomes 7.00. This is equivalent to \"%.2f\" % number and \"{:.2f}\".format(number)."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\nfor i in range(1, 4):\n    print(i, end=\"\")",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1 2 3"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "1\\n2\\n3"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "123"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "[1, 2, 3]"
+					}
+				],
+				"answer": "c",
+				"explanation": "end=\"\" replaces the default newline with nothing. All values print on the same line with no separator: 123."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nfor i in range(1, 4):\n    print(i, end=\"-\")",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1-2-3"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "1-2-3-"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "-1-2-3"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "123"
+					}
+				],
+				"answer": "b",
+				"explanation": "end=\"-\" appends a dash AFTER each number, including the last. Output is 1-2-3- with a trailing dash. If you want 1-2-3 without the trailing dash, you'd use \"-\".join() instead."
+			},
+			{
+				"id": 8,
+				"question": "What does a Python function return if it has no return statement?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "0"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "False"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "None"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "c",
+				"explanation": "Python functions without a return statement automatically return None. This is Python's equivalent of JavaScript's undefined for functions."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nnumber = 2.675\nprint(\"%.2f\" % number)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "2.68"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "2.67"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "2.70"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "2.6"
+					}
+				],
+				"answer": "b",
+				"explanation": "Due to floating-point representation, 2.675 is stored as slightly less than 2.675 in memory. So it rounds DOWN to 2.67, not up to 2.68. This is a classic floating-point precision trap."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\ndef multiply(a, b):\n    result = a * b\n\nprint(multiply(3, 4))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "12"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "7"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "None"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "c",
+				"explanation": "The function computes a * b but never returns it. Without a return statement, the function returns None. print(None) outputs None."
+			}
+		]
+	},
+	{
+		"id": 24,
+		"name": "Python: Lists & Tuples",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What does `\"-\".join([\"a\", \"b\", \"c\"])` return?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[\"a-b-c\"]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"a-b-c\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"abc\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"a\", \"b\", \"c\""
+					}
+				],
+				"answer": "b",
+				"explanation": ".join() concatenates list elements using the string as a separator. The separator appears BETWEEN elements only, not at the start or end. Result: a-b-c"
+			},
+			{
+				"id": 2,
+				"question": "What is the output?\nL = [3, 1, 4, 1, 5]\nL.append(9)\nL.sort()\nprint(L)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[3, 1, 4, 1, 5, 9]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "[1, 1, 3, 4, 5, 9]"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[9, 5, 4, 3, 1, 1]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "[1, 1, 3, 4, 5]"
+					}
+				],
+				"answer": "b",
+				"explanation": "append(9) adds 9 to the end → [3,1,4,1,5,9]. sort() arranges in ascending order → [1,1,3,4,5,9]."
+			},
+			{
+				"id": 3,
+				"question": "What is the output?\nL = [1, 2, 3, 4, 5]\nL.pop()\nL.reverse()\nprint(L)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[5, 4, 3, 2, 1]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "[4, 3, 2, 1]"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[1, 2, 3, 4]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "[5, 4, 3, 2]"
+					}
+				],
+				"answer": "b",
+				"explanation": "pop() removes the LAST element (5) → [1,2,3,4]. reverse() flips the list in place → [4,3,2,1]."
+			},
+			{
+				"id": 4,
+				"question": "What is the output?\nL = [10, 20, 30, 20, 40]\nL.remove(20)\nprint(L)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[10, 30, 40]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "[10, 30, 20, 40]"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[10, 20, 30, 40]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "b",
+				"explanation": "remove() removes only the FIRST occurrence of the value. 20 appears at index 1 and index 3. Only the first 20 is removed → [10, 30, 20, 40]."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nresult = [x*2 for x in range(1, 5) if x % 2 == 0]\nprint(result)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[2, 4, 6, 8]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "[4, 8]"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[2, 6]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "[1, 2, 3, 4]"
+					}
+				],
+				"answer": "b",
+				"explanation": "range(1,5) = [1,2,3,4]. Filter x%2==0 keeps evens: [2,4]. Multiply each by 2: [4,8]."
+			},
+			{
+				"id": 6,
+				"question": "What is the key difference between a list and a tuple?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Lists use () and tuples use []"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Lists are mutable (can change); tuples are immutable (fixed)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Lists are faster; tuples are slower"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "They are identical"
+					}
+				],
+				"answer": "b",
+				"explanation": "Lists use [] and are mutable — elements can be added, removed, or changed. Tuples use () and are immutable — once created they cannot be modified. Tuples are also faster and use less memory."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nL = [5, 3, 1]\nL.insert(1, 99)\nprint(L)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[99, 5, 3, 1]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "[5, 99, 3, 1]"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[5, 3, 99, 1]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "[5, 3, 1, 99]"
+					}
+				],
+				"answer": "b",
+				"explanation": "insert(index, value) inserts the value BEFORE the given index, shifting everything right. insert(1, 99) puts 99 at index 1 → [5, 99, 3, 1]."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nresult = [[i, j]\n    for i in range(3)\n    for j in range(3)\n    if i != j]\nprint(len(result))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "9"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "6"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "8"
+					}
+				],
+				"answer": "b",
+				"explanation": "3×3=9 total combinations. Where i==j: (0,0),(1,1),(2,2) — 3 pairs excluded. 9-3=6 pass the filter."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nt = (1, 2, 3)\nt[0] = 99\nprint(t)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "(99, 2, 3)"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "(1, 2, 3)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "TypeError"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "[99, 2, 3]"
+					}
+				],
+				"answer": "c",
+				"explanation": "Tuples are immutable. Attempting to change an element raises a TypeError. To modify tuple contents, convert to a list first, change it, then convert back."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nwords = [\"hello\", \"world\", \"python\"]\nprint(\"-\".join(words))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"hello-world-python\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "hello-world-python"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[\"hello-world-python\"]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "hello world python"
+					}
+				],
+				"answer": "b",
+				"explanation": ".join() returns a plain string with no surrounding quotes in the output. Result: hello-world-python. Note there is no trailing dash — the separator only appears between elements."
+			}
+		]
+	},
+	{
+		"id": 25,
+		"name": "Python: Strings",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the output?\ns = \"Hello World\"\nprint(s.swapcase())",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"HELLO WORLD\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"hello world\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"hELLO wORLD\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"Hello World\""
+					}
+				],
+				"answer": "c",
+				"explanation": "swapcase() swaps every character's case: uppercase becomes lowercase and vice versa. H→h, e→E, l→L, l→L, o→O, space unchanged, W→w, o→O, r→R, l→L, d→D → hELLO wORLD"
+			},
+			{
+				"id": 2,
+				"question": "What is the output?\ns = \"hello world python\"\nparts = s.split(\" \")\nprint(parts[2])",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"hello\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"world\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"python\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"python world\""
+					}
+				],
+				"answer": "c",
+				"explanation": "split(\" \") splits by spaces → [\"hello\",\"world\",\"python\"]. Index 2 is \"python\"."
+			},
+			{
+				"id": 3,
+				"question": "What is the output?\nprint(\"ab123\".isalnum())\nprint(\"ab 123\".isalnum())",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "True, True"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "True, False"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "False, True"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "False, False"
+					}
+				],
+				"answer": "b",
+				"explanation": "isalnum() returns True if ALL characters are alphanumeric (letters and digits only). \"ab123\" passes. \"ab 123\" contains a space which is not alphanumeric → False."
+			},
+			{
+				"id": 4,
+				"question": "What is the output?\ndef count_substring(string, sub_string):\n    total = 0\n    for i in range(0, len(string)-len(sub_string)+1):\n        if string[i:i+len(sub_string)] == sub_string:\n            total += 1\n    return total\nprint(count_substring(\"abcabc\", \"abc\"))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "2"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "0"
+					}
+				],
+				"answer": "b",
+				"explanation": "The loop checks every possible starting position using string slicing. \"abc\" matches at index 0 (\"abcabc\"[0:3]) and index 3 (\"abcabc\"[3:6]). Count = 2."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nprint(\"ABCD123#\".isupper())\nprint(\"Abcd123#\".isupper())",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "True, True"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "True, False"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "False, True"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "False, False"
+					}
+				],
+				"answer": "b",
+				"explanation": "isupper() checks cased characters only (ignores digits and symbols). In \"ABCD123#\" all cased chars (A,B,C,D) are uppercase → True. In \"Abcd123#\", b,c,d are lowercase → False."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\ndef mutate_string(string, position, character):\n    test = list(string)\n    test[position] = character\n    return ''.join(test)\nprint(mutate_string(\"python\", 0, \"P\"))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"python\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "\"Python\""
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "\"PYTHON\""
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error: strings are immutable"
+					}
+				],
+				"answer": "b",
+				"explanation": "Converts \"python\" to list ['p','y','t','h','o','n'], changes index 0 from 'p' to 'P', joins back to \"Python\". Converting to list is the standard workaround for string immutability."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nprint(\"Python3\".isalpha())\nprint(\"Python3\".isalnum())",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "True, True"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "False, True"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "True, False"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "False, False"
+					}
+				],
+				"answer": "b",
+				"explanation": "isalpha() → False because '3' is a digit, not a letter. isalnum() → True because all characters are either letters or digits (no spaces or special characters)."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\ns = \"Hello World\"\nwords = s.split(\" \")\nresult = \"-\".join(words)\nprint(result)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "\"Hello World\""
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Hello-World"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[\"Hello\", \"World\"]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "\"Hello -World\""
+					}
+				],
+				"answer": "b",
+				"explanation": "split(\" \") → [\"Hello\",\"World\"]. \"-\".join() → Hello-World. This split-then-join pattern is a common way to replace one separator with another."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nprint(\"abcd\".isalpha())\nprint(\"abcd1\".isalpha())",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "True, True"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "True, False"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "False, True"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "False, False"
+					}
+				],
+				"answer": "b",
+				"explanation": "isalpha() returns True only if ALL characters are alphabetical. \"abcd\" passes. \"abcd1\" has a digit → False."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nprint(\"1234\".isdigit())\nprint(\"123edsd\".isdigit())",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "True, True"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "True, False"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "False, True"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "False, False"
+					}
+				],
+				"answer": "b",
+				"explanation": "isdigit() returns True only if ALL characters are digits (0-9). \"1234\" passes. \"123edsd\" contains letters → False."
+			}
+		]
+	},
+	{
+		"id": 26,
+		"name": "Python: Sets",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What does intersection (A ∩ B) return?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "All elements from both sets combined"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Elements only in A but not B"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Elements that appear in BOTH A and B"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Elements in A or B but not both"
+					}
+				],
+				"answer": "c",
+				"explanation": "Intersection returns only elements that exist in BOTH sets. If A={1,2,3} and B={2,3,4}, then A ∩ B = {2,3} — only what they share."
+			},
+			{
+				"id": 2,
+				"question": "What is the output?\ns1 = {1, 2, 3, 4}\ns2 = {3, 4, 5, 6}\nprint(len(s1.intersection(s2)))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "8"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "4"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "2"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "6"
+					}
+				],
+				"answer": "c",
+				"explanation": "s1 ∩ s2 = {3, 4} — the elements present in both sets. Length = 2."
+			},
+			{
+				"id": 3,
+				"question": "What is the output?\ns1 = {1, 2, 3}\ns2 = {3, 4, 5}\nprint(len(s1.union(s2)))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "6"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "5"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "2"
+					}
+				],
+				"answer": "b",
+				"explanation": "Union combines all unique elements. s1 ∪ s2 = {1,2,3,4,5} — element 3 appears in both but is counted once. Length = 5."
+			},
+			{
+				"id": 4,
+				"question": "What is the difference between `remove()` and `discard()` in sets?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "They are identical"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "remove() raises KeyError for missing elements; discard() does not"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "discard() raises KeyError; remove() does not"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "remove() adds an element; discard() deletes it"
+					}
+				],
+				"answer": "b",
+				"explanation": "Both remove an element. Key difference: remove() raises a KeyError if the element is missing. discard() silently does nothing if the element is not found. Use discard() when unsure if the element exists."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\ns = {1, 2, 3, 4, 5}\ns.remove(3)\ns.discard(10)\ns.add(6)\nprint(len(s))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "4"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "5"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "6"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "KeyError"
+					}
+				],
+				"answer": "b",
+				"explanation": "remove(3) → {1,2,4,5} size 4. discard(10) — not in set, no error, no change, still size 4. add(6) → {1,2,4,5,6} size 5."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\ns1 = {1, 2, 3, 4}\ns2 = {3, 4, 5, 6}\nprint(len(s1.difference(s2)))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "4"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "2"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "6"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "8"
+					}
+				],
+				"answer": "b",
+				"explanation": "difference returns elements in s1 that are NOT in s2. s1 has {1,2,3,4}, remove {3,4} → {1,2}. Length = 2."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\ns1 = {1, 2, 3, 4}\ns2 = {3, 4, 5, 6}\nprint(len(s1.symmetric_difference(s2)))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "2"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "8"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "4"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "6"
+					}
+				],
+				"answer": "c",
+				"explanation": "Symmetric difference = elements in either set but NOT in both. s1 has {1,2} not in s2. s2 has {5,6} not in s1. Together = {1,2,5,6}. Length = 4."
+			},
+			{
+				"id": 8,
+				"question": "What does `s.pop()` do on a set?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Removes the last element added"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Removes the largest element"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Removes and returns an arbitrary element"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Removes the smallest element"
+					}
+				],
+				"answer": "c",
+				"explanation": "Sets are unordered so there is no first or last. pop() removes and returns an arbitrary (unpredictable) element. This differs from list.pop() which always removes the last element."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\ns1 = {1, 2, 3, 4, 5}\ns2 = {4, 5, 6, 7, 8}\nprint(len(s1.intersection(s2)))\nprint(len(s1.union(s2)))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "2, 8"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "2, 5"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3, 8"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "5, 8"
+					}
+				],
+				"answer": "a",
+				"explanation": "s1 ∩ s2 = {4,5} → len 2. s1 ∪ s2 = {1,2,3,4,5,6,7,8} → len 8."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\ns1 = {1, 2, 3}\ns2 = {1, 2, 3, 4, 5}\nprint(len(s2.difference(s1)))\nprint(len(s1.difference(s2)))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "2, 0"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "2, 2"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "0, 2"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "5, 3"
+					}
+				],
+				"answer": "a",
+				"explanation": "s2 - s1 = {4,5} (in s2 but not in s1) → len 2. s1 - s2 = {} (every element of s1 is in s2) → len 0. Difference is NOT symmetric — order matters!"
+			}
+		]
+	},
+	{
+		"id": 27,
+		"name": "Python: Math & Itertools",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the output?\nprint(divmod(17, 5))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "3.4"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "(3, 2)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "(2, 3)"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "3"
+					}
+				],
+				"answer": "b",
+				"explanation": "divmod(a, b) returns a tuple (quotient, remainder). 17 ÷ 5 = 3 remainder 2 → (3, 2)."
+			},
+			{
+				"id": 2,
+				"question": "What is the output?\nprint(pow(2, 10))\nprint(pow(2, 10, 100))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1024, 1024"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "1024, 24"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "10, 24"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "1024, 0"
+					}
+				],
+				"answer": "b",
+				"explanation": "pow(2,10) = 2^10 = 1024. pow(2,10,100) = (2^10) % 100 = 1024 % 100 = 24. The three-argument form computes (base^exp) % mod efficiently."
+			},
+			{
+				"id": 3,
+				"question": "What is the output?\nfrom itertools import permutations\nresult = list(permutations([1, 2, 3], 2))\nprint(len(result))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "3"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "6"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "9"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "4"
+					}
+				],
+				"answer": "b",
+				"explanation": "permutations([1,2,3], 2) gives all ordered pairs: (1,2),(1,3),(2,1),(2,3),(3,1),(3,2). 3 × 2 = 6 total."
+			},
+			{
+				"id": 4,
+				"question": "What is the output?\nfrom itertools import product\nresult = list(product([1, 2], [3, 4]))\nprint(len(result))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "2"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "4"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "6"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "8"
+					}
+				],
+				"answer": "b",
+				"explanation": "Cartesian product pairs every element of the first list with every element of the second. 2×2 = 4 pairs: (1,3),(1,4),(2,3),(2,4)."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nfrom itertools import permutations\nresult = list(permutations('abc', 3))\nprint(len(result))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "3"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "9"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "6"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "8"
+					}
+				],
+				"answer": "c",
+				"explanation": "permutations('abc', 3) gives all full-length arrangements of 3 characters. 3! = 3×2×1 = 6."
+			},
+			{
+				"id": 6,
+				"question": "What does `combinations_with_replacement` allow that regular `combinations` does not?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Using more elements than available"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Repeating the same element in a combination"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Ordering elements differently"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Using strings instead of numbers"
+					}
+				],
+				"answer": "b",
+				"explanation": "combinations_with_replacement allows an element to appear more than once in a combination. Regular combinations only use each element once. Example: combinations_with_replacement('ab', 2) includes ('a','a') and ('b','b')."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nfrom itertools import product\nresult = list(product([1, 2], repeat=2))\nprint(len(result))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "2"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "4"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "8"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "6"
+					}
+				],
+				"answer": "b",
+				"explanation": "product([1,2], repeat=2) is equivalent to product([1,2],[1,2]). All pairs: (1,1),(1,2),(2,1),(2,2). 2×2 = 4."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nq, r = divmod(100, 10)\nprint(q, r)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "10 10"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "10 0"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "0 10"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "(10, 0)"
+					}
+				],
+				"answer": "b",
+				"explanation": "100 ÷ 10 = 10 exactly with remainder 0. divmod(100,10) = (10,0). Unpacking gives q=10, r=0. print(q, r) outputs: 10 0 (not the tuple)."
+			},
+			{
+				"id": 9,
+				"question": "What is the output?\nprint(pow(5, 0))\nprint(pow(5, 1))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "0, 5"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "1, 5"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "5, 5"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "b",
+				"explanation": "Any number to the power of 0 is 1. Any number to the power of 1 is itself. pow(5,0)=1, pow(5,1)=5."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nfrom itertools import permutations\np = list(permutations([1, 2, 3]))\nprint(p[0])\nprint(p[-1])",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "(1, 2, 3), (3, 2, 1)"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "(1, 2, 3), (2, 3, 1)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[1, 2, 3], [3, 2, 1]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "1, 3"
+					}
+				],
+				"answer": "a",
+				"explanation": "permutations generates tuples in lexicographic order. First is (1,2,3), last is (3,2,1). Note the results are tuples (with parentheses), not lists."
+			}
+		]
+	},
+	{
+		"id": 28,
+		"name": "Python: Collections",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What does `Counter` from collections do?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Counts the total number of elements"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Returns the maximum element"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Counts how many times each element appears"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Sorts elements by frequency"
+					}
+				],
+				"answer": "c",
+				"explanation": "Counter creates a dictionary-like object where keys are elements and values are their counts. Counter([1,2,2,3,3,3]) gives {3:3, 2:2, 1:1}."
+			},
+			{
+				"id": 2,
+				"question": "What is the output?\nfrom collections import Counter\nc = Counter([1, 2, 2, 3, 3, 3])\nprint(c[3])\nprint(c[5])",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "3, KeyError"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "3, None"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3, 0"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "2, 0"
+					}
+				],
+				"answer": "c",
+				"explanation": "c[3]=3 (appears 3 times). Counter returns 0 for missing keys — not a KeyError like a regular dict. This makes it safe to access any key without checking first."
+			},
+			{
+				"id": 3,
+				"question": "What is the output?\nfrom collections import deque\nd = deque()\nd.append(1)\nd.append(2)\nd.appendleft(0)\nprint(list(d))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[0, 1, 2]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "[1, 2, 0]"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[0, 2, 1]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "[2, 1, 0]"
+					}
+				],
+				"answer": "a",
+				"explanation": "append(1) → [1]. append(2) → [1,2]. appendleft(0) adds to the LEFT → [0,1,2]. A deque (double-ended queue) can add/remove from both ends efficiently."
+			},
+			{
+				"id": 4,
+				"question": "What is the output?\nfrom collections import deque\nd = deque([1, 2, 3, 4, 5])\nd.pop()\nd.popleft()\nprint(list(d))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[2, 3, 4]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "[1, 2, 3, 4]"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[2, 3, 4, 5]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "[1, 2, 3]"
+					}
+				],
+				"answer": "a",
+				"explanation": "pop() removes from the RIGHT → [1,2,3,4]. popleft() removes from the LEFT → [2,3,4]."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\nfrom collections import Counter\nwords = ['apple','banana','apple','cherry']\nc = Counter(words)\nprint(c.most_common(1))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[('apple', 2)]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "('apple', 2)"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "{'apple': 2}"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "'apple'"
+					}
+				],
+				"answer": "a",
+				"explanation": "most_common(n) returns a list of the n most common elements as (element, count) tuples. 'apple' appears twice — the most frequent. Returns [('apple', 2)] as a list."
+			},
+			{
+				"id": 6,
+				"question": "What does the star notation `*name, price = line.split()` do?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Multiplies name and price"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Collects all items except the last into a list called name"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Only works with exactly 2 words"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Raises an error for multiple spaces"
+					}
+				],
+				"answer": "b",
+				"explanation": "The star (*) collects all extra items into a list. *name, price = [\"John\",\"Smith\",\"100\"] gives name=[\"John\",\"Smith\"] and price=\"100\". Essential for handling variable-length names before a final field."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\nfrom collections import Counter\nc = Counter(\"banana\")\nprint(c['a'])",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "1"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "2"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "3"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "0"
+					}
+				],
+				"answer": "c",
+				"explanation": "Counter(\"banana\") counts characters: b=1, a=3, n=2. The letter 'a' appears 3 times in \"banana\"."
+			},
+			{
+				"id": 8,
+				"question": "What is the output?\nline = 'John Smith 100'\n*name, price = line.split()\nprint(name)\nprint(price)",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "['John', 'Smith'], '100'"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "'John Smith', '100'"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "['John', 'Smith', '100'], ''"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "a",
+				"explanation": "line.split() → ['John','Smith','100']. *name collects everything except the last item → name=['John','Smith']. price='100'. print(name) shows the list, print(price) shows the string."
+			},
+			{
+				"id": 9,
+				"question": "What does an OrderedDict guarantee that is useful?",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "Keys are stored in alphabetical order"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Keys are stored in insertion order"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Only unique values are stored"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Keys are automatically sorted by value"
+					}
+				],
+				"answer": "b",
+				"explanation": "OrderedDict remembers the order in which keys were inserted. When you iterate or print it, keys appear in insertion order, not alphabetical order."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\nfrom collections import deque\nd = deque([1, 2, 3])\nd.rotate(1)\nprint(list(d))",
+				"options": [
+					{
+						"id": 1,
+						"label": "a",
+						"text": "[1, 2, 3]"
+					},
+					{
+						"id": 2,
+						"label": "b",
+						"text": "[3, 1, 2]"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "[2, 3, 1]"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Error"
+					}
+				],
+				"answer": "b",
+				"explanation": "rotate(1) rotates the deque RIGHT by 1 step — the last element (3) moves to the front. [1,2,3] → [3,1,2]."
+			}
+		]
 	}
 ]
