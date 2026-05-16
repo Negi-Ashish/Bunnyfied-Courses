@@ -5,7 +5,13 @@
       "Bash(npm install *)",
       "Bash(node -e \"console.log\\(require\\('./node_modules/@sveltejs/kit/package.json'\\).version, require\\('./node_modules/@sveltejs/adapter-vercel/package.json'\\).version\\)\")",
       "Bash(grep -v \"\\\\\"id\\\\\": [0-9]\\\\+,$\")",
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "Bash(find \"/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Chess-Analyzer\" -type f | grep -v node_modules | grep -v .git | grep -v .svelte-kit | grep -v .vercel | sort)",
+      "Read(//home/dontkillme/dontkillme/BunnyfiedLabs Projects/Chess-Analyzer/**)",
+      "Bash(mkdir -p \"/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Bunnyfied-Courses/3/LearningSvelte/interview-quiz/src/routes/progress\" && mkdir -p \"/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Bunnyfied-Courses/3/LearningSvelte/interview-quiz/src/routes/tests\" && mkdir -p \"/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Bunnyfied-Courses/3/LearningSvelte/interview-quiz/src/routes/practice/[testId]\")"
+    ],
+    "additionalDirectories": [
+      "/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Bunnyfied-Courses/3/LearningSvelte/interview-quiz/src/routes/practice"
     ]
   }
 }

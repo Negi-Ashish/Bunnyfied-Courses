@@ -17,3 +17,6 @@ export interface Answer {
 }
 
 export const answers = writable<Answer[]>([]);
+export const sessionId = writable<string>('');
+export const currentQuizId = writable<number>(0);
+export const currentQuizName = writable<string>('');

@@ -3,7 +3,7 @@
 	import QuestionOption from './components/QuestionOption.svelte';
 	import QuestionButton from './components/QuestionButton.svelte';
 	import QuestionProgressCircle from './components/QuestionProgressCircle.svelte';
-	import { answers, type Answer } from '../../../store';
+	import { answers, sessionId, currentQuizId, currentQuizName, type Answer } from '../../../store';
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 
@@ -51,6 +51,9 @@
 	};
 
 	onMount(() => {
+		sessionId.set(crypto.randomUUID());
+		currentQuizId.set(data.id);
+		currentQuizName.set(data.name);
 		answers.set(
 			data.questions.map((q: any) => ({
 				id: q.id,

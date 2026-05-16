@@ -1,10 +1,36 @@
 <script lang="ts">
-	import { answers, type Answer } from '../../store';
+	import { onMount } from 'svelte';
+	import { get } from 'svelte/store';
+	import { answers, sessionId, currentQuizId, currentQuizName, type Answer } from '../../store';
 	import { goto } from '$app/navigation';
+	import { supabase } from '$lib/supabase';
 
 	let answersValue: Answer[] = [];
 	answers.subscribe((value) => {
 		answersValue = value;
+	});
+
+	let saved = false;
+
+	onMount(async () => {
+		const sid = get(sessionId);
+		const qid = get(currentQuizId);
+		const qname = get(currentQuizName);
+		if (saved || !sid || answersValue.length === 0) return;
+		saved = true;
+
+		const rows = answersValue.map((a) => ({
+			session_id: sid,
+			quiz_id: qid,
+			quiz_name: qname,
+			question_id: a.id,
+			question_text: a.questionText,
+			selected_opt: a.selectedOption,
+			correct_opt: a.correctAnswer,
+			is_correct: a.isCorrect
+		}));
+
+		await supabase.from('quiz_attempts').insert(rows);
 	});
 
 	$: score = answersValue.filter((a) => a.isCorrect).length;
