@@ -8166,5 +8166,1148 @@
 				"explanation": "int('0') converts fine, so no ValueError is raised. Then int('1') / 0 raises ZeroDivisionError — but there is no except clause for ZeroDivisionError, so it is unhandled and the program crashes."
 			}
 		]
+	},
+	{
+		"id": 32,
+		"name": "Python: zip() (1)",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What does the zip() function return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "A list of lists" },
+					{ "id": 2, "label": "b", "text": "A list of tuples" },
+					{ "id": 3, "label": "c", "text": "A tuple of lists" },
+					{ "id": 4, "label": "d", "text": "A dictionary" }
+				],
+				"answer": "b",
+				"explanation": "zip() returns a list of tuples. The i-th tuple contains the i-th element from each of the argument sequences or iterables."
+			},
+			{
+				"id": 2,
+				"question": "What does the i-th tuple in zip()'s output contain?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "The i-th element from only the first sequence" },
+					{ "id": 2, "label": "b", "text": "The i-th element from each argument sequence" },
+					{ "id": 3, "label": "c", "text": "All elements from the i-th sequence" },
+					{ "id": 4, "label": "d", "text": "The sum of all i-th elements" }
+				],
+				"answer": "b",
+				"explanation": "The i-th tuple produced by zip() contains the i-th element from each of the argument sequences or iterables passed to it."
+			},
+			{
+				"id": 3,
+				"question": "What is the first tuple in the output of zip([1,2,3,4,5,6], 'Hacker')?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "(1, 'H')" },
+					{ "id": 2, "label": "b", "text": "('H', 1)" },
+					{ "id": 3, "label": "c", "text": "(1, 'a')" },
+					{ "id": 4, "label": "d", "text": "('Hacker', 1)" }
+				],
+				"answer": "a",
+				"explanation": "zip() pairs elements by position. The 0th element of [1,2,3,4,5,6] is 1, and the 0th character of 'Hacker' is 'H', so the first tuple is (1, 'H')."
+			},
+			{
+				"id": 4,
+				"question": "If two sequences have unequal lengths, what does zip() do?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Raises an error" },
+					{ "id": 2, "label": "b", "text": "Pads the shorter one with None" },
+					{ "id": 3, "label": "c", "text": "Truncates to the length of the shortest sequence" },
+					{ "id": 4, "label": "d", "text": "Extends to the length of the longest sequence" }
+				],
+				"answer": "c",
+				"explanation": "If argument sequences are of unequal lengths, the returned list is truncated to the length of the shortest argument sequence."
+			},
+			{
+				"id": 5,
+				"question": "What is the full output of zip([1,2,3,4,5,6], 'Hacker')?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[(1,'H'),(2,'a'),(3,'c'),(4,'k'),(5,'e'),(6,'r')]" },
+					{ "id": 2, "label": "b", "text": "[(1,'Hacker'),(2,'Hacker'),(3,'Hacker')]" },
+					{ "id": 3, "label": "c", "text": "[('H',1),('a',2),('c',3),('k',4),('e',5),('r',6)]" },
+					{ "id": 4, "label": "d", "text": "[1,2,3,4,5,6,'H','a','c','k','e','r']" }
+				],
+				"answer": "a",
+				"explanation": "zip() pairs each number with the character at the same position in 'Hacker'. Both have 6 elements, so all 6 pairs are produced: [(1,'H'),(2,'a'),(3,'c'),(4,'k'),(5,'e'),(6,'r')]."
+			},
+			{
+				"id": 6,
+				"question": "What does zip(*X) do when X is a list of lists?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Reverses the list X" },
+					{ "id": 2, "label": "b", "text": "Unpacks X and zips the inner lists together" },
+					{ "id": 3, "label": "c", "text": "Returns X unchanged" },
+					{ "id": 4, "label": "d", "text": "Raises a TypeError" }
+				],
+				"answer": "b",
+				"explanation": "The * operator unpacks X so each inner list becomes a separate argument to zip(). zip() then pairs elements from each inner list by position."
+			},
+			{
+				"id": 7,
+				"question": "Given A=[1,2,3], B=[6,5,4], C=[7,8,9], X=[A]+[B]+[C], what does zip(*X) produce?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[(1,2,3),(6,5,4),(7,8,9)]" },
+					{ "id": 2, "label": "b", "text": "[(1,6,7),(2,5,8),(3,4,9)]" },
+					{ "id": 3, "label": "c", "text": "[(1,6,7,2,5,8,3,4,9)]" },
+					{ "id": 4, "label": "d", "text": "[(3,4,9),(2,5,8),(1,6,7)]" }
+				],
+				"answer": "b",
+				"explanation": "X = [[1,2,3],[6,5,4],[7,8,9]]. zip(*X) is zip([1,2,3],[6,5,4],[7,8,9]) which pairs 0th elements (1,6,7), 1st elements (2,5,8), and 2nd elements (3,4,9)."
+			},
+			{
+				"id": 8,
+				"question": "In the mark sheet task, how many lines of scores are given after the first line?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "N (number of students)" },
+					{ "id": 2, "label": "b", "text": "X (number of subjects)" },
+					{ "id": 3, "label": "c", "text": "N + X" },
+					{ "id": 4, "label": "d", "text": "N * X" }
+				],
+				"answer": "b",
+				"explanation": "The next X lines each contain the space-separated marks obtained by all N students in a particular subject — one line per subject."
+			},
+			{
+				"id": 9,
+				"question": "What is the average score formula from the lesson?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Sum of all scores / number of students" },
+					{ "id": 2, "label": "b", "text": "Sum of scores obtained by a student / total number of subjects" },
+					{ "id": 3, "label": "c", "text": "Highest score / lowest score" },
+					{ "id": 4, "label": "d", "text": "Total scores / number of subjects" }
+				],
+				"answer": "b",
+				"explanation": "Average score = Sum of scores obtained in all subjects by a student / Total number of subjects. Each student's average is computed independently."
+			},
+			{
+				"id": 10,
+				"question": "How many decimal places must averages be correct to in the output?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "0 (integers only)" },
+					{ "id": 2, "label": "b", "text": "1 decimal place" },
+					{ "id": 3, "label": "c", "text": "2 decimal places" },
+					{ "id": 4, "label": "d", "text": "3 decimal places" }
+				],
+				"answer": "b",
+				"explanation": "The lesson specifies: 'The averages must be correct up to 1 decimal place.' For example, 90.0 and 85.5 are shown in the sample output."
+			}
+		]
+	},
+	{
+		"id": 33,
+		"name": "Python: zip() (2)",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the output of zip([1,2,3,4,5,6],[0,9,8,7,6,5,4,3,2,1])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[(1,0),(2,9),(3,8),(4,7),(5,6),(6,5)]" },
+					{ "id": 2, "label": "b", "text": "[(0,1),(9,2),(8,3),(7,4),(6,5),(5,6)]" },
+					{ "id": 3, "label": "c", "text": "[(1,0),(2,9),(3,8),(4,7),(5,6),(6,5),(7,4),(8,3),(9,2),(10,1)]" },
+					{ "id": 4, "label": "d", "text": "Error — sequences have unequal lengths" }
+				],
+				"answer": "a",
+				"explanation": "The first list has 6 elements, the second has 10. zip() truncates to the shortest (6), pairing by position: (1,0),(2,9),(3,8),(4,7),(5,6),(6,5)."
+			},
+			{
+				"id": 2,
+				"question": "Why does zip([1,2,3,4,5,6],[0,9,8,7,6,5,4,3,2,1]) produce only 6 tuples?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "zip() always returns exactly 6 tuples" },
+					{ "id": 2, "label": "b", "text": "zip() truncates to the length of the shortest sequence, which has 6 elements" },
+					{ "id": 3, "label": "c", "text": "The second list only has 6 unique values" },
+					{ "id": 4, "label": "d", "text": "zip() ignores elements after index 5 by default" }
+				],
+				"answer": "b",
+				"explanation": "zip() always truncates to the shortest argument sequence. The first list has 6 elements, so only 6 tuples are produced even though the second list has 10."
+			},
+			{
+				"id": 3,
+				"question": "For Sample Input '5 3', how many students and subjects are there?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "5 subjects, 3 students" },
+					{ "id": 2, "label": "b", "text": "5 students, 3 subjects" },
+					{ "id": 3, "label": "c", "text": "5 rows, 3 columns" },
+					{ "id": 4, "label": "d", "text": "3 students, 5 subjects" }
+				],
+				"answer": "b",
+				"explanation": "The first line contains N and X — N is the number of students, X is the number of subjects. Input '5 3' means 5 students and 3 subjects."
+			},
+			{
+				"id": 4,
+				"question": "Student 1's scores across 3 subjects are 89, 90, 91. What is their average?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "89.0" },
+					{ "id": 2, "label": "b", "text": "90.0" },
+					{ "id": 3, "label": "c", "text": "91.0" },
+					{ "id": 4, "label": "d", "text": "88.0" }
+				],
+				"answer": "b",
+				"explanation": "(89 + 90 + 91) / 3 = 270 / 3 = 90.0. This matches the first line of the sample output."
+			},
+			{
+				"id": 5,
+				"question": "What does [A] + [B] + [C] produce when A=[1,2,3], B=[6,5,4], C=[7,8,9]?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[1,2,3,6,5,4,7,8,9]" },
+					{ "id": 2, "label": "b", "text": "[[1,2,3],[6,5,4],[7,8,9]]" },
+					{ "id": 3, "label": "c", "text": "[(1,6,7),(2,5,8),(3,4,9)]" },
+					{ "id": 4, "label": "d", "text": "[1,6,7,2,5,8,3,4,9]" }
+				],
+				"answer": "b",
+				"explanation": "[A] wraps A in a list giving [[1,2,3]]. Adding [B] and [C] the same way and concatenating with + gives [[1,2,3],[6,5,4],[7,8,9]] — a list of 3 lists."
+			},
+			{
+				"id": 6,
+				"question": "Student 3's scores across 3 subjects are 78, 85, 83. What is their average?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "80.0" },
+					{ "id": 2, "label": "b", "text": "82.0" },
+					{ "id": 3, "label": "c", "text": "83.0" },
+					{ "id": 4, "label": "d", "text": "81.5" }
+				],
+				"answer": "b",
+				"explanation": "(78 + 85 + 83) / 3 = 246 / 3 = 82.0. This matches the third line of the sample output."
+			},
+			{
+				"id": 7,
+				"question": "What are the constraints on N and X in the mark sheet task?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "0 < N ≤ 100 and 0 < X ≤ 100" },
+					{ "id": 2, "label": "b", "text": "0 ≤ N < 100 and 0 ≤ X < 100" },
+					{ "id": 3, "label": "c", "text": "N and X must be equal" },
+					{ "id": 4, "label": "d", "text": "N and X must be less than 10" }
+				],
+				"answer": "a",
+				"explanation": "The lesson states: 0 < N ≤ 100 and 0 < X ≤ 100. Both N and X must be at least 1 and at most 100."
+			},
+			{
+				"id": 8,
+				"question": "What is zip(*X) equivalent to when X = [[1,2,3],[6,5,4],[7,8,9]]?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "zip([1,2,3],[6,5,4],[7,8,9])" },
+					{ "id": 2, "label": "b", "text": "zip([[1,2,3],[6,5,4],[7,8,9]])" },
+					{ "id": 3, "label": "c", "text": "zip([1,6,7],[2,5,8],[3,4,9])" },
+					{ "id": 4, "label": "d", "text": "zip(1,6,7,2,5,8,3,4,9)" }
+				],
+				"answer": "a",
+				"explanation": "The * operator unpacks the list X, so zip(*X) becomes zip([1,2,3],[6,5,4],[7,8,9]) — passing each inner list as a separate argument."
+			},
+			{
+				"id": 9,
+				"question": "Student 5's scores across 3 subjects are 80, 86, 90.5. What is their average?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "85.0" },
+					{ "id": 2, "label": "b", "text": "85.5" },
+					{ "id": 3, "label": "c", "text": "86.0" },
+					{ "id": 4, "label": "d", "text": "84.5" }
+				],
+				"answer": "b",
+				"explanation": "(80 + 86 + 90.5) / 3 = 256.5 / 3 = 85.5. This matches the last line of the sample output."
+			},
+			{
+				"id": 10,
+				"question": "In the mark sheet input, how are the scores structured after the first line?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "N lines, each with X scores for one student" },
+					{ "id": 2, "label": "b", "text": "X lines, each with N scores for one subject" },
+					{ "id": 3, "label": "c", "text": "One line with all N*X scores" },
+					{ "id": 4, "label": "d", "text": "N+X lines alternating student and subject data" }
+				],
+				"answer": "b",
+				"explanation": "The next X lines each contain the N space-separated marks for a particular subject. For 5 students and 3 subjects, there are 3 lines each with 5 scores."
+			}
+		]
+	},
+	{
+		"id": 34,
+		"name": "Python: zip() (3)",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the output of zip(*[[1,2,3],[6,5,4],[7,8,9]])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[(1,2,3),(6,5,4),(7,8,9)]" },
+					{ "id": 2, "label": "b", "text": "[(1,6,7),(2,5,8),(3,4,9)]" },
+					{ "id": 3, "label": "c", "text": "[(1,6),(2,5),(3,4),(7,8,9)]" },
+					{ "id": 4, "label": "d", "text": "[(7,6,3),(8,5,2),(9,4,1)]" }
+				],
+				"answer": "b",
+				"explanation": "* unpacks the outer list into three arguments: [1,2,3],[6,5,4],[7,8,9]. zip() then pairs by index: (1,6,7),(2,5,8),(3,4,9)."
+			},
+			{
+				"id": 2,
+				"question": "What is the output of zip([1,2],[3,4],[5,6])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[(1,2),(3,4),(5,6)]" },
+					{ "id": 2, "label": "b", "text": "[(1,3,5),(2,4,6)]" },
+					{ "id": 3, "label": "c", "text": "[(1,2,3),(4,5,6)]" },
+					{ "id": 4, "label": "d", "text": "[(1,3),(2,4),(5,6)]" }
+				],
+				"answer": "b",
+				"explanation": "zip() takes three 2-element sequences and pairs elements by index: 0th elements (1,3,5) and 1st elements (2,4,6), giving [(1,3,5),(2,4,6)]."
+			},
+			{
+				"id": 3,
+				"question": "If zip() receives lists of lengths 6 and 10, how many tuples are in the output?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "10" },
+					{ "id": 2, "label": "b", "text": "8" },
+					{ "id": 3, "label": "c", "text": "6" },
+					{ "id": 4, "label": "d", "text": "16" }
+				],
+				"answer": "c",
+				"explanation": "zip() truncates to the length of the shortest sequence. The shortest is length 6, so 6 tuples are produced — the extra 4 elements of the longer list are ignored."
+			},
+			{
+				"id": 4,
+				"question": "Given A=[1,2,3], B=[6,5,4], C=[7,8,9], X=[A]+[B]+[C], what is the second element of zip(*X)?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "(1, 6, 7)" },
+					{ "id": 2, "label": "b", "text": "(2, 5, 8)" },
+					{ "id": 3, "label": "c", "text": "(3, 4, 9)" },
+					{ "id": 4, "label": "d", "text": "(6, 5, 4)" }
+				],
+				"answer": "b",
+				"explanation": "zip(*X) = zip([1,2,3],[6,5,4],[7,8,9]) = [(1,6,7),(2,5,8),(3,4,9)]. The second element (index 1) is (2, 5, 8)."
+			},
+			{
+				"id": 5,
+				"question": "Student 4's scores across 3 subjects are 93, 88, 89. What is their average to 1 decimal place?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "89.0" },
+					{ "id": 2, "label": "b", "text": "90.0" },
+					{ "id": 3, "label": "c", "text": "90.5" },
+					{ "id": 4, "label": "d", "text": "91.0" }
+				],
+				"answer": "b",
+				"explanation": "(93 + 88 + 89) / 3 = 270 / 3 = 90.0. This matches the fourth line of the sample output."
+			},
+			{
+				"id": 6,
+				"question": "If X = [[1,2,3],[4,5,6]], what does zip(*X) return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[(1,2,3),(4,5,6)]" },
+					{ "id": 2, "label": "b", "text": "[(1,4),(2,5),(3,6)]" },
+					{ "id": 3, "label": "c", "text": "[(1,4,2,5,3,6)]" },
+					{ "id": 4, "label": "d", "text": "[(4,1),(5,2),(6,3)]" }
+				],
+				"answer": "b",
+				"explanation": "zip(*X) = zip([1,2,3],[4,5,6]). It pairs 0th elements (1,4), 1st elements (2,5), and 2nd elements (3,6), giving [(1,4),(2,5),(3,6)]."
+			},
+			{
+				"id": 7,
+				"question": "What is the output of zip([1,2,3], 'abc')?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "[(1,'a'),(2,'b'),(3,'c')]" },
+					{ "id": 2, "label": "b", "text": "[(1,'abc'),(2,'abc'),(3,'abc')]" },
+					{ "id": 3, "label": "c", "text": "[('a',1),('b',2),('c',3)]" },
+					{ "id": 4, "label": "d", "text": "[(1,2,3,'a','b','c')]" }
+				],
+				"answer": "a",
+				"explanation": "zip() treats a string as an iterable of characters. It pairs 1 with 'a', 2 with 'b', 3 with 'c', giving [(1,'a'),(2,'b'),(3,'c')]."
+			},
+			{
+				"id": 8,
+				"question": "In the mark sheet task, what does each line of output correspond to?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "The average score per subject" },
+					{ "id": 2, "label": "b", "text": "The average score per student" },
+					{ "id": 3, "label": "c", "text": "The total score per student" },
+					{ "id": 4, "label": "d", "text": "The highest score per subject" }
+				],
+				"answer": "b",
+				"explanation": "The output prints the averages of ALL students on separate lines — one average per student. For 5 students, 5 averages are printed."
+			},
+			{
+				"id": 9,
+				"question": "What is Student 2's average given scores 90, 91, 92 across 3 subjects?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "90.5" },
+					{ "id": 2, "label": "b", "text": "91.0" },
+					{ "id": 3, "label": "c", "text": "91.5" },
+					{ "id": 4, "label": "d", "text": "92.0" }
+				],
+				"answer": "b",
+				"explanation": "(90 + 91 + 92) / 3 = 273 / 3 = 91.0. This matches the second line of the sample output."
+			},
+			{
+				"id": 10,
+				"question": "What does zip([1,2,3,4,5,6],[0,9,8,7,6,5,4,3,2,1]) NOT include in its output?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "(1, 0)" },
+					{ "id": 2, "label": "b", "text": "(6, 5)" },
+					{ "id": 3, "label": "c", "text": "(7, 4)" },
+					{ "id": 4, "label": "d", "text": "(2, 9)" }
+				],
+				"answer": "c",
+				"explanation": "The first list ends at 6. zip() stops there. The 7th pair (7, 4) is never produced — so (7, 4) is not in the output. The result only has 6 tuples."
+			}
+		]
+	},
+	{
+		"id": 35,
+		"name": "Python: eval() (1)",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What does the eval() function do?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Converts a string to a list" },
+					{ "id": 2, "label": "b", "text": "Evaluates a Python expression and returns the result" },
+					{ "id": 3, "label": "c", "text": "Checks if a variable exists" },
+					{ "id": 4, "label": "d", "text": "Formats a string for printing" }
+				],
+				"answer": "b",
+				"explanation": "eval() is a very powerful built-in function that helps in evaluating an expression. The expression can be a Python statement, or a code object."
+			},
+			{
+				"id": 2,
+				"question": "What is the output of eval('9 + 5')?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "'9 + 5'" },
+					{ "id": 2, "label": "b", "text": "14" },
+					{ "id": 3, "label": "c", "text": "95" },
+					{ "id": 4, "label": "d", "text": "SyntaxError" }
+				],
+				"answer": "b",
+				"explanation": "eval('9 + 5') evaluates the string '9 + 5' as a Python expression. 9 + 5 = 14, so eval() returns the integer 14."
+			},
+			{
+				"id": 3,
+				"question": "Given x = 2, what does eval('x + 3') return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "'x + 3'" },
+					{ "id": 2, "label": "b", "text": "23" },
+					{ "id": 3, "label": "c", "text": "5" },
+					{ "id": 4, "label": "d", "text": "TypeError" }
+				],
+				"answer": "c",
+				"explanation": "eval() can access variables defined in the current scope. x = 2, so eval('x + 3') evaluates 2 + 3 = 5."
+			},
+			{
+				"id": 4,
+				"question": "What does type('len') return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "<type 'builtin_function_or_method'>" },
+					{ "id": 2, "label": "b", "text": "<type 'int'>" },
+					{ "id": 3, "label": "c", "text": "<type 'str'>" },
+					{ "id": 4, "label": "d", "text": "<type 'function'>" }
+				],
+				"answer": "c",
+				"explanation": "'len' without eval() is just a plain string — its type is <type 'str'>. eval() is needed to convert it into the actual len function."
+			},
+			{
+				"id": 5,
+				"question": "What does type(eval('len')) return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "<type 'str'>" },
+					{ "id": 2, "label": "b", "text": "<type 'builtin_function_or_method'>" },
+					{ "id": 3, "label": "c", "text": "<type 'int'>" },
+					{ "id": 4, "label": "d", "text": "<type 'NoneType'>" }
+				],
+				"answer": "b",
+				"explanation": "eval('len') evaluates 'len' as Python code, turning it into the actual built-in len function. So type(eval('len')) is <type 'builtin_function_or_method'>."
+			},
+			{
+				"id": 6,
+				"question": "What is the task for the eval() problem in the lesson?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Print all variables in scope" },
+					{ "id": 2, "label": "b", "text": "Read an expression as a string variable and print the result of eval(var)" },
+					{ "id": 3, "label": "c", "text": "Evaluate only math expressions" },
+					{ "id": 4, "label": "d", "text": "Convert code objects to strings" }
+				],
+				"answer": "b",
+				"explanation": "The task says: read the line as a string variable, such as var, and print the result using eval(var)."
+			},
+			{
+				"id": 7,
+				"question": "What is the constraint on the input string in the eval() task?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Less than 50 characters" },
+					{ "id": 2, "label": "b", "text": "Less than 100 characters" },
+					{ "id": 3, "label": "c", "text": "Less than 200 characters" },
+					{ "id": 4, "label": "d", "text": "Exactly 10 characters" }
+				],
+				"answer": "b",
+				"explanation": "The lesson states: 'Input string is less than 100 characters.'"
+			},
+			{
+				"id": 8,
+				"question": "According to the lesson, what can eval() work with beyond math expressions?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Only numeric strings" },
+					{ "id": 2, "label": "b", "text": "Python keywords, defined functions, and variables stored as strings" },
+					{ "id": 3, "label": "c", "text": "Only boolean expressions" },
+					{ "id": 4, "label": "d", "text": "Only expressions without variables" }
+				],
+				"answer": "b",
+				"explanation": "The lesson states: eval() can also be used to work with Python keywords or defined functions and variables — these would normally be stored as strings."
+			},
+			{
+				"id": 9,
+				"question": "What is the sample input for the eval() task in the lesson?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "len('hello')" },
+					{ "id": 2, "label": "b", "text": "print(2 + 3)" },
+					{ "id": 3, "label": "c", "text": "9 + 5" },
+					{ "id": 4, "label": "d", "text": "eval('9 + 5')" }
+				],
+				"answer": "b",
+				"explanation": "The lesson shows the sample input as: print(2 + 3). This is read as a string and executed via eval(var)."
+			},
+			{
+				"id": 10,
+				"question": "Which Python 2 import is mentioned in the NOTE for the eval() task?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "from __future__ import division" },
+					{ "id": 2, "label": "b", "text": "from __future__ import print_function" },
+					{ "id": 3, "label": "c", "text": "from __future__ import unicode_literals" },
+					{ "id": 4, "label": "d", "text": "from __future__ import absolute_import" }
+				],
+				"answer": "b",
+				"explanation": "The NOTE says: 'Python2 users, please import from __future__ import print_function.' This is needed so print works as a function (not a keyword) inside eval()."
+			}
+		]
+	},
+	{
+		"id": 36,
+		"name": "Python: eval() (2)",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "Why does type(eval('len')) differ from type('len')?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "eval() converts strings to integers automatically" },
+					{ "id": 2, "label": "b", "text": "eval() interprets the string as Python code, turning 'len' into the actual len function" },
+					{ "id": 3, "label": "c", "text": "'len' is a special keyword that eval() ignores" },
+					{ "id": 4, "label": "d", "text": "type() behaves differently when called inside eval()" }
+				],
+				"answer": "b",
+				"explanation": "Without eval(), 'len' is just a string (type 'str'). eval('len') executes 'len' as Python code and returns the actual built-in len function (type 'builtin_function_or_method')."
+			},
+			{
+				"id": 2,
+				"question": "Given x = 2, why can eval('x + 3') access x?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "x must be imported from a module first" },
+					{ "id": 2, "label": "b", "text": "eval() can access variables defined in the current scope" },
+					{ "id": 3, "label": "c", "text": "x must be defined as a string for eval() to use it" },
+					{ "id": 4, "label": "d", "text": "eval() creates a new variable x automatically" }
+				],
+				"answer": "b",
+				"explanation": "eval() evaluates its argument in the current scope, so it can access any variables that are defined — including x = 2. That is why eval('x + 3') returns 5."
+			},
+			{
+				"id": 3,
+				"question": "What is the difference between eval('9 + 5') and the string '9 + 5'?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Both return the integer 14" },
+					{ "id": 2, "label": "b", "text": "eval('9 + 5') returns the integer 14; '9 + 5' remains the string '9 + 5'" },
+					{ "id": 3, "label": "c", "text": "Both return the string '9 + 5'" },
+					{ "id": 4, "label": "d", "text": "eval('9 + 5') returns the string '14'; '9 + 5' returns 14" }
+				],
+				"answer": "b",
+				"explanation": "eval() executes its string argument as Python code. '9 + 5' is just a string literal and is never computed. eval('9 + 5') runs the addition and returns 14."
+			},
+			{
+				"id": 4,
+				"question": "What happens when you run eval(var) on the sample input 'print(2 + 3)'?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "It returns 5 silently without printing" },
+					{ "id": 2, "label": "b", "text": "It prints 5" },
+					{ "id": 3, "label": "c", "text": "It returns the string 'print(2 + 3)'" },
+					{ "id": 4, "label": "d", "text": "It raises a SyntaxError" }
+				],
+				"answer": "b",
+				"explanation": "eval(var) executes 'print(2 + 3)' as Python code. Python evaluates 2 + 3 = 5 and print() outputs 5 to the screen."
+			},
+			{
+				"id": 5,
+				"question": "Why does the eval() task read the input as a string variable before calling eval()?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "To avoid TypeError when printing" },
+					{ "id": 2, "label": "b", "text": "So any valid Python expression can be passed to eval() and executed" },
+					{ "id": 3, "label": "c", "text": "Because input() only works with string variables" },
+					{ "id": 4, "label": "d", "text": "To ensure the output is always an integer" }
+				],
+				"answer": "b",
+				"explanation": "Reading input as a string variable lets you capture any expression (math, function calls, etc.) as text, then pass it to eval() which executes it as Python code."
+			},
+			{
+				"id": 6,
+				"question": "What would type(eval('9 + 5')) return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "<type 'str'>" },
+					{ "id": 2, "label": "b", "text": "<type 'float'>" },
+					{ "id": 3, "label": "c", "text": "<type 'int'>" },
+					{ "id": 4, "label": "d", "text": "<type 'builtin_function_or_method'>" }
+				],
+				"answer": "c",
+				"explanation": "eval('9 + 5') returns the integer 14. type(14) is <type 'int'>."
+			},
+			{
+				"id": 7,
+				"question": "What does eval() allow that simply storing an expression as a string does NOT?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Storing multiple characters in one variable" },
+					{ "id": 2, "label": "b", "text": "Treating the string contents as executable Python code" },
+					{ "id": 3, "label": "c", "text": "Printing the string in uppercase" },
+					{ "id": 4, "label": "d", "text": "Converting the string to a list" }
+				],
+				"answer": "b",
+				"explanation": "A plain string is just text. eval() treats that text as Python code and executes it — this is what makes eval() a very powerful built-in function."
+			},
+			{
+				"id": 8,
+				"question": "If var = 'len', what does eval(var) return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "The string 'len'" },
+					{ "id": 2, "label": "b", "text": "The built-in len function" },
+					{ "id": 3, "label": "c", "text": "None" },
+					{ "id": 4, "label": "d", "text": "NameError" }
+				],
+				"answer": "b",
+				"explanation": "eval('len') evaluates 'len' as Python code. In Python, len is a built-in function, so eval() returns the actual len function object."
+			},
+			{
+				"id": 9,
+				"question": "Why do Python 2 users need 'from __future__ import print_function' for the eval() task?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Python 2's print is a keyword, not a function; the import makes it callable inside eval()" },
+					{ "id": 2, "label": "b", "text": "Python 2 does not support eval() without this import" },
+					{ "id": 3, "label": "c", "text": "The import speeds up eval() execution" },
+					{ "id": 4, "label": "d", "text": "The import prevents eval() from raising errors" }
+				],
+				"answer": "a",
+				"explanation": "In Python 2, print is a statement keyword, not a function. Importing print_function makes it behave like a function, so eval('print(2 + 3)') works correctly."
+			},
+			{
+				"id": 10,
+				"question": "According to the lesson, can eval() work with variables defined earlier in the program?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "No — eval() only works with literal values" },
+					{ "id": 2, "label": "b", "text": "Yes — the lesson shows eval('x + 3') working when x = 2" },
+					{ "id": 3, "label": "c", "text": "Only if those variables are strings" },
+					{ "id": 4, "label": "d", "text": "Only if those variables are explicitly passed to eval()" }
+				],
+				"answer": "b",
+				"explanation": "The lesson demonstrates: x = 2, then eval('x + 3') returns 5. eval() has access to variables defined in the current scope."
+			}
+		]
+	},
+	{
+		"id": 37,
+		"name": "Python: eval() (3)",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What are the two outputs shown for type('len') and type(eval('len')) in the lesson?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Both return <type 'str'>" },
+					{ "id": 2, "label": "b", "text": "type('len') → <type 'str'>, type(eval('len')) → <type 'builtin_function_or_method'>" },
+					{ "id": 3, "label": "c", "text": "type('len') → <type 'builtin_function_or_method'>, type(eval('len')) → <type 'str'>" },
+					{ "id": 4, "label": "d", "text": "type(eval('len')) raises a NameError" }
+				],
+				"answer": "b",
+				"explanation": "The lesson shows both examples side by side: type('len') → <type 'str'> (just a string), and type(eval('len')) → <type 'builtin_function_or_method'> (eval turns it into the actual function)."
+			},
+			{
+				"id": 2,
+				"question": "What is the result of eval('9 + 5') and what type does it return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "'14' — type str" },
+					{ "id": 2, "label": "b", "text": "14 — type int" },
+					{ "id": 3, "label": "c", "text": "14.0 — type float" },
+					{ "id": 4, "label": "d", "text": "9 + 5 — unchanged expression" }
+				],
+				"answer": "b",
+				"explanation": "eval('9 + 5') executes 9 + 5 as Python code. Integer addition produces 14 (type int). The lesson shows this exact example."
+			},
+			{
+				"id": 3,
+				"question": "In the lesson, what is the result when x = 2 and you call eval('x + 3')?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "NameError — x is not defined inside eval()" },
+					{ "id": 2, "label": "b", "text": "5, because eval() accesses x from the current scope" },
+					{ "id": 3, "label": "c", "text": "'x + 3' — the string is returned unchanged" },
+					{ "id": 4, "label": "d", "text": "23 — string concatenation of '2' and '3'" }
+				],
+				"answer": "b",
+				"explanation": "eval() evaluates in the current scope. x = 2, so 'x + 3' is evaluated as 2 + 3 = 5. The lesson explicitly demonstrates this."
+			},
+			{
+				"id": 4,
+				"question": "For the eval() task, if var = 'print(2 + 3)', what does eval(var) do?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Returns 5 without printing" },
+					{ "id": 2, "label": "b", "text": "Prints 5 to the screen" },
+					{ "id": 3, "label": "c", "text": "Returns the string 'print(2 + 3)'" },
+					{ "id": 4, "label": "d", "text": "Raises a TypeError" }
+				],
+				"answer": "b",
+				"explanation": "eval(var) executes 'print(2 + 3)' as code. Python first computes 2 + 3 = 5, then print() outputs 5. The sample input and output in the lesson confirms this."
+			},
+			{
+				"id": 5,
+				"question": "What does eval('len') return compared to the string 'len'?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Both return the string 'len'" },
+					{ "id": 2, "label": "b", "text": "eval('len') returns the actual built-in len function; 'len' is just a string" },
+					{ "id": 3, "label": "c", "text": "eval('len') returns the length of 'len' which is 3" },
+					{ "id": 4, "label": "d", "text": "eval('len') raises a NameError" }
+				],
+				"answer": "b",
+				"explanation": "'len' is a string of type str. eval('len') evaluates 'len' as Python code and returns the actual built-in len function of type builtin_function_or_method."
+			},
+			{
+				"id": 6,
+				"question": "The lesson describes eval() as a 'very powerful built-in function'. What specifically makes it powerful?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "It can only evaluate math, making it safe and predictable" },
+					{ "id": 2, "label": "b", "text": "It can evaluate any Python statement or code object, including variables and built-in functions stored as strings" },
+					{ "id": 3, "label": "c", "text": "It avoids the need to import any modules" },
+					{ "id": 4, "label": "d", "text": "It always returns an integer" }
+				],
+				"answer": "b",
+				"explanation": "The lesson says eval() helps evaluate expressions that can be Python statements or code objects, and it can work with Python keywords, defined functions, and variables stored as strings."
+			},
+			{
+				"id": 7,
+				"question": "What does eval() allow that simply storing an expression as a string does NOT?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "'len' gives the len function; eval('len') gives the string 'len'" },
+					{ "id": 2, "label": "b", "text": "'len' is just a string; eval('len') gives the actual len function" },
+					{ "id": 3, "label": "c", "text": "Both give the len function" },
+					{ "id": 4, "label": "d", "text": "Both give the string 'len'" }
+				],
+				"answer": "b",
+				"explanation": "Without eval, 'len' is a string literal. eval('len') executes the name 'len' as Python code and returns the len function. The lesson shows this with type() to make the difference visible."
+			},
+			{
+				"id": 8,
+				"question": "According to the lesson, what kinds of expressions can eval() evaluate?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Only numeric arithmetic expressions" },
+					{ "id": 2, "label": "b", "text": "Python statements and code objects" },
+					{ "id": 3, "label": "c", "text": "Only boolean expressions" },
+					{ "id": 4, "label": "d", "text": "Only expressions imported from modules" }
+				],
+				"answer": "b",
+				"explanation": "The lesson says: 'The expression can be a Python statement, or a code object.' This is what makes eval() broadly powerful — it is not limited to math."
+			},
+			{
+				"id": 9,
+				"question": "If x = 2 and you run eval('x + 3'), what must be true for eval() to find x?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "x must be imported from a module" },
+					{ "id": 2, "label": "b", "text": "x must be accessible in the current scope where eval() is called" },
+					{ "id": 3, "label": "c", "text": "x must be defined as a string, not an integer" },
+					{ "id": 4, "label": "d", "text": "x must be passed explicitly as a second argument to eval()" }
+				],
+				"answer": "b",
+				"explanation": "eval() evaluates code in the current scope. As long as x is defined before eval() is called (as shown in the lesson with x = 2), eval('x + 3') can access it and return 5."
+			},
+			{
+				"id": 10,
+				"question": "How does eval() help complete the task of reading an expression and printing its result?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "By converting the input string to an integer automatically" },
+					{ "id": 2, "label": "b", "text": "By reading the expression as a string var and executing eval(var) to evaluate and print the result" },
+					{ "id": 3, "label": "c", "text": "By splitting the input string into tokens and evaluating each one" },
+					{ "id": 4, "label": "d", "text": "By checking the syntax of the expression before running it" }
+				],
+				"answer": "b",
+				"explanation": "The task says: read the line as a string variable such as var, then print the result using eval(var). eval() executes the string as Python code and returns or prints the result."
+			}
+		]
+	},
+	{
+		"id": 38,
+		"name": "Python: any() & all() (1)",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What does any() return if at least one element of the iterable is True?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "False" },
+					{ "id": 2, "label": "b", "text": "True" },
+					{ "id": 3, "label": "c", "text": "None" },
+					{ "id": 4, "label": "d", "text": "1" }
+				],
+				"answer": "b",
+				"explanation": "any() returns True if any element of the iterable is true. Even if only one element is True, the result is True."
+			},
+			{
+				"id": 2,
+				"question": "What does any() return if the iterable is empty?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "True" },
+					{ "id": 2, "label": "b", "text": "None" },
+					{ "id": 3, "label": "c", "text": "False" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "c",
+				"explanation": "The lesson states: If the iterable is empty, any() will return False. There are no elements to be true, so the result is False."
+			},
+			{
+				"id": 3,
+				"question": "What does all() return if ALL elements of the iterable are True?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "False" },
+					{ "id": 2, "label": "b", "text": "None" },
+					{ "id": 3, "label": "c", "text": "True" },
+					{ "id": 4, "label": "d", "text": "1" }
+				],
+				"answer": "c",
+				"explanation": "all() returns True if all of the elements of the iterable are true. Every element must be true for all() to return True."
+			},
+			{
+				"id": 4,
+				"question": "What does all() return if the iterable is empty?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "False" },
+					{ "id": 2, "label": "b", "text": "True" },
+					{ "id": 3, "label": "c", "text": "None" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "The lesson states: If the iterable is empty, all() will return True. This is the opposite of any() — all() returns True for an empty iterable."
+			},
+			{
+				"id": 5,
+				"question": "What is the output of any([1>0, 1==0, 1<0])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "False" },
+					{ "id": 2, "label": "b", "text": "True" },
+					{ "id": 3, "label": "c", "text": "None" },
+					{ "id": 4, "label": "d", "text": "[True, False, False]" }
+				],
+				"answer": "b",
+				"explanation": "1>0 is True, 1==0 is False, 1<0 is False. The list is [True, False, False]. any() returns True because at least one element (1>0) is True."
+			},
+			{
+				"id": 6,
+				"question": "What is the output of any([1<0, 2<1, 3<2])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "True" },
+					{ "id": 2, "label": "b", "text": "False" },
+					{ "id": 3, "label": "c", "text": "None" },
+					{ "id": 4, "label": "d", "text": "[False, False, False]" }
+				],
+				"answer": "b",
+				"explanation": "1<0 is False, 2<1 is False, 3<2 is False. All elements are False, so any() returns False — no element is true."
+			},
+			{
+				"id": 7,
+				"question": "What is the output of all(['a'<'b', 'b'<'c'])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "False" },
+					{ "id": 2, "label": "b", "text": "True" },
+					{ "id": 3, "label": "c", "text": "None" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "'a'<'b' is True and 'b'<'c' is True. Both elements are True, so all() returns True."
+			},
+			{
+				"id": 8,
+				"question": "What is the output of all(['a'<'b', 'c'<'b'])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "True" },
+					{ "id": 2, "label": "b", "text": "False" },
+					{ "id": 3, "label": "c", "text": "None" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "'a'<'b' is True but 'c'<'b' is False (c comes after b alphabetically). Since not all elements are True, all() returns False."
+			},
+			{
+				"id": 9,
+				"question": "In the any()/all() task, what is checked FIRST before testing for palindromes?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Whether any integer is positive" },
+					{ "id": 2, "label": "b", "text": "Whether all integers are positive" },
+					{ "id": 3, "label": "c", "text": "Whether the list is empty" },
+					{ "id": 4, "label": "d", "text": "Whether any integer is negative" }
+				],
+				"answer": "b",
+				"explanation": "The task says: If all the integers are positive, then check if any integer is a palindromic integer. The all() check (all positive) comes first."
+			},
+			{
+				"id": 10,
+				"question": "According to the task, when should the final output be True?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "When any integer in the list is positive" },
+					{ "id": 2, "label": "b", "text": "When all conditions of the problem statement are satisfied" },
+					{ "id": 3, "label": "c", "text": "When the list contains only one number" },
+					{ "id": 4, "label": "d", "text": "When all integers are palindromes" }
+				],
+				"answer": "b",
+				"explanation": "The task says: Print True if all the conditions of the problem statement are satisfied. Otherwise, print False. Both conditions (all positive AND any palindrome) must hold."
+			}
+		]
+	},
+	{
+		"id": 39,
+		"name": "Python: any() & all() (2)",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the key difference between any() and all()?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "any() checks all elements; all() checks any element" },
+					{ "id": 2, "label": "b", "text": "any() returns True if at least one element is True; all() returns True only if every element is True" },
+					{ "id": 3, "label": "c", "text": "any() works with strings; all() works with numbers only" },
+					{ "id": 4, "label": "d", "text": "There is no difference" }
+				],
+				"answer": "b",
+				"explanation": "any() needs only one True element. all() requires every element to be True. They are complementary — any() is lenient, all() is strict."
+			},
+			{
+				"id": 2,
+				"question": "Why does any([1>0, 1==0, 1<0]) return True?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Because all three conditions are True" },
+					{ "id": 2, "label": "b", "text": "Because at least one condition (1>0) is True, and any() only needs one" },
+					{ "id": 3, "label": "c", "text": "Because any() always returns True for non-empty lists" },
+					{ "id": 4, "label": "d", "text": "Because the list has 3 elements" }
+				],
+				"answer": "b",
+				"explanation": "1>0 is True. any() returns True as soon as it finds one True element — it does not require all of them to be True."
+			},
+			{
+				"id": 3,
+				"question": "Why does all(['a'<'b', 'c'<'b']) return False?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Because 'a'<'b' is False" },
+					{ "id": 2, "label": "b", "text": "Because 'c'<'b' is False and all() requires every element to be True" },
+					{ "id": 3, "label": "c", "text": "Because strings cannot be compared with <" },
+					{ "id": 4, "label": "d", "text": "Because the list has an even number of elements" }
+				],
+				"answer": "b",
+				"explanation": "'c'<'b' is False because 'c' comes after 'b' alphabetically. all() requires all elements to be True, so one False makes the whole result False."
+			},
+			{
+				"id": 4,
+				"question": "What is the output of any([False, False, False])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "True" },
+					{ "id": 2, "label": "b", "text": "False" },
+					{ "id": 3, "label": "c", "text": "None" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "any() returns True if any element is True. All three elements are False, so there is nothing True in the list. any() returns False."
+			},
+			{
+				"id": 5,
+				"question": "What is the output of all([True, True, False])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "True" },
+					{ "id": 2, "label": "b", "text": "False" },
+					{ "id": 3, "label": "c", "text": "None" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "all() requires every element to be True. The third element is False, so all() returns False even though the first two are True."
+			},
+			{
+				"id": 6,
+				"question": "If the list of integers is [-1, 2, 3, 4], what does checking all(x > 0) return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "True" },
+					{ "id": 2, "label": "b", "text": "False" },
+					{ "id": 3, "label": "c", "text": "None" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "-1 > 0 is False. all() fails as soon as one element is False, so the result is False — and since not all are positive, we don't even check for palindromes."
+			},
+			{
+				"id": 7,
+				"question": "What is any([]) and what is all([])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "both True" },
+					{ "id": 2, "label": "b", "text": "any → False, all → True" },
+					{ "id": 3, "label": "c", "text": "both False" },
+					{ "id": 4, "label": "d", "text": "any → True, all → False" }
+				],
+				"answer": "b",
+				"explanation": "The lesson states: any() on an empty iterable returns False; all() on an empty iterable returns True. They behave oppositely for empty iterables."
+			},
+			{
+				"id": 8,
+				"question": "What is the output of any([1>0,1==0,1<0]) compared to all([1>0,1==0,1<0])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "any → True, all → True" },
+					{ "id": 2, "label": "b", "text": "any → True, all → False" },
+					{ "id": 3, "label": "c", "text": "any → False, all → True" },
+					{ "id": 4, "label": "d", "text": "any → False, all → False" }
+				],
+				"answer": "b",
+				"explanation": "The list evaluates to [True, False, False]. any() returns True (one element is True). all() returns False (not all elements are True)."
+			},
+			{
+				"id": 9,
+				"question": "For the task, which pair of functions correctly models the two conditions?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "any(positive) and all(palindrome)" },
+					{ "id": 2, "label": "b", "text": "all(positive) and any(palindrome)" },
+					{ "id": 3, "label": "c", "text": "all(positive) or any(palindrome)" },
+					{ "id": 4, "label": "d", "text": "any(positive) or all(palindrome)" }
+				],
+				"answer": "b",
+				"explanation": "The task requires: ALL integers must be positive (use all()), AND at least one must be a palindrome (use any()). Both conditions must be met with 'and'."
+			},
+			{
+				"id": 10,
+				"question": "What is the constraint on N in the any()/all() task?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "0 ≤ N ≤ 100" },
+					{ "id": 2, "label": "b", "text": "0 < N < 100" },
+					{ "id": 3, "label": "c", "text": "1 ≤ N ≤ 100" },
+					{ "id": 4, "label": "d", "text": "N must equal 10" }
+				],
+				"answer": "b",
+				"explanation": "The lesson states: 0 < N < 100. N is the total number of integers in the list. It must be at least 1 and at most 99."
+			}
+		]
+	},
+	{
+		"id": 40,
+		"name": "Python: any() & all() (3)",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the output of all(['a'<'b','b'<'c']) compared to all(['a'<'b','c'<'b'])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "both True" },
+					{ "id": 2, "label": "b", "text": "first → True, second → False" },
+					{ "id": 3, "label": "c", "text": "both False" },
+					{ "id": 4, "label": "d", "text": "first → False, second → True" }
+				],
+				"answer": "b",
+				"explanation": "['a'<'b','b'<'c'] = [True,True] → all() returns True. ['a'<'b','c'<'b'] = [True,False] → all() returns False because one element is False."
+			},
+			{
+				"id": 2,
+				"question": "What is the output of any([1>0,1==0,1<0]) vs all([1>0,1==0,1<0])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "any → True, all → True" },
+					{ "id": 2, "label": "b", "text": "any → True, all → False" },
+					{ "id": 3, "label": "c", "text": "any → False, all → True" },
+					{ "id": 4, "label": "d", "text": "any → False, all → False" }
+				],
+				"answer": "b",
+				"explanation": "Evaluates to [True,False,False]. any([True,False,False]) → True (one True found). all([True,False,False]) → False (not all are True)."
+			},
+			{
+				"id": 3,
+				"question": "any([1<0,2<1,3<2]) is False and any([1>0,1==0,1<0]) is True. What explains the difference?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "The first list has fewer elements than the second" },
+					{ "id": 2, "label": "b", "text": "The first list [False,False,False] has no True element; the second [True,False,False] has at least one" },
+					{ "id": 3, "label": "c", "text": "any() behaves differently for integer comparisons vs equality checks" },
+					{ "id": 4, "label": "d", "text": "any() always returns False when all conditions involve the number 1" }
+				],
+				"answer": "b",
+				"explanation": "any() only needs one True element. 1<0, 2<1, 3<2 are all False → any returns False. In the second list, 1>0 is True → any returns True."
+			},
+			{
+				"id": 4,
+				"question": "For the task, if integers are all positive but NONE is a palindrome, what is the output?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "True — all positive is enough" },
+					{ "id": 2, "label": "b", "text": "False — both conditions must be satisfied" },
+					{ "id": 3, "label": "c", "text": "True — no palindromes means all() is vacuously True" },
+					{ "id": 4, "label": "d", "text": "Error — the input is invalid" }
+				],
+				"answer": "b",
+				"explanation": "The task requires BOTH: all integers positive AND any integer is palindromic. If no palindrome exists, the second condition fails and the output is False."
+			},
+			{
+				"id": 5,
+				"question": "For the task, if the list contains a negative number alongside a palindromic number, what is the output?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "True — a palindrome exists" },
+					{ "id": 2, "label": "b", "text": "False — not all integers are positive, so the palindrome check does not matter" },
+					{ "id": 3, "label": "c", "text": "True — the palindrome overrides the negative number" },
+					{ "id": 4, "label": "d", "text": "Error" }
+				],
+				"answer": "b",
+				"explanation": "The task checks: IF all are positive, THEN check for a palindrome. If not all positive, the output is False immediately — the palindrome check is irrelevant."
+			},
+			{
+				"id": 6,
+				"question": "What is the output of any([False,False,False]) vs all([False,False,False])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "any → True, all → True" },
+					{ "id": 2, "label": "b", "text": "any → False, all → False" },
+					{ "id": 3, "label": "c", "text": "any → True, all → False" },
+					{ "id": 4, "label": "d", "text": "any → False, all → True" }
+				],
+				"answer": "b",
+				"explanation": "any([False,False,False]) → False (no element is True). all([False,False,False]) → False (not all elements are True). Both return False."
+			},
+			{
+				"id": 7,
+				"question": "What is the output of any([True]) and all([True])?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "any → True, all → False" },
+					{ "id": 2, "label": "b", "text": "any → True, all → True" },
+					{ "id": 3, "label": "c", "text": "any → False, all → True" },
+					{ "id": 4, "label": "d", "text": "any → False, all → False" }
+				],
+				"answer": "b",
+				"explanation": "any([True]) → True (at least one element is True). all([True]) → True (all elements — the single one — are True). Both return True for a single-element True list."
+			},
+			{
+				"id": 8,
+				"question": "The lesson shows any([1<0,2<1,3<2]) → False. What would any([1<0,2<1,2<3]) return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "False — the first two are False" },
+					{ "id": 2, "label": "b", "text": "True — 2<3 is True so any() finds one True element" },
+					{ "id": 3, "label": "c", "text": "False — there are more False values than True" },
+					{ "id": 4, "label": "d", "text": "True — any() always returns True when the list has 3 elements" }
+				],
+				"answer": "b",
+				"explanation": "1<0 → False, 2<1 → False, 2<3 → True. The list is [False,False,True]. any() returns True because at least one element is True."
+			},
+			{
+				"id": 9,
+				"question": "Why does all() return True for an empty iterable but any() returns False for an empty iterable?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "It is a bug in Python" },
+					{ "id": 2, "label": "b", "text": "all() means no element violates the condition (vacuously true); any() needs at least one True element, which cannot exist with zero elements" },
+					{ "id": 3, "label": "c", "text": "Empty iterables always return True for both" },
+					{ "id": 4, "label": "d", "text": "Python treats [] as True by default" }
+				],
+				"answer": "b",
+				"explanation": "For all(): there is no element that is False, so the condition holds vacuously → True. For any(): there is no element at all to be True → False. The lesson explicitly states both behaviors."
+			},
+			{
+				"id": 10,
+				"question": "The task says: 'If all integers are positive, check if any integer is palindromic.' Which logic correctly implements this?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "any(x>0) or all(is_palindrome(x))" },
+					{ "id": 2, "label": "b", "text": "all(x>0) and any(is_palindrome(x))" },
+					{ "id": 3, "label": "c", "text": "all(x>0) or any(is_palindrome(x))" },
+					{ "id": 4, "label": "d", "text": "any(x>0) and all(is_palindrome(x))" }
+				],
+				"answer": "b",
+				"explanation": "The task needs ALL integers positive (all(x>0)) AND at least one palindrome (any(is_palindrome(x))). Both conditions must be True, connected with 'and'."
+			}
+		]
 	}
 ]
