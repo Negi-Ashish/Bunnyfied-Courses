@@ -7733,5 +7733,386 @@
 				"explanation": "rotate(1) rotates the deque RIGHT by 1 step — the last element (3) moves to the front. [1,2,3] → [3,1,2]."
 			}
 		]
+	},
+	{
+		"id": 29,
+		"name": "Python: Errors & Exceptions (Easy)",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What are exceptions in Python?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Errors caught before the program runs" },
+					{ "id": 2, "label": "b", "text": "Errors detected during execution" },
+					{ "id": 3, "label": "c", "text": "Special functions for handling bugs" },
+					{ "id": 4, "label": "d", "text": "Warnings that don't stop the program" }
+				],
+				"answer": "b",
+				"explanation": "Exceptions are errors detected during execution — they happen while your program is running, not before it starts."
+			},
+			{
+				"id": 2,
+				"question": "Which error is raised when the second argument of a division operation is zero?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "ValueError" },
+					{ "id": 2, "label": "b", "text": "TypeError" },
+					{ "id": 3, "label": "c", "text": "ZeroDivisionError" },
+					{ "id": 4, "label": "d", "text": "MathError" }
+				],
+				"answer": "c",
+				"explanation": "ZeroDivisionError is raised when the second argument of a division or modulo operation is zero — for example, 1 / 0."
+			},
+			{
+				"id": 3,
+				"question": "A ValueError is raised when a built-in function receives an argument that has the right type but...",
+				"options": [
+					{ "id": 1, "label": "a", "text": "is too large" },
+					{ "id": 2, "label": "b", "text": "an inappropriate value" },
+					{ "id": 3, "label": "c", "text": "is None" },
+					{ "id": 4, "label": "d", "text": "is a float instead of int" }
+				],
+				"answer": "b",
+				"explanation": "A ValueError is raised when a built-in operation receives an argument with the right type but an inappropriate value — for example, int('#') receives a string (correct type) but '#' cannot be converted to an integer."
+			},
+			{
+				"id": 4,
+				"question": "What keyword is used to begin a block of code that might raise an exception?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "catch" },
+					{ "id": 2, "label": "b", "text": "try" },
+					{ "id": 3, "label": "c", "text": "handle" },
+					{ "id": 4, "label": "d", "text": "begin" }
+				],
+				"answer": "b",
+				"explanation": "The 'try' keyword starts the block of code you want to monitor for exceptions. If an error occurs inside it, Python looks for a matching except clause."
+			},
+			{
+				"id": 5,
+				"question": "What keyword is used to catch an exception?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "catch" },
+					{ "id": 2, "label": "b", "text": "handle" },
+					{ "id": 3, "label": "c", "text": "except" },
+					{ "id": 4, "label": "d", "text": "error" }
+				],
+				"answer": "c",
+				"explanation": "The 'except' keyword catches exceptions. It follows the try block and specifies which exception type to handle."
+			},
+			{
+				"id": 6,
+				"question": "What does int('0') return?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "The string '0'" },
+					{ "id": 2, "label": "b", "text": "The integer 0" },
+					{ "id": 3, "label": "c", "text": "ValueError" },
+					{ "id": 4, "label": "d", "text": "None" }
+				],
+				"answer": "b",
+				"explanation": "'0' is a valid digit string, so int('0') successfully converts it to the integer 0. No exception is raised."
+			},
+			{
+				"id": 7,
+				"question": "What does int('#') raise?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "ZeroDivisionError" },
+					{ "id": 2, "label": "b", "text": "TypeError" },
+					{ "id": 3, "label": "c", "text": "ValueError" },
+					{ "id": 4, "label": "d", "text": "SyntaxError" }
+				],
+				"answer": "c",
+				"explanation": "int('#') raises a ValueError because '#' has the right type (string) but is not a valid integer value — it cannot be converted to a number."
+			},
+			{
+				"id": 8,
+				"question": "What error does 1 / 0 raise in Python?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "MathError" },
+					{ "id": 2, "label": "b", "text": "ValueError" },
+					{ "id": 3, "label": "c", "text": "TypeError" },
+					{ "id": 4, "label": "d", "text": "ZeroDivisionError" }
+				],
+				"answer": "d",
+				"explanation": "Dividing by zero raises ZeroDivisionError. The error message is 'integer division or modulo by zero'."
+			},
+			{
+				"id": 9,
+				"question": "Which of the following would raise a ZeroDivisionError?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "print(10 / 2)" },
+					{ "id": 2, "label": "b", "text": "print(10 % 0)" },
+					{ "id": 3, "label": "c", "text": "int('abc')" },
+					{ "id": 4, "label": "d", "text": "print(0 / 10)" }
+				],
+				"answer": "b",
+				"explanation": "ZeroDivisionError is raised when the second argument of a division OR modulo operation is zero. 10 % 0 uses zero as the divisor in modulo, so it raises ZeroDivisionError. 0 / 10 is fine because 10 is not zero."
+			},
+			{
+				"id": 10,
+				"question": "What does 'as e' do in:  except ZeroDivisionError as e:",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Prints the error automatically" },
+					{ "id": 2, "label": "b", "text": "Ignores the exception completely" },
+					{ "id": 3, "label": "c", "text": "Assigns the exception object to variable e" },
+					{ "id": 4, "label": "d", "text": "Raises a new exception named e" }
+				],
+				"answer": "c",
+				"explanation": "'as e' binds the caught exception object to the variable e, so you can use e to access the error message — for example, printing 'Error Code:', e."
+			}
+		]
+	},
+	{
+		"id": 30,
+		"name": "Python: Errors & Exceptions (Medium)",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "Given a = '1' and b = '0', what does int(a) / int(b) raise?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "ValueError" },
+					{ "id": 2, "label": "b", "text": "TypeError" },
+					{ "id": 3, "label": "c", "text": "ZeroDivisionError" },
+					{ "id": 4, "label": "d", "text": "No error — returns infinity" }
+				],
+				"answer": "c",
+				"explanation": "int('0') converts successfully to 0. Dividing int('1') / 0 then raises ZeroDivisionError, not ValueError, because the conversion itself succeeded."
+			},
+			{
+				"id": 2,
+				"question": "Given a = '1' and b = '#', what error is raised when evaluating int(a) / int(b)?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "ZeroDivisionError — dividing by zero" },
+					{ "id": 2, "label": "b", "text": "ValueError — int('#') cannot be converted" },
+					{ "id": 3, "label": "c", "text": "TypeError — wrong argument type" },
+					{ "id": 4, "label": "d", "text": "No error is raised" }
+				],
+				"answer": "b",
+				"explanation": "int('#') fails first before any division happens, raising ValueError: invalid literal for int() with base 10: '#'. The division never gets a chance to run."
+			},
+			{
+				"id": 3,
+				"question": "What is the output of this code?\ntry:\n    print(1/0)\nexcept ZeroDivisionError as e:\n    print('Error Code:', e)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "1/0" },
+					{ "id": 2, "label": "b", "text": "ZeroDivisionError" },
+					{ "id": 3, "label": "c", "text": "Error Code: division by zero" },
+					{ "id": 4, "label": "d", "text": "No output; the program crashes silently" }
+				],
+				"answer": "c",
+				"explanation": "1/0 raises ZeroDivisionError, which is caught by the except clause. The variable e holds the error message 'division by zero', so the output is: Error Code: division by zero."
+			},
+			{
+				"id": 4,
+				"question": "Can a try statement have more than one except clause?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "No, only one except clause is allowed" },
+					{ "id": 2, "label": "b", "text": "Yes, to specify handlers for different exception types" },
+					{ "id": 3, "label": "c", "text": "Only in Python 2" },
+					{ "id": 4, "label": "d", "text": "Only when using a finally block" }
+				],
+				"answer": "b",
+				"explanation": "A try statement may have more than one except clause to specify handlers for different exceptions — for example, one clause for ZeroDivisionError and another for ValueError."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\ntry:\n    x = 5\n    y = 0\n    print(x % y)\nexcept ZeroDivisionError as e:\n    print('Caught:', e)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "0" },
+					{ "id": 2, "label": "b", "text": "Caught: integer division or modulo by zero" },
+					{ "id": 3, "label": "c", "text": "Caught: division by zero" },
+					{ "id": 4, "label": "d", "text": "5" }
+				],
+				"answer": "b",
+				"explanation": "5 % 0 raises ZeroDivisionError because zero is the second argument of a modulo operation. The except clause catches it and e holds the message 'integer division or modulo by zero'."
+			},
+			{
+				"id": 6,
+				"question": "What would 10 % 0 raise?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "ValueError" },
+					{ "id": 2, "label": "b", "text": "TypeError" },
+					{ "id": 3, "label": "c", "text": "ZeroDivisionError" },
+					{ "id": 4, "label": "d", "text": "ModuloError" }
+				],
+				"answer": "c",
+				"explanation": "ZeroDivisionError is raised when the second argument of a division OR modulo operation is zero. 10 % 0 triggers the same error as 10 / 0."
+			},
+			{
+				"id": 7,
+				"question": "Why does int('0') NOT raise a ValueError, but int('#') DOES?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Because '0' equals zero, a special allowed value" },
+					{ "id": 2, "label": "b", "text": "Because '0' is a valid digit that converts cleanly; '#' is not a valid integer literal" },
+					{ "id": 3, "label": "c", "text": "Because '#' is treated as a comment character by int()" },
+					{ "id": 4, "label": "d", "text": "There is no difference; both raise ValueError" }
+				],
+				"answer": "b",
+				"explanation": "ValueError is about having the right type but an inappropriate value. '0' IS an appropriate value (a valid integer literal), so it converts fine. '#' is a string (right type) but not a valid integer value, so it raises ValueError."
+			},
+			{
+				"id": 8,
+				"question": "What is the exact error message shown when int('#') raises a ValueError?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "cannot convert '#' to integer" },
+					{ "id": 2, "label": "b", "text": "integer division or modulo by zero" },
+					{ "id": 3, "label": "c", "text": "invalid literal for int() with base 10: '#'" },
+					{ "id": 4, "label": "d", "text": "type '#' is not an integer" }
+				],
+				"answer": "c",
+				"explanation": "The full error message from the lesson is: ValueError: invalid literal for int() with base 10: '#'. This tells you that '#' cannot be interpreted as a base-10 integer."
+			},
+			{
+				"id": 9,
+				"question": "In a try/except block, if an exception is raised in the try block and matches the except clause, what happens?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "The program terminates immediately" },
+					{ "id": 2, "label": "b", "text": "The try block restarts from the beginning" },
+					{ "id": 3, "label": "c", "text": "The except block runs" },
+					{ "id": 4, "label": "d", "text": "Both the rest of try and the except block run" }
+				],
+				"answer": "c",
+				"explanation": "When an exception is raised inside try and it matches an except clause, Python jumps to that except block and runs it. The remaining code in the try block is skipped."
+			},
+			{
+				"id": 10,
+				"question": "What is the correct syntax to catch a ZeroDivisionError and store it in variable e?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "catch ZeroDivisionError as e:" },
+					{ "id": 2, "label": "b", "text": "except ZeroDivisionError = e:" },
+					{ "id": 3, "label": "c", "text": "handle ZeroDivisionError as e:" },
+					{ "id": 4, "label": "d", "text": "except ZeroDivisionError as e:" }
+				],
+				"answer": "d",
+				"explanation": "The correct Python syntax is: except ZeroDivisionError as e: — using the 'except' keyword, the exception name, and 'as e' to bind the exception object to variable e."
+			}
+		]
+	},
+	{
+		"id": 31,
+		"name": "Python: Errors & Exceptions (Hard)",
+		"imageUrl": "python",
+		"questions": [
+			{
+				"id": 1,
+				"question": "What is the output?\ntry:\n    a = '1'\n    b = '0'\n    print(int(a) / int(b))\nexcept ZeroDivisionError as e:\n    print('Error Code:', e)\nexcept ValueError as e:\n    print('Value Error:', e)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "0.0" },
+					{ "id": 2, "label": "b", "text": "Error Code: division by zero" },
+					{ "id": 3, "label": "c", "text": "Value Error: invalid literal for int() with base 10: '0'" },
+					{ "id": 4, "label": "d", "text": "The program crashes with no output" }
+				],
+				"answer": "b",
+				"explanation": "int('0') converts to 0 without error. Then int('1') / 0 raises ZeroDivisionError, which is caught by the first except clause. Output: Error Code: division by zero."
+			},
+			{
+				"id": 2,
+				"question": "What is the output?\ntry:\n    a = '1'\n    b = '#'\n    print(int(a) / int(b))\nexcept ZeroDivisionError as e:\n    print('Error Code:', e)\nexcept ValueError as e:\n    print('Value Error:', e)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Error Code: division by zero" },
+					{ "id": 2, "label": "b", "text": "Value Error: invalid literal for int() with base 10: '#'" },
+					{ "id": 3, "label": "c", "text": "Both errors are printed" },
+					{ "id": 4, "label": "d", "text": "No output" }
+				],
+				"answer": "b",
+				"explanation": "int('#') is attempted first (before any division) and raises ValueError immediately. The second except clause catches it, printing: Value Error: invalid literal for int() with base 10: '#'."
+			},
+			{
+				"id": 3,
+				"question": "What is the output?\ntry:\n    result = 10 % 0\nexcept ZeroDivisionError as e:\n    print('Caught:', e)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "0" },
+					{ "id": 2, "label": "b", "text": "No output" },
+					{ "id": 3, "label": "c", "text": "Caught: integer division or modulo by zero" },
+					{ "id": 4, "label": "d", "text": "Caught: modulo by zero" }
+				],
+				"answer": "c",
+				"explanation": "10 % 0 raises ZeroDivisionError with the message 'integer division or modulo by zero'. The except clause catches it and prints: Caught: integer division or modulo by zero."
+			},
+			{
+				"id": 4,
+				"question": "What is the output?\ntry:\n    a = int('5')\n    b = int('0')\n    c = int('#')\n    print(a / b)\nexcept ZeroDivisionError as e:\n    print('ZDE:', e)\nexcept ValueError as e:\n    print('VE:', e)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "ZDE: division by zero" },
+					{ "id": 2, "label": "b", "text": "VE: invalid literal for int() with base 10: '#'" },
+					{ "id": 3, "label": "c", "text": "Both errors are printed" },
+					{ "id": 4, "label": "d", "text": "1.0" }
+				],
+				"answer": "b",
+				"explanation": "int('5') and int('0') succeed, but int('#') raises ValueError before print(a / b) is ever reached. The ValueError clause catches it: VE: invalid literal for int() with base 10: '#'."
+			},
+			{
+				"id": 5,
+				"question": "What is the output?\ntry:\n    x = int('hello')\nexcept ZeroDivisionError:\n    print('Zero Division')\nexcept ValueError:\n    print('Value Error')",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Zero Division" },
+					{ "id": 2, "label": "b", "text": "Value Error" },
+					{ "id": 3, "label": "c", "text": "Both lines are printed" },
+					{ "id": 4, "label": "d", "text": "No output; the program crashes" }
+				],
+				"answer": "b",
+				"explanation": "int('hello') raises ValueError because 'hello' is not a valid integer literal. The second except clause matches and prints: Value Error. The ZeroDivisionError clause is skipped because it doesn't match."
+			},
+			{
+				"id": 6,
+				"question": "What is the output?\ntry:\n    print(int('abc') / int('0'))\nexcept ValueError as e:\n    print('First:', e)\nexcept ZeroDivisionError as e:\n    print('Second:', e)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "First: invalid literal for int() with base 10: 'abc'" },
+					{ "id": 2, "label": "b", "text": "Second: division by zero" },
+					{ "id": 3, "label": "c", "text": "Both errors are printed" },
+					{ "id": 4, "label": "d", "text": "No output" }
+				],
+				"answer": "a",
+				"explanation": "int('abc') is evaluated first and raises ValueError immediately — the division never runs. The first except clause matches, printing: First: invalid literal for int() with base 10: 'abc'."
+			},
+			{
+				"id": 7,
+				"question": "What is the output?\ntry:\n    x = int('5')\n    y = int('0')\n    print(x / y)\nexcept ValueError as e:\n    print('ValueError:', e)\nexcept ZeroDivisionError as e:\n    print('ZeroDivisionError:', e)",
+				"options": [
+					{ "id": 1, "label": "a", "text": "ValueError: invalid literal..." },
+					{ "id": 2, "label": "b", "text": "ZeroDivisionError: division by zero" },
+					{ "id": 3, "label": "c", "text": "0" },
+					{ "id": 4, "label": "d", "text": "inf" }
+				],
+				"answer": "b",
+				"explanation": "int('5') and int('0') both convert without error. Then 5 / 0 raises ZeroDivisionError, which is caught by the second except clause: ZeroDivisionError: division by zero."
+			},
+			{
+				"id": 8,
+				"question": "What happens when the code in the try block does NOT raise any exception?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "The except block runs anyway as a safety check" },
+					{ "id": 2, "label": "b", "text": "The program raises a new exception for having an empty except" },
+					{ "id": 3, "label": "c", "text": "The try block completes normally and the except block is skipped" },
+					{ "id": 4, "label": "d", "text": "Python will automatically test all possible exceptions" }
+				],
+				"answer": "c",
+				"explanation": "If no exception is raised in the try block, Python skips all the except clauses entirely. The try block runs to completion and execution continues after the entire try/except structure."
+			},
+			{
+				"id": 9,
+				"question": "Which statement about the try/except structure is TRUE based on the lesson?",
+				"options": [
+					{ "id": 1, "label": "a", "text": "A try block can only have one except clause" },
+					{ "id": 2, "label": "b", "text": "The except block always runs regardless of whether an error occurs" },
+					{ "id": 3, "label": "c", "text": "A try statement may have more than one except clause to handle different exceptions" },
+					{ "id": 4, "label": "d", "text": "The 'except' keyword works identically to 'catch' in other languages" }
+				],
+				"answer": "c",
+				"explanation": "The lesson explicitly states: 'A try statement may have more than one except clause to specify handlers for different exceptions.' This lets you handle ZeroDivisionError differently from ValueError, for example."
+			},
+			{
+				"id": 10,
+				"question": "What is the output?\ntry:\n    a = '1'\n    b = '0'\n    c = int(a) / int(b)\nexcept ValueError:\n    print('Value Error')",
+				"options": [
+					{ "id": 1, "label": "a", "text": "Value Error" },
+					{ "id": 2, "label": "b", "text": "0.5" },
+					{ "id": 3, "label": "c", "text": "The ZeroDivisionError is NOT caught and the program crashes" },
+					{ "id": 4, "label": "d", "text": "ZeroDivisionError: division by zero is printed automatically" }
+				],
+				"answer": "c",
+				"explanation": "int('0') converts fine, so no ValueError is raised. Then int('1') / 0 raises ZeroDivisionError — but there is no except clause for ZeroDivisionError, so it is unhandled and the program crashes."
+			}
+		]
 	}
 ]

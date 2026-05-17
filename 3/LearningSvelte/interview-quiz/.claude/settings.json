@@ -8,7 +8,8 @@
       "Bash(python3 -c ' *)",
       "Bash(find \"/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Chess-Analyzer\" -type f | grep -v node_modules | grep -v .git | grep -v .svelte-kit | grep -v .vercel | sort)",
       "Read(//home/dontkillme/dontkillme/BunnyfiedLabs Projects/Chess-Analyzer/**)",
-      "Bash(mkdir -p \"/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Bunnyfied-Courses/3/LearningSvelte/interview-quiz/src/routes/progress\" && mkdir -p \"/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Bunnyfied-Courses/3/LearningSvelte/interview-quiz/src/routes/tests\" && mkdir -p \"/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Bunnyfied-Courses/3/LearningSvelte/interview-quiz/src/routes/practice/[testId]\")"
+      "Bash(mkdir -p \"/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Bunnyfied-Courses/3/LearningSvelte/interview-quiz/src/routes/progress\" && mkdir -p \"/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Bunnyfied-Courses/3/LearningSvelte/interview-quiz/src/routes/tests\" && mkdir -p \"/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Bunnyfied-Courses/3/LearningSvelte/interview-quiz/src/routes/practice/[testId]\")",
+      "Bash(python3 -c \"import json; data = json.load\\(open\\('/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Bunnyfied-Courses/3/LearningSvelte/interview-quiz/src/questions.json'\\)\\); quizzes = [q for q in data if q['id'] in [29,30,31]]; print\\(f'Found {len\\(quizzes\\)} new quizzes'\\); [print\\(f\\\\\"  ID {q['id']}: {q['name']} — {len\\(q['questions']\\)} questions\\\\\"\\) for q in quizzes]\")"
     ],
     "additionalDirectories": [
       "/home/dontkillme/dontkillme/BunnyfiedLabs Projects/Bunnyfied-Courses/3/LearningSvelte/interview-quiz/src/routes/practice"
