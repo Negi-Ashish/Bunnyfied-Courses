@@ -7736,7 +7736,7 @@
 	},
 	{
 		"id": 29,
-		"name": "Python: Errors & Exceptions (Easy)",
+		"name": "Python: Errors & Exceptions 1",
 		"imageUrl": "python",
 		"questions": [
 			{
@@ -7863,7 +7863,7 @@
 	},
 	{
 		"id": 30,
-		"name": "Python: Errors & Exceptions (Medium)",
+		"name": "Python: Errors & Exceptions 2",
 		"imageUrl": "python",
 		"questions": [
 			{
@@ -7907,7 +7907,11 @@
 				"question": "Can a try statement have more than one except clause?",
 				"options": [
 					{ "id": 1, "label": "a", "text": "No, only one except clause is allowed" },
-					{ "id": 2, "label": "b", "text": "Yes, to specify handlers for different exception types" },
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Yes, to specify handlers for different exception types"
+					},
 					{ "id": 3, "label": "c", "text": "Only in Python 2" },
 					{ "id": 4, "label": "d", "text": "Only when using a finally block" }
 				],
@@ -7943,8 +7947,16 @@
 				"question": "Why does int('0') NOT raise a ValueError, but int('#') DOES?",
 				"options": [
 					{ "id": 1, "label": "a", "text": "Because '0' equals zero, a special allowed value" },
-					{ "id": 2, "label": "b", "text": "Because '0' is a valid digit that converts cleanly; '#' is not a valid integer literal" },
-					{ "id": 3, "label": "c", "text": "Because '#' is treated as a comment character by int()" },
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Because '0' is a valid digit that converts cleanly; '#' is not a valid integer literal"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Because '#' is treated as a comment character by int()"
+					},
 					{ "id": 4, "label": "d", "text": "There is no difference; both raise ValueError" }
 				],
 				"answer": "b",
@@ -7990,7 +8002,7 @@
 	},
 	{
 		"id": 31,
-		"name": "Python: Errors & Exceptions (Hard)",
+		"name": "Python: Errors & Exceptions 3",
 		"imageUrl": "python",
 		"questions": [
 			{
@@ -7999,7 +8011,11 @@
 				"options": [
 					{ "id": 1, "label": "a", "text": "0.0" },
 					{ "id": 2, "label": "b", "text": "Error Code: division by zero" },
-					{ "id": 3, "label": "c", "text": "Value Error: invalid literal for int() with base 10: '0'" },
+					{
+						"id": 3,
+						"label": "c",
+						"text": "Value Error: invalid literal for int() with base 10: '0'"
+					},
 					{ "id": 4, "label": "d", "text": "The program crashes with no output" }
 				],
 				"answer": "b",
@@ -8010,7 +8026,11 @@
 				"question": "What is the output?\ntry:\n    a = '1'\n    b = '#'\n    print(int(a) / int(b))\nexcept ZeroDivisionError as e:\n    print('Error Code:', e)\nexcept ValueError as e:\n    print('Value Error:', e)",
 				"options": [
 					{ "id": 1, "label": "a", "text": "Error Code: division by zero" },
-					{ "id": 2, "label": "b", "text": "Value Error: invalid literal for int() with base 10: '#'" },
+					{
+						"id": 2,
+						"label": "b",
+						"text": "Value Error: invalid literal for int() with base 10: '#'"
+					},
 					{ "id": 3, "label": "c", "text": "Both errors are printed" },
 					{ "id": 4, "label": "d", "text": "No output" }
 				],
@@ -8082,9 +8102,21 @@
 				"question": "What happens when the code in the try block does NOT raise any exception?",
 				"options": [
 					{ "id": 1, "label": "a", "text": "The except block runs anyway as a safety check" },
-					{ "id": 2, "label": "b", "text": "The program raises a new exception for having an empty except" },
-					{ "id": 3, "label": "c", "text": "The try block completes normally and the except block is skipped" },
-					{ "id": 4, "label": "d", "text": "Python will automatically test all possible exceptions" }
+					{
+						"id": 2,
+						"label": "b",
+						"text": "The program raises a new exception for having an empty except"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "The try block completes normally and the except block is skipped"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "Python will automatically test all possible exceptions"
+					}
 				],
 				"answer": "c",
 				"explanation": "If no exception is raised in the try block, Python skips all the except clauses entirely. The try block runs to completion and execution continues after the entire try/except structure."
@@ -8094,9 +8126,21 @@
 				"question": "Which statement about the try/except structure is TRUE based on the lesson?",
 				"options": [
 					{ "id": 1, "label": "a", "text": "A try block can only have one except clause" },
-					{ "id": 2, "label": "b", "text": "The except block always runs regardless of whether an error occurs" },
-					{ "id": 3, "label": "c", "text": "A try statement may have more than one except clause to handle different exceptions" },
-					{ "id": 4, "label": "d", "text": "The 'except' keyword works identically to 'catch' in other languages" }
+					{
+						"id": 2,
+						"label": "b",
+						"text": "The except block always runs regardless of whether an error occurs"
+					},
+					{
+						"id": 3,
+						"label": "c",
+						"text": "A try statement may have more than one except clause to handle different exceptions"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "The 'except' keyword works identically to 'catch' in other languages"
+					}
 				],
 				"answer": "c",
 				"explanation": "The lesson explicitly states: 'A try statement may have more than one except clause to specify handlers for different exceptions.' This lets you handle ZeroDivisionError differently from ValueError, for example."
@@ -8107,8 +8151,16 @@
 				"options": [
 					{ "id": 1, "label": "a", "text": "Value Error" },
 					{ "id": 2, "label": "b", "text": "0.5" },
-					{ "id": 3, "label": "c", "text": "The ZeroDivisionError is NOT caught and the program crashes" },
-					{ "id": 4, "label": "d", "text": "ZeroDivisionError: division by zero is printed automatically" }
+					{
+						"id": 3,
+						"label": "c",
+						"text": "The ZeroDivisionError is NOT caught and the program crashes"
+					},
+					{
+						"id": 4,
+						"label": "d",
+						"text": "ZeroDivisionError: division by zero is printed automatically"
+					}
 				],
 				"answer": "c",
 				"explanation": "int('0') converts fine, so no ValueError is raised. Then int('1') / 0 raises ZeroDivisionError — but there is no except clause for ZeroDivisionError, so it is unhandled and the program crashes."
